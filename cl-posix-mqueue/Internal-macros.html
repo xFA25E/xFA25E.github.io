@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<!-- Created by GNU Texinfo 6.7, http://www.gnu.org/software/texinfo/ -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Internal macros (The cl-posix-mqueue Reference Manual)</title>
+
+<meta name="description" content="The cl-posix-mqueue Reference Manual, version 0.1.0.">
+<meta name="keywords" content="Internal macros (The cl-posix-mqueue Reference Manual)">
+<meta name="resource-type" content="document">
+<meta name="distribution" content="global">
+<meta name="Generator" content="makeinfo">
+<link href="index.html" rel="start" title="Top">
+<link href="Indexes.html" rel="index" title="Indexes">
+<link href="index.html#SEC_Contents" rel="contents" title="Table of Contents">
+<link href="Internal-definitions.html" rel="up" title="Internal definitions">
+<link href="Internal-functions.html" rel="next" title="Internal functions">
+<link href="Internal-symbol-macros.html" rel="prev" title="Internal symbol macros">
+<style type="text/css">
+<!--
+a.summary-letter {text-decoration: none}
+blockquote.indentedblock {margin-right: 0em}
+div.display {margin-left: 3.2em}
+div.example {margin-left: 3.2em}
+div.lisp {margin-left: 3.2em}
+kbd {font-style: oblique}
+pre.display {font-family: inherit}
+pre.format {font-family: inherit}
+pre.menu-comment {font-family: serif}
+pre.menu-preformatted {font-family: serif}
+span.nolinebreak {white-space: nowrap}
+span.roman {font-family: initial; font-weight: normal}
+span.sansserif {font-family: sans-serif; font-weight: normal}
+ul.no-bullet {list-style: none}
+-->
+</style>
+
+
+</head>
+
+<body lang="en">
+<span id="Internal-macros"></span><div class="header">
+<p>
+Next: <a href="Internal-functions.html" accesskey="n" rel="next">Internal functions</a>, Previous: <a href="Internal-symbol-macros.html" accesskey="p" rel="prev">Internal symbol macros</a>, Up: <a href="Internal-definitions.html" accesskey="u" rel="up">Internal definitions</a> &nbsp; [<a href="index.html#SEC_Contents" title="Table of contents" rel="contents">Contents</a>][<a href="Indexes.html" title="Index" rel="index">Index</a>]</p>
+</div>
+<hr>
+<span id="Macros-1"></span><h4 class="subsection">5.2.2 Macros</h4>
+<dl>
+<dt id="index-_0025receive">Macro: <strong>%receive</strong> <em>RECEIVE-FN CURRENT-FN RETURN-FORM &amp;rest CURRENT-FN-ARGS</em></dt>
+<dd><span id="go-to-the-POSIX_002dMQUEUE_2236_2236_0025RECEIVE-macro"></span><span id="index-Macro_002c-_0025receive"></span>
+<p>Macro used for generating various receive functions.<br>
+</p>
+<p>RECEIVE-FN is a function called to receive a message.  CURRENT-FN is a function
+which will be called on interrupt.  RETURN-FORM is a form placed at the end of
+the macro.  It has access to BUFFER, LENGTH (of received message) and
+PRIORITY (of received message).  CURRENT-FN-ARGS are additional arguments placed
+at the end of RECEIVE-FN and CURRENT-FN.
+</p><dl compact="compact">
+<dt><strong>Package</strong></dt>
+<dd><p><a href="The-posix_002dmqueue-package.html#go-to-the-POSIX_002dMQUEUE-package"><tt>posix-mqueue</tt></a>
+</p></dd>
+<dt><strong>Source</strong></dt>
+<dd><p><a href="The-cl_002dposix_002dmqueue_002fsrc_002flib_002elisp-file.html#go-to-the-cl_002dposix_002dmqueue_002fsrc_002flib_2024lisp-file"><tt>lib.lisp</tt></a> (file)
+</p></dd>
+</dl>
+</dd></dl>
+<dl>
+<dt id="index-_0025send">Macro: <strong>%send</strong> <em>SEND-FN CURRENT-FN &amp;rest SEND-FN-ARGS</em></dt>
+<dd><span id="go-to-the-POSIX_002dMQUEUE_2236_2236_0025SEND-macro"></span><span id="index-Macro_002c-_0025send"></span>
+<p>A macro used to generate send functions.  SEND-FN is a function used to send
+the actual message.  CURRENT-FN is a function which is called on interrupt.
+SEND-FN-ARGS are additional arguments placed at the end of SEND-FN and
+CURRENT-FN call.
+</p><dl compact="compact">
+<dt><strong>Package</strong></dt>
+<dd><p><a href="The-posix_002dmqueue-package.html#go-to-the-POSIX_002dMQUEUE-package"><tt>posix-mqueue</tt></a>
+</p></dd>
+<dt><strong>Source</strong></dt>
+<dd><p><a href="The-cl_002dposix_002dmqueue_002fsrc_002flib_002elisp-file.html#go-to-the-cl_002dposix_002dmqueue_002fsrc_002flib_2024lisp-file"><tt>lib.lisp</tt></a> (file)
+</p></dd>
+</dl>
+</dd></dl>
+
+
+
+
+</body>
+</html>

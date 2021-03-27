@@ -1,0 +1,364 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<!-- Created by GNU Texinfo 6.7, http://www.gnu.org/software/texinfo/ -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Internal functions (The cl-posix-mqueue Reference Manual)</title>
+
+<meta name="description" content="The cl-posix-mqueue Reference Manual, version 0.1.0.">
+<meta name="keywords" content="Internal functions (The cl-posix-mqueue Reference Manual)">
+<meta name="resource-type" content="document">
+<meta name="distribution" content="global">
+<meta name="Generator" content="makeinfo">
+<link href="index.html" rel="start" title="Top">
+<link href="Indexes.html" rel="index" title="Indexes">
+<link href="index.html#SEC_Contents" rel="contents" title="Table of Contents">
+<link href="Internal-definitions.html" rel="up" title="Internal definitions">
+<link href="Internal-generic-functions.html" rel="next" title="Internal generic functions">
+<link href="Internal-macros.html" rel="prev" title="Internal macros">
+<style type="text/css">
+<!--
+a.summary-letter {text-decoration: none}
+blockquote.indentedblock {margin-right: 0em}
+div.display {margin-left: 3.2em}
+div.example {margin-left: 3.2em}
+div.lisp {margin-left: 3.2em}
+kbd {font-style: oblique}
+pre.display {font-family: inherit}
+pre.format {font-family: inherit}
+pre.menu-comment {font-family: serif}
+pre.menu-preformatted {font-family: serif}
+span.nolinebreak {white-space: nowrap}
+span.roman {font-family: initial; font-weight: normal}
+span.sansserif {font-family: sans-serif; font-weight: normal}
+ul.no-bullet {list-style: none}
+-->
+</style>
+
+
+</head>
+
+<body lang="en">
+<span id="Internal-functions"></span><div class="header">
+<p>
+Next: <a href="Internal-generic-functions.html" accesskey="n" rel="next">Internal generic functions</a>, Previous: <a href="Internal-macros.html" accesskey="p" rel="prev">Internal macros</a>, Up: <a href="Internal-definitions.html" accesskey="u" rel="up">Internal definitions</a> &nbsp; [<a href="index.html#SEC_Contents" title="Table of contents" rel="contents">Contents</a>][<a href="Indexes.html" title="Index" rel="index">Index</a>]</p>
+</div>
+<hr>
+<span id="Functions-1"></span><h4 class="subsection">5.2.3 Functions</h4>
+<dl>
+<dt id="index-_0025var_002daccessor_002d_002aerrno_002a">Function: <strong>%var-accessor-*errno*</strong> <em>()</em></dt>
+<dd><span id="go-to-the-POSIX_002dMQUEUE_2236_2236_0025VAR_002dACCESSOR_002d_002aERRNO_002a-function"></span><span id="index-Function_002c-_0025var_002daccessor_002d_002aerrno_002a"></span>
+</dd><dt id="index-_0028setf-_0025var_002daccessor_002d_002aerrno_002a_0029">Function: <strong>(setf %var-accessor-*errno*)</strong> <em>VALUE</em></dt>
+<dd><span id="go-to-the-POSIX_002dMQUEUE_2236_2236_2768SETF-_0025VAR_002dACCESSOR_002d_002aERRNO_002a_2769-function"></span><span id="index-Function_002c-_0028setf-_0025var_002daccessor_002d_002aerrno_002a_0029"></span>
+<dl compact="compact">
+<dt><strong>Package</strong></dt>
+<dd><p><a href="The-posix_002dmqueue-package.html#go-to-the-POSIX_002dMQUEUE-package"><tt>posix-mqueue</tt></a>
+</p></dd>
+<dt><strong>Source</strong></dt>
+<dd><p><a href="The-cl_002dposix_002dmqueue_002fsrc_002ftranslation_002elisp-file.html#go-to-the-cl_002dposix_002dmqueue_002fsrc_002ftranslation_2024lisp-file"><tt>translation.lisp</tt></a> (file)
+</p></dd>
+</dl>
+</dd></dl>
+<dl>
+<dt id="index-attributes_002dp">Function: <strong>attributes-p</strong> <em>OBJECT</em></dt>
+<dd><span id="go-to-the-POSIX_002dMQUEUE_2236_2236ATTRIBUTES_002dP-function"></span><span id="index-Function_002c-attributes_002dp"></span>
+<dl compact="compact">
+<dt><strong>Package</strong></dt>
+<dd><p><a href="The-posix_002dmqueue-package.html#go-to-the-POSIX_002dMQUEUE-package"><tt>posix-mqueue</tt></a>
+</p></dd>
+<dt><strong>Source</strong></dt>
+<dd><p><a href="The-cl_002dposix_002dmqueue_002fsrc_002fqueue_002elisp-file.html#go-to-the-cl_002dposix_002dmqueue_002fsrc_002fqueue_2024lisp-file"><tt>queue.lisp</tt></a> (file)
+</p></dd>
+</dl>
+</dd></dl>
+<dl>
+<dt id="index-buffer">Function: <strong>buffer</strong> <em>INSTANCE</em></dt>
+<dd><span id="go-to-the-POSIX_002dMQUEUE_2236_2236BUFFER-function"></span><span id="index-Function_002c-buffer"></span>
+</dd><dt id="index-_0028setf-buffer_0029">Function: <strong>(setf buffer)</strong> <em>VALUE INSTANCE</em></dt>
+<dd><span id="go-to-the-POSIX_002dMQUEUE_2236_2236_2768SETF-BUFFER_2769-function"></span><span id="index-Function_002c-_0028setf-buffer_0029"></span>
+<dl compact="compact">
+<dt><strong>Package</strong></dt>
+<dd><p><a href="The-posix_002dmqueue-package.html#go-to-the-POSIX_002dMQUEUE-package"><tt>posix-mqueue</tt></a>
+</p></dd>
+<dt><strong>Source</strong></dt>
+<dd><p><a href="The-cl_002dposix_002dmqueue_002fsrc_002fqueue_002elisp-file.html#go-to-the-cl_002dposix_002dmqueue_002fsrc_002fqueue_2024lisp-file"><tt>queue.lisp</tt></a> (file)
+</p></dd>
+</dl>
+</dd></dl>
+<dl>
+<dt id="index-copy_002dattributes">Function: <strong>copy-attributes</strong> <em>INSTANCE</em></dt>
+<dd><span id="go-to-the-POSIX_002dMQUEUE_2236_2236COPY_002dATTRIBUTES-function"></span><span id="index-Function_002c-copy_002dattributes"></span>
+<dl compact="compact">
+<dt><strong>Package</strong></dt>
+<dd><p><a href="The-posix_002dmqueue-package.html#go-to-the-POSIX_002dMQUEUE-package"><tt>posix-mqueue</tt></a>
+</p></dd>
+<dt><strong>Source</strong></dt>
+<dd><p><a href="The-cl_002dposix_002dmqueue_002fsrc_002fqueue_002elisp-file.html#go-to-the-cl_002dposix_002dmqueue_002fsrc_002fqueue_2024lisp-file"><tt>queue.lisp</tt></a> (file)
+</p></dd>
+</dl>
+</dd></dl>
+<dl>
+<dt id="index-default_002dsizes">Function: <strong>default-sizes</strong> <em>()</em></dt>
+<dd><span id="go-to-the-POSIX_002dMQUEUE_2236_2236DEFAULT_002dSIZES-function"></span><span id="index-Function_002c-default_002dsizes"></span>
+<p>Return default sizes of a queue with unspecified MAX-MESSAGES and
+MESSAGE-SIZE in a form of cons (MAX-MESSAGES . MESSAGE-SIZE).  This is done by
+creating a queue with a random name and by extracting its attributes.  By using
+a 255 length name, we protect ourselves from name collision.
+</p><dl compact="compact">
+<dt><strong>Package</strong></dt>
+<dd><p><a href="The-posix_002dmqueue-package.html#go-to-the-POSIX_002dMQUEUE-package"><tt>posix-mqueue</tt></a>
+</p></dd>
+<dt><strong>Source</strong></dt>
+<dd><p><a href="The-cl_002dposix_002dmqueue_002fsrc_002flib_002elisp-file.html#go-to-the-cl_002dposix_002dmqueue_002fsrc_002flib_2024lisp-file"><tt>lib.lisp</tt></a> (file)
+</p></dd>
+</dl>
+</dd></dl>
+<dl>
+<dt id="index-make_002dattributes">Function: <strong>make-attributes</strong> <em>&amp;key (NON-BLOCKING-P NON-BLOCKING-P) (MAX-MESSAGES MAX-MESSAGES) (MESSAGE-SIZE MESSAGE-SIZE) (CURRENT-MESSAGES CURRENT-MESSAGES)</em></dt>
+<dd><span id="go-to-the-POSIX_002dMQUEUE_2236_2236MAKE_002dATTRIBUTES-function"></span><span id="index-Function_002c-make_002dattributes"></span>
+<dl compact="compact">
+<dt><strong>Package</strong></dt>
+<dd><p><a href="The-posix_002dmqueue-package.html#go-to-the-POSIX_002dMQUEUE-package"><tt>posix-mqueue</tt></a>
+</p></dd>
+<dt><strong>Source</strong></dt>
+<dd><p><a href="The-cl_002dposix_002dmqueue_002fsrc_002fqueue_002elisp-file.html#go-to-the-cl_002dposix_002dmqueue_002fsrc_002fqueue_2024lisp-file"><tt>queue.lisp</tt></a> (file)
+</p></dd>
+</dl>
+</dd></dl>
+<dl>
+<dt id="index-make_002dqueue">Function: <strong>make-queue</strong> <em>&amp;key (MQD MQD) (BUFFER BUFFER)</em></dt>
+<dd><span id="go-to-the-POSIX_002dMQUEUE_2236_2236MAKE_002dQUEUE-function"></span><span id="index-Function_002c-make_002dqueue"></span>
+<dl compact="compact">
+<dt><strong>Package</strong></dt>
+<dd><p><a href="The-posix_002dmqueue-package.html#go-to-the-POSIX_002dMQUEUE-package"><tt>posix-mqueue</tt></a>
+</p></dd>
+<dt><strong>Source</strong></dt>
+<dd><p><a href="The-cl_002dposix_002dmqueue_002fsrc_002fqueue_002elisp-file.html#go-to-the-cl_002dposix_002dmqueue_002fsrc_002fqueue_2024lisp-file"><tt>queue.lisp</tt></a> (file)
+</p></dd>
+</dl>
+</dd></dl>
+<dl>
+<dt id="index-mq_002dclose">Function: <strong>mq-close</strong> <em>MQDES</em></dt>
+<dd><span id="go-to-the-POSIX_002dMQUEUE_2236_2236MQ_002dCLOSE-function"></span><span id="index-Function_002c-mq_002dclose"></span>
+<p>Close POSIX message queue.  See mq_close(3) for more details.
+</p><dl compact="compact">
+<dt><strong>Package</strong></dt>
+<dd><p><a href="The-posix_002dmqueue-package.html#go-to-the-POSIX_002dMQUEUE-package"><tt>posix-mqueue</tt></a>
+</p></dd>
+<dt><strong>Source</strong></dt>
+<dd><p><a href="The-cl_002dposix_002dmqueue_002fsrc_002fspec_002elisp-file.html#go-to-the-cl_002dposix_002dmqueue_002fsrc_002fspec_2024lisp-file"><tt>spec.lisp</tt></a> (file)
+</p></dd>
+</dl>
+</dd></dl>
+<dl>
+<dt id="index-mq_002dclose_002ddefault">Function: <strong>mq-close-default</strong> <em>MQDES</em></dt>
+<dd><span id="go-to-the-POSIX_002dMQUEUE_2236_2236MQ_002dCLOSE_002dDEFAULT-function"></span><span id="index-Function_002c-mq_002dclose_002ddefault"></span>
+<p>Close default POSIX message queue.  See mq_close(3).
+</p><dl compact="compact">
+<dt><strong>Package</strong></dt>
+<dd><p><a href="The-posix_002dmqueue-package.html#go-to-the-POSIX_002dMQUEUE-package"><tt>posix-mqueue</tt></a>
+</p></dd>
+<dt><strong>Source</strong></dt>
+<dd><p><a href="The-cl_002dposix_002dmqueue_002fsrc_002fspec_002elisp-file.html#go-to-the-cl_002dposix_002dmqueue_002fsrc_002fspec_2024lisp-file"><tt>spec.lisp</tt></a> (file)
+</p></dd>
+</dl>
+</dd></dl>
+<dl>
+<dt id="index-mq_002dgetattr">Function: <strong>mq-getattr</strong> <em>MQDES ATTR</em></dt>
+<dd><span id="go-to-the-POSIX_002dMQUEUE_2236_2236MQ_002dGETATTR-function"></span><span id="index-Function_002c-mq_002dgetattr"></span>
+<p>Get POSIX message queue attributes.  See mq_getattr(3) for more details.
+</p><dl compact="compact">
+<dt><strong>Package</strong></dt>
+<dd><p><a href="The-posix_002dmqueue-package.html#go-to-the-POSIX_002dMQUEUE-package"><tt>posix-mqueue</tt></a>
+</p></dd>
+<dt><strong>Source</strong></dt>
+<dd><p><a href="The-cl_002dposix_002dmqueue_002fsrc_002fspec_002elisp-file.html#go-to-the-cl_002dposix_002dmqueue_002fsrc_002fspec_2024lisp-file"><tt>spec.lisp</tt></a> (file)
+</p></dd>
+</dl>
+</dd></dl>
+<dl>
+<dt id="index-mq_002dgetattr_002ddefault">Function: <strong>mq-getattr-default</strong> <em>MQDES ATTR</em></dt>
+<dd><span id="go-to-the-POSIX_002dMQUEUE_2236_2236MQ_002dGETATTR_002dDEFAULT-function"></span><span id="index-Function_002c-mq_002dgetattr_002ddefault"></span>
+<p>Get POSIX message queue default attributes.  See mq_getattr(3).
+</p><dl compact="compact">
+<dt><strong>Package</strong></dt>
+<dd><p><a href="The-posix_002dmqueue-package.html#go-to-the-POSIX_002dMQUEUE-package"><tt>posix-mqueue</tt></a>
+</p></dd>
+<dt><strong>Source</strong></dt>
+<dd><p><a href="The-cl_002dposix_002dmqueue_002fsrc_002fspec_002elisp-file.html#go-to-the-cl_002dposix_002dmqueue_002fsrc_002fspec_2024lisp-file"><tt>spec.lisp</tt></a> (file)
+</p></dd>
+</dl>
+</dd></dl>
+<dl>
+<dt id="index-mq_002dopen">Function: <strong>mq-open</strong> <em>NAME OFLAG MODE ATTR</em></dt>
+<dd><span id="go-to-the-POSIX_002dMQUEUE_2236_2236MQ_002dOPEN-function"></span><span id="index-Function_002c-mq_002dopen"></span>
+<p>Open POSIX message queue.  See mq_open(3) for more details.
+</p><dl compact="compact">
+<dt><strong>Package</strong></dt>
+<dd><p><a href="The-posix_002dmqueue-package.html#go-to-the-POSIX_002dMQUEUE-package"><tt>posix-mqueue</tt></a>
+</p></dd>
+<dt><strong>Source</strong></dt>
+<dd><p><a href="The-cl_002dposix_002dmqueue_002fsrc_002fspec_002elisp-file.html#go-to-the-cl_002dposix_002dmqueue_002fsrc_002fspec_2024lisp-file"><tt>spec.lisp</tt></a> (file)
+</p></dd>
+</dl>
+</dd></dl>
+<dl>
+<dt id="index-mq_002dopen_002ddefault">Function: <strong>mq-open-default</strong> <em>NAME OFLAG MODE ATTR</em></dt>
+<dd><span id="go-to-the-POSIX_002dMQUEUE_2236_2236MQ_002dOPEN_002dDEFAULT-function"></span><span id="index-Function_002c-mq_002dopen_002ddefault"></span>
+<p>Open POSIX message queue with default attributes.  See mq_open(3).
+</p><dl compact="compact">
+<dt><strong>Package</strong></dt>
+<dd><p><a href="The-posix_002dmqueue-package.html#go-to-the-POSIX_002dMQUEUE-package"><tt>posix-mqueue</tt></a>
+</p></dd>
+<dt><strong>Source</strong></dt>
+<dd><p><a href="The-cl_002dposix_002dmqueue_002fsrc_002fspec_002elisp-file.html#go-to-the-cl_002dposix_002dmqueue_002fsrc_002fspec_2024lisp-file"><tt>spec.lisp</tt></a> (file)
+</p></dd>
+</dl>
+</dd></dl>
+<dl>
+<dt id="index-mq_002dreceive">Function: <strong>mq-receive</strong> <em>MQDES MSG-PTR MSG-LEN MSG-PRIO</em></dt>
+<dd><span id="go-to-the-POSIX_002dMQUEUE_2236_2236MQ_002dRECEIVE-function"></span><span id="index-Function_002c-mq_002dreceive"></span>
+<p>Receive a message from POSIX message queue.  See mq_receive(3) for more
+details.
+</p><dl compact="compact">
+<dt><strong>Package</strong></dt>
+<dd><p><a href="The-posix_002dmqueue-package.html#go-to-the-POSIX_002dMQUEUE-package"><tt>posix-mqueue</tt></a>
+</p></dd>
+<dt><strong>Source</strong></dt>
+<dd><p><a href="The-cl_002dposix_002dmqueue_002fsrc_002fspec_002elisp-file.html#go-to-the-cl_002dposix_002dmqueue_002fsrc_002fspec_2024lisp-file"><tt>spec.lisp</tt></a> (file)
+</p></dd>
+</dl>
+</dd></dl>
+<dl>
+<dt id="index-mq_002dsend">Function: <strong>mq-send</strong> <em>MQDES MSG-PTR MSG-LEN MSG-PRIO</em></dt>
+<dd><span id="go-to-the-POSIX_002dMQUEUE_2236_2236MQ_002dSEND-function"></span><span id="index-Function_002c-mq_002dsend"></span>
+<p>Send a message to POSIX message queue.  See mq_send(3) for more details.
+</p><dl compact="compact">
+<dt><strong>Package</strong></dt>
+<dd><p><a href="The-posix_002dmqueue-package.html#go-to-the-POSIX_002dMQUEUE-package"><tt>posix-mqueue</tt></a>
+</p></dd>
+<dt><strong>Source</strong></dt>
+<dd><p><a href="The-cl_002dposix_002dmqueue_002fsrc_002fspec_002elisp-file.html#go-to-the-cl_002dposix_002dmqueue_002fsrc_002fspec_2024lisp-file"><tt>spec.lisp</tt></a> (file)
+</p></dd>
+</dl>
+</dd></dl>
+<dl>
+<dt id="index-mq_002dsetattr">Function: <strong>mq-setattr</strong> <em>MQDES NEWATTR OLDATTR</em></dt>
+<dd><span id="go-to-the-POSIX_002dMQUEUE_2236_2236MQ_002dSETATTR-function"></span><span id="index-Function_002c-mq_002dsetattr"></span>
+<p>Set POSIX message queue non-blocking attribute.  See mq_setattr(3) for more
+details.
+</p><dl compact="compact">
+<dt><strong>Package</strong></dt>
+<dd><p><a href="The-posix_002dmqueue-package.html#go-to-the-POSIX_002dMQUEUE-package"><tt>posix-mqueue</tt></a>
+</p></dd>
+<dt><strong>Source</strong></dt>
+<dd><p><a href="The-cl_002dposix_002dmqueue_002fsrc_002fspec_002elisp-file.html#go-to-the-cl_002dposix_002dmqueue_002fsrc_002fspec_2024lisp-file"><tt>spec.lisp</tt></a> (file)
+</p></dd>
+</dl>
+</dd></dl>
+<dl>
+<dt id="index-mq_002dtimedreceive">Function: <strong>mq-timedreceive</strong> <em>MQDES MSG-PTR MSG-LEN MSG-PRIO ABS-TIMEOUT</em></dt>
+<dd><span id="go-to-the-POSIX_002dMQUEUE_2236_2236MQ_002dTIMEDRECEIVE-function"></span><span id="index-Function_002c-mq_002dtimedreceive"></span>
+<p>Receive a message from POSIX message queue.  See mq_timedreceive(3) for more
+details.
+</p><dl compact="compact">
+<dt><strong>Package</strong></dt>
+<dd><p><a href="The-posix_002dmqueue-package.html#go-to-the-POSIX_002dMQUEUE-package"><tt>posix-mqueue</tt></a>
+</p></dd>
+<dt><strong>Source</strong></dt>
+<dd><p><a href="The-cl_002dposix_002dmqueue_002fsrc_002fspec_002elisp-file.html#go-to-the-cl_002dposix_002dmqueue_002fsrc_002fspec_2024lisp-file"><tt>spec.lisp</tt></a> (file)
+</p></dd>
+</dl>
+</dd></dl>
+<dl>
+<dt id="index-mq_002dtimedsend">Function: <strong>mq-timedsend</strong> <em>MQDES MSG-PTR MSG-LEN MSG-PRIO ABS-TIMEOUT</em></dt>
+<dd><span id="go-to-the-POSIX_002dMQUEUE_2236_2236MQ_002dTIMEDSEND-function"></span><span id="index-Function_002c-mq_002dtimedsend"></span>
+<p>Send a message to POSIX message queue.  See mq_timedsend(3) for more
+details.
+</p><dl compact="compact">
+<dt><strong>Package</strong></dt>
+<dd><p><a href="The-posix_002dmqueue-package.html#go-to-the-POSIX_002dMQUEUE-package"><tt>posix-mqueue</tt></a>
+</p></dd>
+<dt><strong>Source</strong></dt>
+<dd><p><a href="The-cl_002dposix_002dmqueue_002fsrc_002fspec_002elisp-file.html#go-to-the-cl_002dposix_002dmqueue_002fsrc_002fspec_2024lisp-file"><tt>spec.lisp</tt></a> (file)
+</p></dd>
+</dl>
+</dd></dl>
+<dl>
+<dt id="index-mq_002dunlink">Function: <strong>mq-unlink</strong> <em>NAME</em></dt>
+<dd><span id="go-to-the-POSIX_002dMQUEUE_2236_2236MQ_002dUNLINK-function"></span><span id="index-Function_002c-mq_002dunlink"></span>
+<p>Unlink POSIX message queue.  See mq_unlink(3) for more details.
+</p><dl compact="compact">
+<dt><strong>Package</strong></dt>
+<dd><p><a href="The-posix_002dmqueue-package.html#go-to-the-POSIX_002dMQUEUE-package"><tt>posix-mqueue</tt></a>
+</p></dd>
+<dt><strong>Source</strong></dt>
+<dd><p><a href="The-cl_002dposix_002dmqueue_002fsrc_002fspec_002elisp-file.html#go-to-the-cl_002dposix_002dmqueue_002fsrc_002fspec_2024lisp-file"><tt>spec.lisp</tt></a> (file)
+</p></dd>
+</dl>
+</dd></dl>
+<dl>
+<dt id="index-mqd">Function: <strong>mqd</strong> <em>INSTANCE</em></dt>
+<dd><span id="go-to-the-POSIX_002dMQUEUE_2236_2236MQD-function"></span><span id="index-Function_002c-mqd"></span>
+</dd><dt id="index-_0028setf-mqd_0029">Function: <strong>(setf mqd)</strong> <em>VALUE INSTANCE</em></dt>
+<dd><span id="go-to-the-POSIX_002dMQUEUE_2236_2236_2768SETF-MQD_2769-function"></span><span id="index-Function_002c-_0028setf-mqd_0029"></span>
+<dl compact="compact">
+<dt><strong>Package</strong></dt>
+<dd><p><a href="The-posix_002dmqueue-package.html#go-to-the-POSIX_002dMQUEUE-package"><tt>posix-mqueue</tt></a>
+</p></dd>
+<dt><strong>Source</strong></dt>
+<dd><p><a href="The-cl_002dposix_002dmqueue_002fsrc_002fqueue_002elisp-file.html#go-to-the-cl_002dposix_002dmqueue_002fsrc_002fqueue_2024lisp-file"><tt>queue.lisp</tt></a> (file)
+</p></dd>
+</dl>
+</dd></dl>
+<dl>
+<dt id="index-queue_002dp">Function: <strong>queue-p</strong> <em>OBJECT</em></dt>
+<dd><span id="go-to-the-POSIX_002dMQUEUE_2236_2236QUEUE_002dP-function"></span><span id="index-Function_002c-queue_002dp"></span>
+<dl compact="compact">
+<dt><strong>Package</strong></dt>
+<dd><p><a href="The-posix_002dmqueue-package.html#go-to-the-POSIX_002dMQUEUE-package"><tt>posix-mqueue</tt></a>
+</p></dd>
+<dt><strong>Source</strong></dt>
+<dd><p><a href="The-cl_002dposix_002dmqueue_002fsrc_002fqueue_002elisp-file.html#go-to-the-cl_002dposix_002dmqueue_002fsrc_002fqueue_2024lisp-file"><tt>queue.lisp</tt></a> (file)
+</p></dd>
+</dl>
+</dd></dl>
+<dl>
+<dt id="index-random_002dqueue_002dname">Function: <strong>random-queue-name</strong> <em>&amp;key LENGTH START END</em></dt>
+<dd><span id="go-to-the-POSIX_002dMQUEUE_2236_2236RANDOM_002dQUEUE_002dNAME-function"></span><span id="index-Function_002c-random_002dqueue_002dname"></span>
+<p>Generate random queue name with specified LENGTH, with characters starting
+from START to END.  With slash at the beginning.
+</p><dl compact="compact">
+<dt><strong>Package</strong></dt>
+<dd><p><a href="The-posix_002dmqueue-package.html#go-to-the-POSIX_002dMQUEUE-package"><tt>posix-mqueue</tt></a>
+</p></dd>
+<dt><strong>Source</strong></dt>
+<dd><p><a href="The-cl_002dposix_002dmqueue_002fsrc_002flib_002elisp-file.html#go-to-the-cl_002dposix_002dmqueue_002fsrc_002flib_2024lisp-file"><tt>lib.lisp</tt></a> (file)
+</p></dd>
+</dl>
+</dd></dl>
+<dl>
+<dt id="index-timed_002dreceive_002dbuffer">Function: <strong>timed-receive-buffer</strong> <em>QUEUE TIMESTAMP</em></dt>
+<dd><span id="go-to-the-POSIX_002dMQUEUE_2236_2236TIMED_002dRECEIVE_002dBUFFER-function"></span><span id="index-Function_002c-timed_002dreceive_002dbuffer"></span>
+<p>Behaves just like TIMED-RECEIVE, except that it creates a new buffer with
+ONLY message data.
+</p><dl compact="compact">
+<dt><strong>Package</strong></dt>
+<dd><p><a href="The-posix_002dmqueue-package.html#go-to-the-POSIX_002dMQUEUE-package"><tt>posix-mqueue</tt></a>
+</p></dd>
+<dt><strong>Source</strong></dt>
+<dd><p><a href="The-cl_002dposix_002dmqueue_002fsrc_002flib_002elisp-file.html#go-to-the-cl_002dposix_002dmqueue_002fsrc_002flib_2024lisp-file"><tt>lib.lisp</tt></a> (file)
+</p></dd>
+</dl>
+</dd></dl>
+
+<hr>
+<div class="header">
+<p>
+Next: <a href="Internal-generic-functions.html" accesskey="n" rel="next">Internal generic functions</a>, Previous: <a href="Internal-macros.html" accesskey="p" rel="prev">Internal macros</a>, Up: <a href="Internal-definitions.html" accesskey="u" rel="up">Internal definitions</a> &nbsp; [<a href="index.html#SEC_Contents" title="Table of contents" rel="contents">Contents</a>][<a href="Indexes.html" title="Index" rel="index">Index</a>]</p>
+</div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,622 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<!-- Created by GNU Texinfo 6.7, http://www.gnu.org/software/texinfo/ -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Exported functions (The cl-posix-mqueue Reference Manual)</title>
+
+<meta name="description" content="The cl-posix-mqueue Reference Manual, version 0.1.0.">
+<meta name="keywords" content="Exported functions (The cl-posix-mqueue Reference Manual)">
+<meta name="resource-type" content="document">
+<meta name="distribution" content="global">
+<meta name="Generator" content="makeinfo">
+<link href="index.html" rel="start" title="Top">
+<link href="Indexes.html" rel="index" title="Indexes">
+<link href="index.html#SEC_Contents" rel="contents" title="Table of Contents">
+<link href="Exported-definitions.html" rel="up" title="Exported definitions">
+<link href="Exported-conditions.html" rel="next" title="Exported conditions">
+<link href="Exported-macros.html" rel="prev" title="Exported macros">
+<style type="text/css">
+<!--
+a.summary-letter {text-decoration: none}
+blockquote.indentedblock {margin-right: 0em}
+div.display {margin-left: 3.2em}
+div.example {margin-left: 3.2em}
+div.lisp {margin-left: 3.2em}
+kbd {font-style: oblique}
+pre.display {font-family: inherit}
+pre.format {font-family: inherit}
+pre.menu-comment {font-family: serif}
+pre.menu-preformatted {font-family: serif}
+span.nolinebreak {white-space: nowrap}
+span.roman {font-family: initial; font-weight: normal}
+span.sansserif {font-family: sans-serif; font-weight: normal}
+ul.no-bullet {list-style: none}
+-->
+</style>
+
+
+</head>
+
+<body lang="en">
+<span id="Exported-functions"></span><div class="header">
+<p>
+Next: <a href="Exported-conditions.html" accesskey="n" rel="next">Exported conditions</a>, Previous: <a href="Exported-macros.html" accesskey="p" rel="prev">Exported macros</a>, Up: <a href="Exported-definitions.html" accesskey="u" rel="up">Exported definitions</a> &nbsp; [<a href="index.html#SEC_Contents" title="Table of contents" rel="contents">Contents</a>][<a href="Indexes.html" title="Index" rel="index">Index</a>]</p>
+</div>
+<hr>
+<span id="Functions"></span><h4 class="subsection">5.1.3 Functions</h4>
+<dl>
+<dt id="index-attributes">Function: <strong>attributes</strong> <em>QUEUE</em></dt>
+<dd><span id="go-to-the-POSIX_002dMQUEUE_2236_2236ATTRIBUTES-function"></span><span id="index-Function_002c-attributes"></span>
+<p>Retrieve attributes of the message queue.<br>
+</p>
+<p>Conditions:<br>
+</p>
+<p>BAD-FILE-DESCRIPTOR-INVALID<br>
+</p>
+<p>The message queue file descriptor (MQD) is invalid.
+</p><dl compact="compact">
+<dt><strong>Package</strong></dt>
+<dd><p><a href="The-posix_002dmqueue-package.html#go-to-the-POSIX_002dMQUEUE-package"><tt>posix-mqueue</tt></a>
+</p></dd>
+<dt><strong>Source</strong></dt>
+<dd><p><a href="The-cl_002dposix_002dmqueue_002fsrc_002flib_002elisp-file.html#go-to-the-cl_002dposix_002dmqueue_002fsrc_002flib_2024lisp-file"><tt>lib.lisp</tt></a> (file)
+</p></dd>
+</dl>
+</dd></dl>
+<dl>
+<dt id="index-close_002dqueue">Function: <strong>close-queue</strong> <em>QUEUE</em></dt>
+<dd><span id="go-to-the-POSIX_002dMQUEUE_2236_2236CLOSE_002dQUEUE-function"></span><span id="index-Function_002c-close_002dqueue"></span>
+<p>Close the message queue.<br>
+</p>
+<p>Conditions:<br>
+</p>
+<p>BAD-FILE-DESCRIPTOR-INVALID<br>
+</p>
+<p>The message queue file descriptor (MQD) is invalid.
+</p><dl compact="compact">
+<dt><strong>Package</strong></dt>
+<dd><p><a href="The-posix_002dmqueue-package.html#go-to-the-POSIX_002dMQUEUE-package"><tt>posix-mqueue</tt></a>
+</p></dd>
+<dt><strong>Source</strong></dt>
+<dd><p><a href="The-cl_002dposix_002dmqueue_002fsrc_002flib_002elisp-file.html#go-to-the-cl_002dposix_002dmqueue_002fsrc_002flib_2024lisp-file"><tt>lib.lisp</tt></a> (file)
+</p></dd>
+</dl>
+</dd></dl>
+<dl>
+<dt id="index-create_002dmodesp">Function: <strong>create-modesp</strong> <em>THING</em></dt>
+<dd><span id="go-to-the-POSIX_002dMQUEUE_2236_2236CREATE_002dMODESP-function"></span><span id="index-Function_002c-create_002dmodesp"></span>
+<p>Check if THING is a list and contains only MODEs.
+</p><dl compact="compact">
+<dt><strong>Package</strong></dt>
+<dd><p><a href="The-posix_002dmqueue-package.html#go-to-the-POSIX_002dMQUEUE-package"><tt>posix-mqueue</tt></a>
+</p></dd>
+<dt><strong>Source</strong></dt>
+<dd><p><a href="The-cl_002dposix_002dmqueue_002fsrc_002ftypes_002elisp-file.html#go-to-the-cl_002dposix_002dmqueue_002fsrc_002ftypes_2024lisp-file"><tt>types.lisp</tt></a> (file)
+</p></dd>
+</dl>
+</dd></dl>
+<dl>
+<dt id="index-current_002dmessages">Function: <strong>current-messages</strong> <em>INSTANCE</em></dt>
+<dd><span id="go-to-the-POSIX_002dMQUEUE_2236_2236CURRENT_002dMESSAGES-function"></span><span id="index-Function_002c-current_002dmessages"></span>
+</dd><dt id="index-_0028setf-current_002dmessages_0029">Function: <strong>(setf current-messages)</strong> <em>VALUE INSTANCE</em></dt>
+<dd><span id="go-to-the-POSIX_002dMQUEUE_2236_2236_2768SETF-CURRENT_002dMESSAGES_2769-function"></span><span id="index-Function_002c-_0028setf-current_002dmessages_0029"></span>
+<dl compact="compact">
+<dt><strong>Package</strong></dt>
+<dd><p><a href="The-posix_002dmqueue-package.html#go-to-the-POSIX_002dMQUEUE-package"><tt>posix-mqueue</tt></a>
+</p></dd>
+<dt><strong>Source</strong></dt>
+<dd><p><a href="The-cl_002dposix_002dmqueue_002fsrc_002fqueue_002elisp-file.html#go-to-the-cl_002dposix_002dmqueue_002fsrc_002fqueue_2024lisp-file"><tt>queue.lisp</tt></a> (file)
+</p></dd>
+</dl>
+</dd></dl>
+<dl>
+<dt id="index-max_002dmessages">Function: <strong>max-messages</strong> <em>INSTANCE</em></dt>
+<dd><span id="go-to-the-POSIX_002dMQUEUE_2236_2236MAX_002dMESSAGES-function"></span><span id="index-Function_002c-max_002dmessages"></span>
+</dd><dt id="index-_0028setf-max_002dmessages_0029">Function: <strong>(setf max-messages)</strong> <em>VALUE INSTANCE</em></dt>
+<dd><span id="go-to-the-POSIX_002dMQUEUE_2236_2236_2768SETF-MAX_002dMESSAGES_2769-function"></span><span id="index-Function_002c-_0028setf-max_002dmessages_0029"></span>
+<dl compact="compact">
+<dt><strong>Package</strong></dt>
+<dd><p><a href="The-posix_002dmqueue-package.html#go-to-the-POSIX_002dMQUEUE-package"><tt>posix-mqueue</tt></a>
+</p></dd>
+<dt><strong>Source</strong></dt>
+<dd><p><a href="The-cl_002dposix_002dmqueue_002fsrc_002fqueue_002elisp-file.html#go-to-the-cl_002dposix_002dmqueue_002fsrc_002fqueue_2024lisp-file"><tt>queue.lisp</tt></a> (file)
+</p></dd>
+</dl>
+</dd></dl>
+<dl>
+<dt id="index-message_002dsize">Function: <strong>message-size</strong> <em>INSTANCE</em></dt>
+<dd><span id="go-to-the-POSIX_002dMQUEUE_2236_2236MESSAGE_002dSIZE-function"></span><span id="index-Function_002c-message_002dsize"></span>
+</dd><dt id="index-_0028setf-message_002dsize_0029">Function: <strong>(setf message-size)</strong> <em>VALUE INSTANCE</em></dt>
+<dd><span id="go-to-the-POSIX_002dMQUEUE_2236_2236_2768SETF-MESSAGE_002dSIZE_2769-function"></span><span id="index-Function_002c-_0028setf-message_002dsize_0029"></span>
+<dl compact="compact">
+<dt><strong>Package</strong></dt>
+<dd><p><a href="The-posix_002dmqueue-package.html#go-to-the-POSIX_002dMQUEUE-package"><tt>posix-mqueue</tt></a>
+</p></dd>
+<dt><strong>Source</strong></dt>
+<dd><p><a href="The-cl_002dposix_002dmqueue_002fsrc_002fqueue_002elisp-file.html#go-to-the-cl_002dposix_002dmqueue_002fsrc_002fqueue_2024lisp-file"><tt>queue.lisp</tt></a> (file)
+</p></dd>
+</dl>
+</dd></dl>
+<dl>
+<dt id="index-non_002dblocking_002dp">Function: <strong>non-blocking-p</strong> <em>INSTANCE</em></dt>
+<dd><span id="go-to-the-POSIX_002dMQUEUE_2236_2236NON_002dBLOCKING_002dP-function"></span><span id="index-Function_002c-non_002dblocking_002dp"></span>
+</dd><dt id="index-_0028setf-non_002dblocking_002dp_0029">Function: <strong>(setf non-blocking-p)</strong> <em>VALUE INSTANCE</em></dt>
+<dd><span id="go-to-the-POSIX_002dMQUEUE_2236_2236_2768SETF-NON_002dBLOCKING_002dP_2769-function"></span><span id="index-Function_002c-_0028setf-non_002dblocking_002dp_0029"></span>
+<dl compact="compact">
+<dt><strong>Package</strong></dt>
+<dd><p><a href="The-posix_002dmqueue-package.html#go-to-the-POSIX_002dMQUEUE-package"><tt>posix-mqueue</tt></a>
+</p></dd>
+<dt><strong>Source</strong></dt>
+<dd><p><a href="The-cl_002dposix_002dmqueue_002fsrc_002fqueue_002elisp-file.html#go-to-the-cl_002dposix_002dmqueue_002fsrc_002fqueue_2024lisp-file"><tt>queue.lisp</tt></a> (file)
+</p></dd>
+</dl>
+</dd></dl>
+<dl>
+<dt id="index-open_002dflagsp">Function: <strong>open-flagsp</strong> <em>THING</em></dt>
+<dd><span id="go-to-the-POSIX_002dMQUEUE_2236_2236OPEN_002dFLAGSP-function"></span><span id="index-Function_002c-open_002dflagsp"></span>
+<p>Check if THING is a list and contains only OFLAGs.  Also, check that
+single-flags are present only once.
+</p><dl compact="compact">
+<dt><strong>Package</strong></dt>
+<dd><p><a href="The-posix_002dmqueue-package.html#go-to-the-POSIX_002dMQUEUE-package"><tt>posix-mqueue</tt></a>
+</p></dd>
+<dt><strong>Source</strong></dt>
+<dd><p><a href="The-cl_002dposix_002dmqueue_002fsrc_002ftypes_002elisp-file.html#go-to-the-cl_002dposix_002dmqueue_002fsrc_002ftypes_2024lisp-file"><tt>types.lisp</tt></a> (file)
+</p></dd>
+</dl>
+</dd></dl>
+<dl>
+<dt id="index-open_002dqueue">Function: <strong>open-queue</strong> <em>NAME &amp;key OPEN-FLAGS CREATE-MODES MAX-MESSAGES MESSAGE-SIZE</em></dt>
+<dd><span id="go-to-the-POSIX_002dMQUEUE_2236_2236OPEN_002dQUEUE-function"></span><span id="index-Function_002c-open_002dqueue"></span>
+<p>Create a new POSIX message queue or open an existing queue.<br>
+</p>
+<p>NAME is a string that identifies a queue.  It MUST start with a slash (&quot;/&quot;)
+and MUST NOT contain other slashes.  Example: &quot;/myqueue&quot;.<br>
+</p>
+<p>OPEN-FLAGS is a list of flags that control the operation of queue. Exactly one
+of the following must be specified in OPEN-FLAGS:<br>
+</p>
+<p>:read-only<br>
+</p>
+<p>Open the queue to receive messages only.<br>
+</p>
+<p>:write-only<br>
+</p>
+<p>Open the queue to send messages only.<br>
+</p>
+<p>:read-write<br>
+</p>
+<p>Open the queue to both send and receive messages.<br>
+</p>
+<p>Zero or more of the following flags:<br>
+</p>
+<p>:close-on-exec<br>
+</p>
+<p>Set the close-on-exec flag for the message queue descriptor.  See open(2)
+    for a discussion of why this flag is useful.<br>
+</p>
+<p>:create<br>
+</p>
+<p>Create the message queue if it does not exist.  The owner (user ID) of the
+    message queue is set to the effective user ID of the calling process.  The
+    group ownership (group ID) is set to the effective group ID of the calling
+    process.<br>
+</p>
+<p>:exclusive<br>
+</p>
+<p>If :create was specified in OPEN-FLAGS, and a queue with the given name
+    already exists, then fail signaling FILE-EXISTS condition.<br>
+</p>
+<p>:non-blocking<br>
+</p>
+<p>Open the queue in nonblocking mode.  In circumstances where RECEIVE and SEND
+    operations would normally block, these operations will return :try-again
+    instead.<br>
+</p>
+<p>If :create is specified in OPEN-FLAGS, then three additional arguments can be
+supplied.  The MODE argument specifies the permissions to be placed on the new
+queue.  It is a list of the following possible flags:<br>
+</p>
+<p>:user-read :user-write :group-read :group-write :other-read :other-read<br>
+</p>
+<p>In addition, MAX-MESSAGES and MESSAGE-SIZE specify the maximum number of
+messages and the maximum size of messages that the queue will allow.  Usually,
+they default to their maximum values, 10 and 8192 respectively, but these values
+can be changes through /proc/sys/fs/mqueue/ interface.<br>
+</p>
+<p>This function can signal the following conditions:<br>
+</p>
+<p>ACCESS-DENIED-PERMISSION<br>
+</p>
+<p>The queue exists, but the caller does not have permission to open it in the
+    specified mode.<br>
+</p>
+<p>ACCESS-DENIED-SLASHES<br>
+</p>
+<p>NAME contained more than one slash.<br>
+</p>
+<p>FILE-EXISTS<br>
+</p>
+<p>Both :create and :exclusive were specified in OPEN-FLAGS, but a queue with
+    this NAME already exists.<br>
+</p>
+<p>INVALID-ARGUMENT-NAME<br>
+</p>
+<p>NAME doesn&rsquo;t follow the format described in mq_overview(7).<br>
+</p>
+<p>INVALID-ARGUMENT-SIZES<br>
+</p>
+<p>:create was specified in OPEN-FLAGS, but MAX-MESSAGES or MESSAGE-SIZE were
+    invalid. Both of these fields must be greater than zero.  In a process that
+    is unprivileged (does not have the CAP_SYS_RESOURCE capability),
+    MAX-MESSAGES must be less than or equal to the msg_max limit, and
+    MESSAGE-SIZE must be less than or equal to the msgsize_max limit.  In
+    addition, even in a privileged process, MAX-MESSAGES cannot exceed the
+    HARD_MAX limit.  (See mq_overview(7) for details of these limits.).<br>
+</p>
+<p>Both of these limits can be changed through the /proc/sys/fs/mqueue/
+    interface.<br>
+</p>
+<p>TOO-MANY-OPEN-FILES<br>
+</p>
+<p>The per-process limit on the number of open file and message queue
+    descriptors has been reached (see the description of RLIMIT_NOFILE in
+    getrlimit(2)).<br>
+</p>
+<p>NAME-TOO-LONG<br>
+</p>
+<p>NAME was too long.<br>
+</p>
+<p>FILE-TABLE-OVERFLOW<br>
+</p>
+<p>The system-wide limit on the total number of open files and message queues
+    has been reached.<br>
+</p>
+<p>NO-FILE-OR-DIRECTORY-JUST-SLASH<br>
+</p>
+<p>NAME was just &quot;/&quot; followed by no other characters.<br>
+</p>
+<p>NO-FILE-OR-DIRECTORY-NO-CREATE<br>
+</p>
+<p>The :create flag was not specified in OPEN-FLAGS, and no queue with this
+    NAME exists.<br>
+</p>
+<p>OUT-OF-MEMORY<br>
+</p>
+<p>Insufficient memory.<br>
+</p>
+<p>NO-SPACE-LEFT-ON-DEVICE<br>
+</p>
+<p>Insufficient space for the creation of a new message queue.  This probably
+    occurred because the queues_max limit was encountered; see mq_overview(7).
+</p>
+<p>SIMPLE-ERROR<br>
+</p>
+<p>This one can be signalled if the OPEN-FLAGS or the MODE are invalid.<br>
+</p>
+<p>BAD-FILE-DESCRIPTOR<br>
+</p>
+<p>The message queue file descriptor (MQD) is invalid.  This is an internal
+    error that should not happen, it is mainly for the writer of this library.
+</p><dl compact="compact">
+<dt><strong>Package</strong></dt>
+<dd><p><a href="The-posix_002dmqueue-package.html#go-to-the-POSIX_002dMQUEUE-package"><tt>posix-mqueue</tt></a>
+</p></dd>
+<dt><strong>Source</strong></dt>
+<dd><p><a href="The-cl_002dposix_002dmqueue_002fsrc_002flib_002elisp-file.html#go-to-the-cl_002dposix_002dmqueue_002fsrc_002flib_2024lisp-file"><tt>lib.lisp</tt></a> (file)
+</p></dd>
+</dl>
+</dd></dl>
+<dl>
+<dt id="index-receive">Function: <strong>receive</strong> <em>QUEUE</em></dt>
+<dd><span id="go-to-the-POSIX_002dMQUEUE_2236_2236RECEIVE-function"></span><span id="index-Function_002c-receive"></span>
+<p>Remove the oldest message with the highest priority from the message QUEUE
+and return it as &rsquo;(ARRAY (UNSIGNED-BYTE 8)).  Return the priority associated
+with the received message as second value.  Return the message LENGTH as a third
+value.  Message length could be less than the returned BUFFER length.  In fact,
+this is the same buffer used internally in queue to receive all messages.  This
+function is provided for better control of the message data.  Most library users
+would like to use RECEIVE-STRING, or RECEIVE-BUFFER, or RECEIVE-DISPLACED,
+instead.<br>
+</p>
+<p>If the queue is empty, then, by default, RECEIVE blocks until a message becomes
+available, or the call is interrupted by a signal handler.  If the :non-blocking
+OPEN-FLAG is enabled for the message queue, then the call instead returns
+immediately with :try-again.<br>
+</p>
+<p>Conditions:<br>
+</p>
+<p>BAD-FILE-DESCRIPTOR-INVALID<br>
+</p>
+<p>The file descriptor specified MQD was invalid or not opened for reading.
+</p>
+<p>INTERRUPTED-SYSTEM-CALL<br>
+</p>
+<p>The call was interrupted by a signal handler; see signal(7).<br>
+</p>
+<p>MESSAGE-TOO-LONG-ON-RECEIVE<br>
+</p>
+<p>Message length was less than the :message-size attribute of the message
+    queue.  This is an intarnal error that should not happen, it is mainly for
+    the writer of this library.<br>
+</p>
+<p>Restarts:<br>
+</p>
+<p>RETRY-ON-INTERRUPT<br>
+</p>
+<p>If the call was interrupted by a signal handler, you can restart the call.
+</p><dl compact="compact">
+<dt><strong>Package</strong></dt>
+<dd><p><a href="The-posix_002dmqueue-package.html#go-to-the-POSIX_002dMQUEUE-package"><tt>posix-mqueue</tt></a>
+</p></dd>
+<dt><strong>Source</strong></dt>
+<dd><p><a href="The-cl_002dposix_002dmqueue_002fsrc_002flib_002elisp-file.html#go-to-the-cl_002dposix_002dmqueue_002fsrc_002flib_2024lisp-file"><tt>lib.lisp</tt></a> (file)
+</p></dd>
+</dl>
+</dd></dl>
+<dl>
+<dt id="index-receive_002dbuffer">Function: <strong>receive-buffer</strong> <em>QUEUE</em></dt>
+<dd><span id="go-to-the-POSIX_002dMQUEUE_2236_2236RECEIVE_002dBUFFER-function"></span><span id="index-Function_002c-receive_002dbuffer"></span>
+<p>Behaves just luke RECEIVE, except that it creates a new buffer with ONLY
+message data.
+</p><dl compact="compact">
+<dt><strong>Package</strong></dt>
+<dd><p><a href="The-posix_002dmqueue-package.html#go-to-the-POSIX_002dMQUEUE-package"><tt>posix-mqueue</tt></a>
+</p></dd>
+<dt><strong>Source</strong></dt>
+<dd><p><a href="The-cl_002dposix_002dmqueue_002fsrc_002flib_002elisp-file.html#go-to-the-cl_002dposix_002dmqueue_002fsrc_002flib_2024lisp-file"><tt>lib.lisp</tt></a> (file)
+</p></dd>
+</dl>
+</dd></dl>
+<dl>
+<dt id="index-receive_002ddisplaced">Function: <strong>receive-displaced</strong> <em>QUEUE</em></dt>
+<dd><span id="go-to-the-POSIX_002dMQUEUE_2236_2236RECEIVE_002dDISPLACED-function"></span><span id="index-Function_002c-receive_002ddisplaced"></span>
+<p>Behaves just like RECEIVE, except that it tries to return a displaced array
+from internal buffer.  You should not use it in a thread, unless protected by a
+lock.
+</p><dl compact="compact">
+<dt><strong>Package</strong></dt>
+<dd><p><a href="The-posix_002dmqueue-package.html#go-to-the-POSIX_002dMQUEUE-package"><tt>posix-mqueue</tt></a>
+</p></dd>
+<dt><strong>Source</strong></dt>
+<dd><p><a href="The-cl_002dposix_002dmqueue_002fsrc_002flib_002elisp-file.html#go-to-the-cl_002dposix_002dmqueue_002fsrc_002flib_2024lisp-file"><tt>lib.lisp</tt></a> (file)
+</p></dd>
+</dl>
+</dd></dl>
+<dl>
+<dt id="index-receive_002dstring">Function: <strong>receive-string</strong> <em>QUEUE</em></dt>
+<dd><span id="go-to-the-POSIX_002dMQUEUE_2236_2236RECEIVE_002dSTRING-function"></span><span id="index-Function_002c-receive_002dstring"></span>
+<p>Behaves just like RECEIVE, except that it tries to convert received message
+to string.
+</p><dl compact="compact">
+<dt><strong>Package</strong></dt>
+<dd><p><a href="The-posix_002dmqueue-package.html#go-to-the-POSIX_002dMQUEUE-package"><tt>posix-mqueue</tt></a>
+</p></dd>
+<dt><strong>Source</strong></dt>
+<dd><p><a href="The-cl_002dposix_002dmqueue_002fsrc_002flib_002elisp-file.html#go-to-the-cl_002dposix_002dmqueue_002fsrc_002flib_2024lisp-file"><tt>lib.lisp</tt></a> (file)
+</p></dd>
+</dl>
+</dd></dl>
+<dl>
+<dt id="index-send">Function: <strong>send</strong> <em>QUEUE MESSAGE-BUFFER PRIORITY &amp;optional LENGTH</em></dt>
+<dd><span id="go-to-the-POSIX_002dMQUEUE_2236_2236SEND-function"></span><span id="index-Function_002c-send"></span>
+<p>Adds the MESSAGE-BUFFER to the message QUEUE.  MESSAGE-BUFFER length must be
+less than or equal to the QUEUE&rsquo;s :message-size attribute.  Zero-length messages
+are allowed.  MESSAGE-BUFFER must be an &rsquo;(array (unsigned-byte 8)).  Additional
+LENGTH argument can be provided to limit the message being sent.  By default, it
+is equal to MESSAGE-BUFFER length.<br>
+</p>
+<p>The PRIORITY argument is a nonnegative integer that specifies the priority of
+new message.  Messages are placed on the QUEUE in decreasing order of priority,
+with newer messages of the same priority being placed after older messages with
+the same priority.  See mq_overview(7) for details on the range for the message
+priority.<br>
+</p>
+<p>If the message QUEUE is already full (i.e., the number of messages on the QUEUE
+equals the QUEUE&rsquo;s :max-messages attribute), then, by default, SEND blocks until
+sufficient space becomes available to allow the message to be queued, or until
+the call is interrupted by a signal handler.  If the :non-blocking flag is
+enabled for the message QUEUE, then the call instead returns :try-again.<br>
+</p>
+<p>Note: if you don&rsquo;t want to create a new buffer for sending to save space, you
+can reuse QUEUE&rsquo;s buffer.  Use BUFFER function on a QUEUE to get it.  Remember,
+that its data will be overwritten on next receive call.<br>
+</p>
+<p>Conditions:<br>
+</p>
+<p>BAD-FILE-DESCRIPTOR-ON-SEND<br>
+</p>
+<p>The file descriptor specified MQD was invalid or not opened for writing.
+</p>
+<p>INTERRUPTED-SYSTEM-CALL<br>
+</p>
+<p>The call was interrupted by a signal handler; see signal(7).<br>
+</p>
+<p>MESSAGE-TOO-LONG-ON-SEND<br>
+</p>
+<p>MESSAGE length was greater than the :message-size attribute of the message
+    QUEUE.<br>
+</p>
+<p>Restarts:<br>
+</p>
+<p>RETRY-ON-INTERRUPT<br>
+</p>
+<p>If the call was interrupted by a signal handler, you can restart the call.
+</p><dl compact="compact">
+<dt><strong>Package</strong></dt>
+<dd><p><a href="The-posix_002dmqueue-package.html#go-to-the-POSIX_002dMQUEUE-package"><tt>posix-mqueue</tt></a>
+</p></dd>
+<dt><strong>Source</strong></dt>
+<dd><p><a href="The-cl_002dposix_002dmqueue_002fsrc_002flib_002elisp-file.html#go-to-the-cl_002dposix_002dmqueue_002fsrc_002flib_2024lisp-file"><tt>lib.lisp</tt></a> (file)
+</p></dd>
+</dl>
+</dd></dl>
+<dl>
+<dt id="index-send_002dstring">Function: <strong>send-string</strong> <em>QUEUE MESSAGE-STRING PRIORITY</em></dt>
+<dd><span id="go-to-the-POSIX_002dMQUEUE_2236_2236SEND_002dSTRING-function"></span><span id="index-Function_002c-send_002dstring"></span>
+<p>Behaves just like SEND, except that it sends a string, not an
+&rsquo;(array (unsigned-byte 8)) 
+</p><dl compact="compact">
+<dt><strong>Package</strong></dt>
+<dd><p><a href="The-posix_002dmqueue-package.html#go-to-the-POSIX_002dMQUEUE-package"><tt>posix-mqueue</tt></a>
+</p></dd>
+<dt><strong>Source</strong></dt>
+<dd><p><a href="The-cl_002dposix_002dmqueue_002fsrc_002flib_002elisp-file.html#go-to-the-cl_002dposix_002dmqueue_002fsrc_002flib_2024lisp-file"><tt>lib.lisp</tt></a> (file)
+</p></dd>
+</dl>
+</dd></dl>
+<dl>
+<dt id="index-set_002dnon_002dblocking">Function: <strong>set-non-blocking</strong> <em>QUEUE NON-BLOCKING-P</em></dt>
+<dd><span id="go-to-the-POSIX_002dMQUEUE_2236_2236SET_002dNON_002dBLOCKING-function"></span><span id="index-Function_002c-set_002dnon_002dblocking"></span>
+<p>Modify NON-BLOCKING-P attribute of the message queue.<br>
+</p>
+<p>Conditions:<br>
+</p>
+<p>BAD-FILE-DESCRIPTOR-INVALID<br>
+</p>
+<p>The message queue file descriptor (MQD) is invalid.<br>
+</p>
+<p>INVALID-ARGUMENT-ATTRIBUTES<br>
+</p>
+<p>mq-flags contained flags other than :non-blocking. This is an internal error
+    that should not happen, it is mainly for the writer of this library.
+</p><dl compact="compact">
+<dt><strong>Package</strong></dt>
+<dd><p><a href="The-posix_002dmqueue-package.html#go-to-the-POSIX_002dMQUEUE-package"><tt>posix-mqueue</tt></a>
+</p></dd>
+<dt><strong>Source</strong></dt>
+<dd><p><a href="The-cl_002dposix_002dmqueue_002fsrc_002flib_002elisp-file.html#go-to-the-cl_002dposix_002dmqueue_002fsrc_002flib_2024lisp-file"><tt>lib.lisp</tt></a> (file)
+</p></dd>
+</dl>
+</dd></dl>
+<dl>
+<dt id="index-timed_002dreceive">Function: <strong>timed-receive</strong> <em>QUEUE TIMESTAMP</em></dt>
+<dd><span id="go-to-the-POSIX_002dMQUEUE_2236_2236TIMED_002dRECEIVE-function"></span><span id="index-Function_002c-timed_002dreceive"></span>
+<p>Behaves just like RECEIVE, except that if the queue is empty and the
+:non-blocking OPEN-FLAG is not enabled for the message queue, then the TIMESTAMP
+specifies how long the call will block.  The TIMESTAMP is absolute, not
+relative.  If no message is available, and the timeout has already expired by
+the time of the call, TIMED-RECEIVE returns immediately with
+:connection-timed-out.<br>
+</p>
+<p>Look LOCAL-TIME package for more information on timestamps.<br>
+</p>
+<p>Additional conditions:<br>
+</p>
+<p>INVALID-ARGUMENT-ON-SEND-RECEIVE<br>
+</p>
+<p>The call would have blocked, and timeout arguments were invalid, either
+    because :sec was less than zero, or because :nsec was less than zero or
+    greater than 1000 million.
+</p><dl compact="compact">
+<dt><strong>Package</strong></dt>
+<dd><p><a href="The-posix_002dmqueue-package.html#go-to-the-POSIX_002dMQUEUE-package"><tt>posix-mqueue</tt></a>
+</p></dd>
+<dt><strong>Source</strong></dt>
+<dd><p><a href="The-cl_002dposix_002dmqueue_002fsrc_002flib_002elisp-file.html#go-to-the-cl_002dposix_002dmqueue_002fsrc_002flib_2024lisp-file"><tt>lib.lisp</tt></a> (file)
+</p></dd>
+</dl>
+</dd></dl>
+<dl>
+<dt id="index-timed_002dreceive_002ddisplaced">Function: <strong>timed-receive-displaced</strong> <em>QUEUE TIMESTAMP</em></dt>
+<dd><span id="go-to-the-POSIX_002dMQUEUE_2236_2236TIMED_002dRECEIVE_002dDISPLACED-function"></span><span id="index-Function_002c-timed_002dreceive_002ddisplaced"></span>
+<p>Behaves just like TIMED-RECEIVE, except that it tries to return a displaced
+array from internal buffer.  You should not use it in a thread, unless protected
+by a lock.
+</p><dl compact="compact">
+<dt><strong>Package</strong></dt>
+<dd><p><a href="The-posix_002dmqueue-package.html#go-to-the-POSIX_002dMQUEUE-package"><tt>posix-mqueue</tt></a>
+</p></dd>
+<dt><strong>Source</strong></dt>
+<dd><p><a href="The-cl_002dposix_002dmqueue_002fsrc_002flib_002elisp-file.html#go-to-the-cl_002dposix_002dmqueue_002fsrc_002flib_2024lisp-file"><tt>lib.lisp</tt></a> (file)
+</p></dd>
+</dl>
+</dd></dl>
+<dl>
+<dt id="index-timed_002dreceive_002dstring">Function: <strong>timed-receive-string</strong> <em>QUEUE TIMESTAMP</em></dt>
+<dd><span id="go-to-the-POSIX_002dMQUEUE_2236_2236TIMED_002dRECEIVE_002dSTRING-function"></span><span id="index-Function_002c-timed_002dreceive_002dstring"></span>
+<p>Behaves just like TIMED-RECEIVE, except that it tries to convert received
+message to string.
+</p><dl compact="compact">
+<dt><strong>Package</strong></dt>
+<dd><p><a href="The-posix_002dmqueue-package.html#go-to-the-POSIX_002dMQUEUE-package"><tt>posix-mqueue</tt></a>
+</p></dd>
+<dt><strong>Source</strong></dt>
+<dd><p><a href="The-cl_002dposix_002dmqueue_002fsrc_002flib_002elisp-file.html#go-to-the-cl_002dposix_002dmqueue_002fsrc_002flib_2024lisp-file"><tt>lib.lisp</tt></a> (file)
+</p></dd>
+</dl>
+</dd></dl>
+<dl>
+<dt id="index-timed_002dsend">Function: <strong>timed-send</strong> <em>QUEUE MESSAGE-BUFFER PRIORITY TIMESTAMP &amp;optional LENGTH</em></dt>
+<dd><span id="go-to-the-POSIX_002dMQUEUE_2236_2236TIMED_002dSEND-function"></span><span id="index-Function_002c-timed_002dsend"></span>
+<p>Behaves just like SEND, except that if the QUEUE is full and the
+:non-blocking flag is not enabled for the message queue, then TIMESTAMP
+specifies how long the call will block.  The TIMESTAMP is absolute, not
+relative. If the message queue is full, and the timeout has already expired by
+the time of the call, TIMED-SEND returns immediately with :connection-timed-out.
+</p>
+<p>Look LOCAL-TIME package for more information on timestamps.
+</p><dl compact="compact">
+<dt><strong>Package</strong></dt>
+<dd><p><a href="The-posix_002dmqueue-package.html#go-to-the-POSIX_002dMQUEUE-package"><tt>posix-mqueue</tt></a>
+</p></dd>
+<dt><strong>Source</strong></dt>
+<dd><p><a href="The-cl_002dposix_002dmqueue_002fsrc_002flib_002elisp-file.html#go-to-the-cl_002dposix_002dmqueue_002fsrc_002flib_2024lisp-file"><tt>lib.lisp</tt></a> (file)
+</p></dd>
+</dl>
+</dd></dl>
+<dl>
+<dt id="index-timed_002dsend_002dstring">Function: <strong>timed-send-string</strong> <em>QUEUE MESSAGE-STRING PRIORITY TIMESTAMP</em></dt>
+<dd><span id="go-to-the-POSIX_002dMQUEUE_2236_2236TIMED_002dSEND_002dSTRING-function"></span><span id="index-Function_002c-timed_002dsend_002dstring"></span>
+<p>Behaves just like TIMED-SEND, except that it sends a string, not an
+&rsquo;(array (unsigned-byte 8)) 
+</p><dl compact="compact">
+<dt><strong>Package</strong></dt>
+<dd><p><a href="The-posix_002dmqueue-package.html#go-to-the-POSIX_002dMQUEUE-package"><tt>posix-mqueue</tt></a>
+</p></dd>
+<dt><strong>Source</strong></dt>
+<dd><p><a href="The-cl_002dposix_002dmqueue_002fsrc_002flib_002elisp-file.html#go-to-the-cl_002dposix_002dmqueue_002fsrc_002flib_2024lisp-file"><tt>lib.lisp</tt></a> (file)
+</p></dd>
+</dl>
+</dd></dl>
+<dl>
+<dt id="index-unlink">Function: <strong>unlink</strong> <em>NAME</em></dt>
+<dd><span id="go-to-the-POSIX_002dMQUEUE_2236_2236UNLINK-function"></span><span id="index-Function_002c-unlink"></span>
+<p>Remove the specified message queue NAME.  The message queue NAME is removed
+immediately.  The queue itself is destroyed once any other processes that have
+the queue open close their descriptors referring to the queue.<br>
+</p>
+<p>Conditions:<br>
+</p>
+<p>ACCESS-DENIED-ON-UNLINK<br>
+</p>
+<p>The caller does not have permission to unlink this message queue.<br>
+</p>
+<p>NAME-TOO-LONG<br>
+</p>
+<p>NAME was too long.<br>
+</p>
+<p>NO-FILE-OR-DIRECTORY-ON-UNLINK<br>
+</p>
+<p>There is no message queue with the given NAME.
+</p><dl compact="compact">
+<dt><strong>Package</strong></dt>
+<dd><p><a href="The-posix_002dmqueue-package.html#go-to-the-POSIX_002dMQUEUE-package"><tt>posix-mqueue</tt></a>
+</p></dd>
+<dt><strong>Source</strong></dt>
+<dd><p><a href="The-cl_002dposix_002dmqueue_002fsrc_002flib_002elisp-file.html#go-to-the-cl_002dposix_002dmqueue_002fsrc_002flib_2024lisp-file"><tt>lib.lisp</tt></a> (file)
+</p></dd>
+</dl>
+</dd></dl>
+
+<hr>
+<div class="header">
+<p>
+Next: <a href="Exported-conditions.html" accesskey="n" rel="next">Exported conditions</a>, Previous: <a href="Exported-macros.html" accesskey="p" rel="prev">Exported macros</a>, Up: <a href="Exported-definitions.html" accesskey="u" rel="up">Exported definitions</a> &nbsp; [<a href="index.html#SEC_Contents" title="Table of contents" rel="contents">Contents</a>][<a href="Indexes.html" title="Index" rel="index">Index</a>]</p>
+</div>
+
+
+
+</body>
+</html>

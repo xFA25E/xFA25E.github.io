@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<!-- Created by GNU Texinfo 6.7, http://www.gnu.org/software/texinfo/ -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>The cl-posix-mqueue/src/condition․lisp file (The cl-posix-mqueue Reference Manual)</title>
+
+<meta name="description" content="The cl-posix-mqueue Reference Manual, version 0.1.0.">
+<meta name="keywords" content="The cl-posix-mqueue/src/condition․lisp file (The cl-posix-mqueue Reference Manual)">
+<meta name="resource-type" content="document">
+<meta name="distribution" content="global">
+<meta name="Generator" content="makeinfo">
+<link href="index.html" rel="start" title="Top">
+<link href="Indexes.html" rel="index" title="Indexes">
+<link href="index.html#SEC_Contents" rel="contents" title="Table of Contents">
+<link href="Lisp-files.html" rel="up" title="Lisp files">
+<link href="The-cl_002dposix_002dmqueue_002fsrc_002flib_002elisp-file.html" rel="next" title="The cl-posix-mqueue/src/lib․lisp file">
+<link href="The-cl_002dposix_002dmqueue_002fsrc_002fpackage_002elisp-file.html" rel="prev" title="The cl-posix-mqueue/src/package․lisp file">
+<style type="text/css">
+<!--
+a.summary-letter {text-decoration: none}
+blockquote.indentedblock {margin-right: 0em}
+div.display {margin-left: 3.2em}
+div.example {margin-left: 3.2em}
+div.lisp {margin-left: 3.2em}
+kbd {font-style: oblique}
+pre.display {font-family: inherit}
+pre.format {font-family: inherit}
+pre.menu-comment {font-family: serif}
+pre.menu-preformatted {font-family: serif}
+span.nolinebreak {white-space: nowrap}
+span.roman {font-family: initial; font-weight: normal}
+span.sansserif {font-family: sans-serif; font-weight: normal}
+ul.no-bullet {list-style: none}
+-->
+</style>
+
+
+</head>
+
+<body lang="en">
+<span id="The-cl_002dposix_002dmqueue_002fsrc_002fcondition_2024lisp-file"></span><div class="header">
+<p>
+Next: <a href="The-cl_002dposix_002dmqueue_002fsrc_002flib_002elisp-file.html" accesskey="n" rel="next">The cl-posix-mqueue/src/lib․lisp file</a>, Previous: <a href="The-cl_002dposix_002dmqueue_002fsrc_002fpackage_002elisp-file.html" accesskey="p" rel="prev">The cl-posix-mqueue/src/package․lisp file</a>, Up: <a href="Lisp-files.html" accesskey="u" rel="up">Lisp files</a> &nbsp; [<a href="index.html#SEC_Contents" title="Table of contents" rel="contents">Contents</a>][<a href="Indexes.html" title="Index" rel="index">Index</a>]</p>
+</div>
+<hr>
+<span id="cl_002dposix_002dmqueue_002fsrc_002fcondition_002elisp"></span><h4 class="subsection">3.1.3 <tt>cl-posix-mqueue/src/condition.lisp</tt></h4>
+<span id="go-to-the-cl_002dposix_002dmqueue_002fsrc_002fcondition_2024lisp-file"></span><span id="index-cl_002dposix_002dmqueue_002fsrc_002fcondition_002elisp"></span>
+<span id="index-Lisp-File_002c-cl_002dposix_002dmqueue_002fsrc_002fcondition_002elisp"></span>
+<span id="index-File_002c-Lisp_002c-cl_002dposix_002dmqueue_002fsrc_002fcondition_002elisp"></span>
+<dl compact="compact">
+<dt><strong>Parent</strong></dt>
+<dd><p><a href="The-cl_002dposix_002dmqueue_002fsrc-module.html#go-to-the-cl_002dposix_002dmqueue_002fsrc-module"><tt>src</tt></a> (module)
+</p></dd>
+<dt><strong>Location</strong></dt>
+<dd><p><tt>src/condition.lisp</tt>
+</p></dd>
+<dt><strong>Exported Definitions</strong></dt>
+<dd><ul>
+<li> <a href="Exported-conditions.html#go-to-the-POSIX_002dMQUEUE_2236_2236ACCESS_002dDENIED_002dON_002dUNLINK-condition"><tt>access-denied-on-unlink</tt></a> (condition)
+</li><li> <a href="Exported-conditions.html#go-to-the-POSIX_002dMQUEUE_2236_2236ACCESS_002dDENIED_002dPERMISSION-condition"><tt>access-denied-permission</tt></a> (condition)
+</li><li> <a href="Exported-conditions.html#go-to-the-POSIX_002dMQUEUE_2236_2236ACCESS_002dDENIED_002dSLASHES-condition"><tt>access-denied-slashes</tt></a> (condition)
+</li><li> <a href="Exported-conditions.html#go-to-the-POSIX_002dMQUEUE_2236_2236BAD_002dFILE_002dDESCRIPTOR_002dINVALID-condition"><tt>bad-file-descriptor-invalid</tt></a> (condition)
+</li><li> <a href="Exported-conditions.html#go-to-the-POSIX_002dMQUEUE_2236_2236BAD_002dFILE_002dDESCRIPTOR_002dON_002dRECEIVE-condition"><tt>bad-file-descriptor-on-receive</tt></a> (condition)
+</li><li> <a href="Exported-conditions.html#go-to-the-POSIX_002dMQUEUE_2236_2236BAD_002dFILE_002dDESCRIPTOR_002dON_002dSEND-condition"><tt>bad-file-descriptor-on-send</tt></a> (condition)
+</li><li> <a href="Exported-conditions.html#go-to-the-POSIX_002dMQUEUE_2236_2236FILE_002dEXISTS-condition"><tt>file-exists</tt></a> (condition)
+</li><li> <a href="Exported-conditions.html#go-to-the-POSIX_002dMQUEUE_2236_2236FILE_002dTABLE_002dOVERFLOW-condition"><tt>file-table-overflow</tt></a> (condition)
+</li><li> <a href="Exported-conditions.html#go-to-the-POSIX_002dMQUEUE_2236_2236INTERRUPTED_002dSYSTEM_002dCALL-condition"><tt>interrupted-system-call</tt></a> (condition)
+</li><li> <a href="Exported-conditions.html#go-to-the-POSIX_002dMQUEUE_2236_2236INVALID_002dARGUMENT_002dATTRIBUTES-condition"><tt>invalid-argument-attributes</tt></a> (condition)
+</li><li> <a href="Exported-conditions.html#go-to-the-POSIX_002dMQUEUE_2236_2236INVALID_002dARGUMENT_002dNAME-condition"><tt>invalid-argument-name</tt></a> (condition)
+</li><li> <a href="Exported-conditions.html#go-to-the-POSIX_002dMQUEUE_2236_2236INVALID_002dARGUMENT_002dON_002dSEND_002dRECEIVE-condition"><tt>invalid-argument-on-send-receive</tt></a> (condition)
+</li><li> <a href="Exported-conditions.html#go-to-the-POSIX_002dMQUEUE_2236_2236INVALID_002dARGUMENT_002dON_002dUNLINK-condition"><tt>invalid-argument-on-unlink</tt></a> (condition)
+</li><li> <a href="Exported-conditions.html#go-to-the-POSIX_002dMQUEUE_2236_2236INVALID_002dARGUMENT_002dSIZES-condition"><tt>invalid-argument-sizes</tt></a> (condition)
+</li><li> <a href="Exported-conditions.html#go-to-the-POSIX_002dMQUEUE_2236_2236MESSAGE_002dTOO_002dLONG_002dON_002dRECEIVE-condition"><tt>message-too-long-on-receive</tt></a> (condition)
+</li><li> <a href="Exported-conditions.html#go-to-the-POSIX_002dMQUEUE_2236_2236MESSAGE_002dTOO_002dLONG_002dON_002dSEND-condition"><tt>message-too-long-on-send</tt></a> (condition)
+</li><li> <a href="Exported-conditions.html#go-to-the-POSIX_002dMQUEUE_2236_2236NAME_002dTOO_002dLONG-condition"><tt>name-too-long</tt></a> (condition)
+</li><li> <a href="Exported-conditions.html#go-to-the-POSIX_002dMQUEUE_2236_2236NO_002dFILE_002dOR_002dDIRECTORY_002dJUST_002dSLASH-condition"><tt>no-file-or-directory-just-slash</tt></a> (condition)
+</li><li> <a href="Exported-conditions.html#go-to-the-POSIX_002dMQUEUE_2236_2236NO_002dFILE_002dOR_002dDIRECTORY_002dNO_002dCREATE-condition"><tt>no-file-or-directory-no-create</tt></a> (condition)
+</li><li> <a href="Exported-conditions.html#go-to-the-POSIX_002dMQUEUE_2236_2236NO_002dFILE_002dOR_002dDIRECTORY_002dON_002dUNLINK-condition"><tt>no-file-or-directory-on-unlink</tt></a> (condition)
+</li><li> <a href="Exported-conditions.html#go-to-the-POSIX_002dMQUEUE_2236_2236NO_002dSPACE_002dLEFT_002dON_002dDEVICE-condition"><tt>no-space-left-on-device</tt></a> (condition)
+</li><li> <a href="Exported-conditions.html#go-to-the-POSIX_002dMQUEUE_2236_2236OUT_002dOF_002dMEMORY-condition"><tt>out-of-memory</tt></a> (condition)
+</li><li> <a href="Exported-conditions.html#go-to-the-POSIX_002dMQUEUE_2236_2236TOO_002dMANY_002dOPEN_002dFILES-condition"><tt>too-many-open-files</tt></a> (condition)
+</li></ul>
+</dd>
+<dt><strong>Internal Definitions</strong></dt>
+<dd><ul>
+<li> <a href="Internal-conditions.html#go-to-the-POSIX_002dMQUEUE_2236_2236ACCESS_002dDENIED-condition"><tt>access-denied</tt></a> (condition)
+</li><li> <a href="Internal-conditions.html#go-to-the-POSIX_002dMQUEUE_2236_2236BAD_002dFILE_002dDESCRIPTOR-condition"><tt>bad-file-descriptor</tt></a> (condition)
+</li><li> <a href="Internal-conditions.html#go-to-the-POSIX_002dMQUEUE_2236_2236GENERIC-condition"><tt>generic</tt></a> (condition)
+</li><li> <a href="Internal-conditions.html#go-to-the-POSIX_002dMQUEUE_2236_2236INVALID_002dARGUMENT-condition"><tt>invalid-argument</tt></a> (condition)
+</li><li> <a href="Internal-generic-functions.html#go-to-the-POSIX_002dMQUEUE_2236_2236MESSAGE-POSIX_002dMQUEUE_2236_2236GENERIC-method"><tt>message</tt></a> (method)
+</li><li> <a href="Internal-conditions.html#go-to-the-POSIX_002dMQUEUE_2236_2236MESSAGE_002dTOO_002dLONG-condition"><tt>message-too-long</tt></a> (condition)
+</li><li> <a href="Internal-conditions.html#go-to-the-POSIX_002dMQUEUE_2236_2236NO_002dFILE_002dOR_002dDIRECTORY-condition"><tt>no-file-or-directory</tt></a> (condition)
+</li><li> <a href="Internal-generic-functions.html#go-to-the-POSIX_002dMQUEUE_2236_2236STRERROR-POSIX_002dMQUEUE_2236_2236GENERIC-method"><tt>strerror</tt></a> (method)
+</li></ul>
+</dd>
+</dl>
+
+
+
+
+</body>
+</html>

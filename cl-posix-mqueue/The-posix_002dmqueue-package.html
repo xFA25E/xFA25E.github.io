@@ -1,0 +1,181 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<!-- Created by GNU Texinfo 6.7, http://www.gnu.org/software/texinfo/ -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>The posix-mqueue package (The cl-posix-mqueue Reference Manual)</title>
+
+<meta name="description" content="The cl-posix-mqueue Reference Manual, version 0.1.0.">
+<meta name="keywords" content="The posix-mqueue package (The cl-posix-mqueue Reference Manual)">
+<meta name="resource-type" content="document">
+<meta name="distribution" content="global">
+<meta name="Generator" content="makeinfo">
+<link href="index.html" rel="start" title="Top">
+<link href="Indexes.html" rel="index" title="Indexes">
+<link href="index.html#SEC_Contents" rel="contents" title="Table of Contents">
+<link href="Packages.html" rel="up" title="Packages">
+<link href="Definitions.html" rel="next" title="Definitions">
+<link href="Packages.html" rel="prev" title="Packages">
+<style type="text/css">
+<!--
+a.summary-letter {text-decoration: none}
+blockquote.indentedblock {margin-right: 0em}
+div.display {margin-left: 3.2em}
+div.example {margin-left: 3.2em}
+div.lisp {margin-left: 3.2em}
+kbd {font-style: oblique}
+pre.display {font-family: inherit}
+pre.format {font-family: inherit}
+pre.menu-comment {font-family: serif}
+pre.menu-preformatted {font-family: serif}
+span.nolinebreak {white-space: nowrap}
+span.roman {font-family: initial; font-weight: normal}
+span.sansserif {font-family: sans-serif; font-weight: normal}
+ul.no-bullet {list-style: none}
+-->
+</style>
+
+
+</head>
+
+<body lang="en">
+<span id="The-posix_002dmqueue-package"></span><div class="header">
+<p>
+Previous: <a href="Packages.html" accesskey="p" rel="prev">Packages</a>, Up: <a href="Packages.html" accesskey="u" rel="up">Packages</a> &nbsp; [<a href="index.html#SEC_Contents" title="Table of contents" rel="contents">Contents</a>][<a href="Indexes.html" title="Index" rel="index">Index</a>]</p>
+</div>
+<hr>
+<span id="posix_002dmqueue"></span><h3 class="section">4.1 <tt>posix-mqueue</tt></h3>
+<span id="go-to-the-POSIX_002dMQUEUE-package"></span><span id="index-posix_002dmqueue"></span>
+<span id="index-Package_002c-posix_002dmqueue"></span>
+<p>POSIX message queue bindings.
+</p><dl compact="compact">
+<dt><strong>Source</strong></dt>
+<dd><p><a href="The-cl_002dposix_002dmqueue_002fsrc_002fpackage_002elisp-file.html#go-to-the-cl_002dposix_002dmqueue_002fsrc_002fpackage_2024lisp-file"><tt>package.lisp</tt></a> (file)
+</p></dd>
+<dt><strong>Use List</strong></dt>
+<dd><p><tt>common-lisp</tt>
+</p></dd>
+<dt><strong>Exported Definitions</strong></dt>
+<dd><ul>
+<li> <a href="Exported-special-variables.html#go-to-the-POSIX_002dMQUEUE_2236_2236_002aRETRY_002dON_002dINTERRUPT_002dP_002a-special-variable"><tt>*retry-on-interrupt-p*</tt></a> (special variable)
+</li><li> <a href="Exported-conditions.html#go-to-the-POSIX_002dMQUEUE_2236_2236ACCESS_002dDENIED_002dON_002dUNLINK-condition"><tt>access-denied-on-unlink</tt></a> (condition)
+</li><li> <a href="Exported-conditions.html#go-to-the-POSIX_002dMQUEUE_2236_2236ACCESS_002dDENIED_002dPERMISSION-condition"><tt>access-denied-permission</tt></a> (condition)
+</li><li> <a href="Exported-conditions.html#go-to-the-POSIX_002dMQUEUE_2236_2236ACCESS_002dDENIED_002dSLASHES-condition"><tt>access-denied-slashes</tt></a> (condition)
+</li><li> <a href="Exported-functions.html#go-to-the-POSIX_002dMQUEUE_2236_2236ATTRIBUTES-function"><tt>attributes</tt></a> (function)
+</li><li> <a href="Exported-structures.html#go-to-the-POSIX_002dMQUEUE_2236_2236ATTRIBUTES-structure"><tt>attributes</tt></a> (structure)
+</li><li> <a href="Exported-conditions.html#go-to-the-POSIX_002dMQUEUE_2236_2236BAD_002dFILE_002dDESCRIPTOR_002dINVALID-condition"><tt>bad-file-descriptor-invalid</tt></a> (condition)
+</li><li> <a href="Exported-conditions.html#go-to-the-POSIX_002dMQUEUE_2236_2236BAD_002dFILE_002dDESCRIPTOR_002dON_002dRECEIVE-condition"><tt>bad-file-descriptor-on-receive</tt></a> (condition)
+</li><li> <a href="Exported-conditions.html#go-to-the-POSIX_002dMQUEUE_2236_2236BAD_002dFILE_002dDESCRIPTOR_002dON_002dSEND-condition"><tt>bad-file-descriptor-on-send</tt></a> (condition)
+</li><li> <a href="Exported-functions.html#go-to-the-POSIX_002dMQUEUE_2236_2236CLOSE_002dQUEUE-function"><tt>close-queue</tt></a> (function)
+</li><li> <a href="Exported-types.html#go-to-the-POSIX_002dMQUEUE_2236_2236CREATE_002dMODES-type"><tt>create-modes</tt></a> (type)
+</li><li> <a href="Exported-functions.html#go-to-the-POSIX_002dMQUEUE_2236_2236CREATE_002dMODESP-function"><tt>create-modesp</tt></a> (function)
+</li><li> <a href="Exported-functions.html#go-to-the-POSIX_002dMQUEUE_2236_2236CURRENT_002dMESSAGES-function"><tt>current-messages</tt></a> (function)
+</li><li> <a href="Exported-functions.html#go-to-the-POSIX_002dMQUEUE_2236_2236_2768SETF-CURRENT_002dMESSAGES_2769-function"><tt>(setf current-messages)</tt></a> (function)
+</li><li> <a href="Exported-conditions.html#go-to-the-POSIX_002dMQUEUE_2236_2236FILE_002dEXISTS-condition"><tt>file-exists</tt></a> (condition)
+</li><li> <a href="Exported-conditions.html#go-to-the-POSIX_002dMQUEUE_2236_2236FILE_002dTABLE_002dOVERFLOW-condition"><tt>file-table-overflow</tt></a> (condition)
+</li><li> <a href="Exported-conditions.html#go-to-the-POSIX_002dMQUEUE_2236_2236INTERRUPTED_002dSYSTEM_002dCALL-condition"><tt>interrupted-system-call</tt></a> (condition)
+</li><li> <a href="Exported-conditions.html#go-to-the-POSIX_002dMQUEUE_2236_2236INVALID_002dARGUMENT_002dATTRIBUTES-condition"><tt>invalid-argument-attributes</tt></a> (condition)
+</li><li> <a href="Exported-conditions.html#go-to-the-POSIX_002dMQUEUE_2236_2236INVALID_002dARGUMENT_002dNAME-condition"><tt>invalid-argument-name</tt></a> (condition)
+</li><li> <a href="Exported-conditions.html#go-to-the-POSIX_002dMQUEUE_2236_2236INVALID_002dARGUMENT_002dON_002dSEND_002dRECEIVE-condition"><tt>invalid-argument-on-send-receive</tt></a> (condition)
+</li><li> <a href="Exported-conditions.html#go-to-the-POSIX_002dMQUEUE_2236_2236INVALID_002dARGUMENT_002dON_002dUNLINK-condition"><tt>invalid-argument-on-unlink</tt></a> (condition)
+</li><li> <a href="Exported-conditions.html#go-to-the-POSIX_002dMQUEUE_2236_2236INVALID_002dARGUMENT_002dSIZES-condition"><tt>invalid-argument-sizes</tt></a> (condition)
+</li><li> <a href="Exported-functions.html#go-to-the-POSIX_002dMQUEUE_2236_2236MAX_002dMESSAGES-function"><tt>max-messages</tt></a> (function)
+</li><li> <a href="Exported-functions.html#go-to-the-POSIX_002dMQUEUE_2236_2236_2768SETF-MAX_002dMESSAGES_2769-function"><tt>(setf max-messages)</tt></a> (function)
+</li><li> <a href="Exported-functions.html#go-to-the-POSIX_002dMQUEUE_2236_2236MESSAGE_002dSIZE-function"><tt>message-size</tt></a> (function)
+</li><li> <a href="Exported-functions.html#go-to-the-POSIX_002dMQUEUE_2236_2236_2768SETF-MESSAGE_002dSIZE_2769-function"><tt>(setf message-size)</tt></a> (function)
+</li><li> <a href="Exported-conditions.html#go-to-the-POSIX_002dMQUEUE_2236_2236MESSAGE_002dTOO_002dLONG_002dON_002dRECEIVE-condition"><tt>message-too-long-on-receive</tt></a> (condition)
+</li><li> <a href="Exported-conditions.html#go-to-the-POSIX_002dMQUEUE_2236_2236MESSAGE_002dTOO_002dLONG_002dON_002dSEND-condition"><tt>message-too-long-on-send</tt></a> (condition)
+</li><li> <a href="Exported-conditions.html#go-to-the-POSIX_002dMQUEUE_2236_2236NAME_002dTOO_002dLONG-condition"><tt>name-too-long</tt></a> (condition)
+</li><li> <a href="Exported-conditions.html#go-to-the-POSIX_002dMQUEUE_2236_2236NO_002dFILE_002dOR_002dDIRECTORY_002dJUST_002dSLASH-condition"><tt>no-file-or-directory-just-slash</tt></a> (condition)
+</li><li> <a href="Exported-conditions.html#go-to-the-POSIX_002dMQUEUE_2236_2236NO_002dFILE_002dOR_002dDIRECTORY_002dNO_002dCREATE-condition"><tt>no-file-or-directory-no-create</tt></a> (condition)
+</li><li> <a href="Exported-conditions.html#go-to-the-POSIX_002dMQUEUE_2236_2236NO_002dFILE_002dOR_002dDIRECTORY_002dON_002dUNLINK-condition"><tt>no-file-or-directory-on-unlink</tt></a> (condition)
+</li><li> <a href="Exported-conditions.html#go-to-the-POSIX_002dMQUEUE_2236_2236NO_002dSPACE_002dLEFT_002dON_002dDEVICE-condition"><tt>no-space-left-on-device</tt></a> (condition)
+</li><li> <a href="Exported-functions.html#go-to-the-POSIX_002dMQUEUE_2236_2236NON_002dBLOCKING_002dP-function"><tt>non-blocking-p</tt></a> (function)
+</li><li> <a href="Exported-functions.html#go-to-the-POSIX_002dMQUEUE_2236_2236_2768SETF-NON_002dBLOCKING_002dP_2769-function"><tt>(setf non-blocking-p)</tt></a> (function)
+</li><li> <a href="Exported-types.html#go-to-the-POSIX_002dMQUEUE_2236_2236OPEN_002dFLAGS-type"><tt>open-flags</tt></a> (type)
+</li><li> <a href="Exported-functions.html#go-to-the-POSIX_002dMQUEUE_2236_2236OPEN_002dFLAGSP-function"><tt>open-flagsp</tt></a> (function)
+</li><li> <a href="Exported-functions.html#go-to-the-POSIX_002dMQUEUE_2236_2236OPEN_002dQUEUE-function"><tt>open-queue</tt></a> (function)
+</li><li> <a href="Exported-conditions.html#go-to-the-POSIX_002dMQUEUE_2236_2236OUT_002dOF_002dMEMORY-condition"><tt>out-of-memory</tt></a> (condition)
+</li><li> <a href="Exported-structures.html#go-to-the-POSIX_002dMQUEUE_2236_2236QUEUE-structure"><tt>queue</tt></a> (structure)
+</li><li> <a href="Exported-functions.html#go-to-the-POSIX_002dMQUEUE_2236_2236RECEIVE-function"><tt>receive</tt></a> (function)
+</li><li> <a href="Exported-functions.html#go-to-the-POSIX_002dMQUEUE_2236_2236RECEIVE_002dBUFFER-function"><tt>receive-buffer</tt></a> (function)
+</li><li> <a href="Exported-functions.html#go-to-the-POSIX_002dMQUEUE_2236_2236RECEIVE_002dDISPLACED-function"><tt>receive-displaced</tt></a> (function)
+</li><li> <a href="Exported-functions.html#go-to-the-POSIX_002dMQUEUE_2236_2236RECEIVE_002dSTRING-function"><tt>receive-string</tt></a> (function)
+</li><li> <a href="Exported-functions.html#go-to-the-POSIX_002dMQUEUE_2236_2236SEND-function"><tt>send</tt></a> (function)
+</li><li> <a href="Exported-functions.html#go-to-the-POSIX_002dMQUEUE_2236_2236SEND_002dSTRING-function"><tt>send-string</tt></a> (function)
+</li><li> <a href="Exported-functions.html#go-to-the-POSIX_002dMQUEUE_2236_2236SET_002dNON_002dBLOCKING-function"><tt>set-non-blocking</tt></a> (function)
+</li><li> <a href="Exported-functions.html#go-to-the-POSIX_002dMQUEUE_2236_2236TIMED_002dRECEIVE-function"><tt>timed-receive</tt></a> (function)
+</li><li> <a href="Exported-functions.html#go-to-the-POSIX_002dMQUEUE_2236_2236TIMED_002dRECEIVE_002dDISPLACED-function"><tt>timed-receive-displaced</tt></a> (function)
+</li><li> <a href="Exported-functions.html#go-to-the-POSIX_002dMQUEUE_2236_2236TIMED_002dRECEIVE_002dSTRING-function"><tt>timed-receive-string</tt></a> (function)
+</li><li> <a href="Exported-functions.html#go-to-the-POSIX_002dMQUEUE_2236_2236TIMED_002dSEND-function"><tt>timed-send</tt></a> (function)
+</li><li> <a href="Exported-functions.html#go-to-the-POSIX_002dMQUEUE_2236_2236TIMED_002dSEND_002dSTRING-function"><tt>timed-send-string</tt></a> (function)
+</li><li> <a href="Exported-conditions.html#go-to-the-POSIX_002dMQUEUE_2236_2236TOO_002dMANY_002dOPEN_002dFILES-condition"><tt>too-many-open-files</tt></a> (condition)
+</li><li> <a href="Exported-functions.html#go-to-the-POSIX_002dMQUEUE_2236_2236UNLINK-function"><tt>unlink</tt></a> (function)
+</li><li> <a href="Exported-macros.html#go-to-the-POSIX_002dMQUEUE_2236_2236WITH_002dOPEN_002dQUEUE-macro"><tt>with-open-queue</tt></a> (macro)
+</li></ul>
+</dd>
+<dt><strong>Internal Definitions</strong></dt>
+<dd><ul>
+<li> <a href="Internal-macros.html#go-to-the-POSIX_002dMQUEUE_2236_2236_0025RECEIVE-macro"><tt>%receive</tt></a> (macro)
+</li><li> <a href="Internal-macros.html#go-to-the-POSIX_002dMQUEUE_2236_2236_0025SEND-macro"><tt>%send</tt></a> (macro)
+</li><li> <a href="Internal-functions.html#go-to-the-POSIX_002dMQUEUE_2236_2236_0025VAR_002dACCESSOR_002d_002aERRNO_002a-function"><tt>%var-accessor-*errno*</tt></a> (function)
+</li><li> <a href="Internal-functions.html#go-to-the-POSIX_002dMQUEUE_2236_2236_2768SETF-_0025VAR_002dACCESSOR_002d_002aERRNO_002a_2769-function"><tt>(setf %var-accessor-*errno*)</tt></a> (function)
+</li><li> <a href="Internal-symbol-macros.html#go-to-the-POSIX_002dMQUEUE_2236_2236_002aERRNO_002a-symbol-macro"><tt>*errno*</tt></a> (symbol macro)
+</li><li> <a href="Internal-conditions.html#go-to-the-POSIX_002dMQUEUE_2236_2236ACCESS_002dDENIED-condition"><tt>access-denied</tt></a> (condition)
+</li><li> <a href="Internal-functions.html#go-to-the-POSIX_002dMQUEUE_2236_2236ATTRIBUTES_002dP-function"><tt>attributes-p</tt></a> (function)
+</li><li> <a href="Internal-conditions.html#go-to-the-POSIX_002dMQUEUE_2236_2236BAD_002dFILE_002dDESCRIPTOR-condition"><tt>bad-file-descriptor</tt></a> (condition)
+</li><li> <a href="Internal-functions.html#go-to-the-POSIX_002dMQUEUE_2236_2236BUFFER-function"><tt>buffer</tt></a> (function)
+</li><li> <a href="Internal-functions.html#go-to-the-POSIX_002dMQUEUE_2236_2236_2768SETF-BUFFER_2769-function"><tt>(setf buffer)</tt></a> (function)
+</li><li> <a href="Internal-functions.html#go-to-the-POSIX_002dMQUEUE_2236_2236COPY_002dATTRIBUTES-function"><tt>copy-attributes</tt></a> (function)
+</li><li> <a href="Internal-functions.html#go-to-the-POSIX_002dMQUEUE_2236_2236DEFAULT_002dSIZES-function"><tt>default-sizes</tt></a> (function)
+</li><li> <a href="Internal-conditions.html#go-to-the-POSIX_002dMQUEUE_2236_2236GENERIC-condition"><tt>generic</tt></a> (condition)
+</li><li> <a href="Internal-conditions.html#go-to-the-POSIX_002dMQUEUE_2236_2236INVALID_002dARGUMENT-condition"><tt>invalid-argument</tt></a> (condition)
+</li><li> <a href="Internal-functions.html#go-to-the-POSIX_002dMQUEUE_2236_2236MAKE_002dATTRIBUTES-function"><tt>make-attributes</tt></a> (function)
+</li><li> <a href="Internal-functions.html#go-to-the-POSIX_002dMQUEUE_2236_2236MAKE_002dQUEUE-function"><tt>make-queue</tt></a> (function)
+</li><li> <a href="Internal-generic-functions.html#go-to-the-POSIX_002dMQUEUE_2236_2236MESSAGE-generic-function"><tt>message</tt></a> (generic function)
+</li><li> <a href="Internal-generic-functions.html#go-to-the-POSIX_002dMQUEUE_2236_2236MESSAGE-POSIX_002dMQUEUE_2236_2236GENERIC-method"><tt>message</tt></a> (method)
+</li><li> <a href="Internal-conditions.html#go-to-the-POSIX_002dMQUEUE_2236_2236MESSAGE_002dTOO_002dLONG-condition"><tt>message-too-long</tt></a> (condition)
+</li><li> <a href="Internal-classes.html#go-to-the-POSIX_002dMQUEUE_2236_2236MQ_002dATTR_002dTCLASS-class"><tt>mq-attr-tclass</tt></a> (class)
+</li><li> <a href="Internal-functions.html#go-to-the-POSIX_002dMQUEUE_2236_2236MQ_002dCLOSE-function"><tt>mq-close</tt></a> (function)
+</li><li> <a href="Internal-functions.html#go-to-the-POSIX_002dMQUEUE_2236_2236MQ_002dCLOSE_002dDEFAULT-function"><tt>mq-close-default</tt></a> (function)
+</li><li> <a href="Internal-classes.html#go-to-the-POSIX_002dMQUEUE_2236_2236MQ_002dGET_002dATTR_002dTYPE-class"><tt>mq-get-attr-type</tt></a> (class)
+</li><li> <a href="Internal-functions.html#go-to-the-POSIX_002dMQUEUE_2236_2236MQ_002dGETATTR-function"><tt>mq-getattr</tt></a> (function)
+</li><li> <a href="Internal-functions.html#go-to-the-POSIX_002dMQUEUE_2236_2236MQ_002dGETATTR_002dDEFAULT-function"><tt>mq-getattr-default</tt></a> (function)
+</li><li> <a href="Internal-classes.html#go-to-the-POSIX_002dMQUEUE_2236_2236MQ_002dNON_002dBLOCKING_002dATTR_002dTYPE-class"><tt>mq-non-blocking-attr-type</tt></a> (class)
+</li><li> <a href="Internal-functions.html#go-to-the-POSIX_002dMQUEUE_2236_2236MQ_002dOPEN-function"><tt>mq-open</tt></a> (function)
+</li><li> <a href="Internal-functions.html#go-to-the-POSIX_002dMQUEUE_2236_2236MQ_002dOPEN_002dDEFAULT-function"><tt>mq-open-default</tt></a> (function)
+</li><li> <a href="Internal-functions.html#go-to-the-POSIX_002dMQUEUE_2236_2236MQ_002dRECEIVE-function"><tt>mq-receive</tt></a> (function)
+</li><li> <a href="Internal-functions.html#go-to-the-POSIX_002dMQUEUE_2236_2236MQ_002dSEND-function"><tt>mq-send</tt></a> (function)
+</li><li> <a href="Internal-functions.html#go-to-the-POSIX_002dMQUEUE_2236_2236MQ_002dSETATTR-function"><tt>mq-setattr</tt></a> (function)
+</li><li> <a href="Internal-classes.html#go-to-the-POSIX_002dMQUEUE_2236_2236MQ_002dSIZE_002dATTR_002dTYPE-class"><tt>mq-size-attr-type</tt></a> (class)
+</li><li> <a href="Internal-functions.html#go-to-the-POSIX_002dMQUEUE_2236_2236MQ_002dTIMEDRECEIVE-function"><tt>mq-timedreceive</tt></a> (function)
+</li><li> <a href="Internal-functions.html#go-to-the-POSIX_002dMQUEUE_2236_2236MQ_002dTIMEDSEND-function"><tt>mq-timedsend</tt></a> (function)
+</li><li> <a href="Internal-functions.html#go-to-the-POSIX_002dMQUEUE_2236_2236MQ_002dUNLINK-function"><tt>mq-unlink</tt></a> (function)
+</li><li> <a href="Internal-functions.html#go-to-the-POSIX_002dMQUEUE_2236_2236MQD-function"><tt>mqd</tt></a> (function)
+</li><li> <a href="Internal-functions.html#go-to-the-POSIX_002dMQUEUE_2236_2236_2768SETF-MQD_2769-function"><tt>(setf mqd)</tt></a> (function)
+</li><li> <a href="Internal-classes.html#go-to-the-POSIX_002dMQUEUE_2236_2236MQD_002dTYPE-class"><tt>mqd-type</tt></a> (class)
+</li><li> <a href="Internal-conditions.html#go-to-the-POSIX_002dMQUEUE_2236_2236NO_002dFILE_002dOR_002dDIRECTORY-condition"><tt>no-file-or-directory</tt></a> (condition)
+</li><li> <a href="Internal-functions.html#go-to-the-POSIX_002dMQUEUE_2236_2236QUEUE_002dP-function"><tt>queue-p</tt></a> (function)
+</li><li> <a href="Internal-functions.html#go-to-the-POSIX_002dMQUEUE_2236_2236RANDOM_002dQUEUE_002dNAME-function"><tt>random-queue-name</tt></a> (function)
+</li><li> <a href="Internal-classes.html#go-to-the-POSIX_002dMQUEUE_2236_2236RESULT_002dTYPE-class"><tt>result-type</tt></a> (class)
+</li><li> <a href="Internal-generic-functions.html#go-to-the-POSIX_002dMQUEUE_2236_2236STRERROR-generic-function"><tt>strerror</tt></a> (generic function)
+</li><li> <a href="Internal-generic-functions.html#go-to-the-POSIX_002dMQUEUE_2236_2236STRERROR-POSIX_002dMQUEUE_2236_2236GENERIC-method"><tt>strerror</tt></a> (method)
+</li><li> <a href="Internal-functions.html#go-to-the-POSIX_002dMQUEUE_2236_2236TIMED_002dRECEIVE_002dBUFFER-function"><tt>timed-receive-buffer</tt></a> (function)
+</li><li> <a href="Internal-classes.html#go-to-the-POSIX_002dMQUEUE_2236_2236TIMESPEC_002dTCLASS-class"><tt>timespec-tclass</tt></a> (class)
+</li><li> <a href="Internal-classes.html#go-to-the-POSIX_002dMQUEUE_2236_2236TIMESPEC_002dTYPE-class"><tt>timespec-type</tt></a> (class)
+</li></ul>
+</dd>
+</dl>
+
+
+
+<hr>
+<div class="header">
+<p>
+Previous: <a href="Packages.html" accesskey="p" rel="prev">Packages</a>, Up: <a href="Packages.html" accesskey="u" rel="up">Packages</a> &nbsp; [<a href="index.html#SEC_Contents" title="Table of contents" rel="contents">Contents</a>][<a href="Indexes.html" title="Index" rel="index">Index</a>]</p>
+</div>
+
+
+
+</body>
+</html>

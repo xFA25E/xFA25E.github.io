@@ -1,0 +1,572 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<!-- Created by GNU Texinfo 6.7, http://www.gnu.org/software/texinfo/ -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Exported conditions (The cl-posix-mqueue Reference Manual)</title>
+
+<meta name="description" content="The cl-posix-mqueue Reference Manual, version 0.1.0.">
+<meta name="keywords" content="Exported conditions (The cl-posix-mqueue Reference Manual)">
+<meta name="resource-type" content="document">
+<meta name="distribution" content="global">
+<meta name="Generator" content="makeinfo">
+<link href="index.html" rel="start" title="Top">
+<link href="Indexes.html" rel="index" title="Indexes">
+<link href="index.html#SEC_Contents" rel="contents" title="Table of Contents">
+<link href="Exported-definitions.html" rel="up" title="Exported definitions">
+<link href="Exported-structures.html" rel="next" title="Exported structures">
+<link href="Exported-functions.html" rel="prev" title="Exported functions">
+<style type="text/css">
+<!--
+a.summary-letter {text-decoration: none}
+blockquote.indentedblock {margin-right: 0em}
+div.display {margin-left: 3.2em}
+div.example {margin-left: 3.2em}
+div.lisp {margin-left: 3.2em}
+kbd {font-style: oblique}
+pre.display {font-family: inherit}
+pre.format {font-family: inherit}
+pre.menu-comment {font-family: serif}
+pre.menu-preformatted {font-family: serif}
+span.nolinebreak {white-space: nowrap}
+span.roman {font-family: initial; font-weight: normal}
+span.sansserif {font-family: sans-serif; font-weight: normal}
+ul.no-bullet {list-style: none}
+-->
+</style>
+
+
+</head>
+
+<body lang="en">
+<span id="Exported-conditions"></span><div class="header">
+<p>
+Next: <a href="Exported-structures.html" accesskey="n" rel="next">Exported structures</a>, Previous: <a href="Exported-functions.html" accesskey="p" rel="prev">Exported functions</a>, Up: <a href="Exported-definitions.html" accesskey="u" rel="up">Exported definitions</a> &nbsp; [<a href="index.html#SEC_Contents" title="Table of contents" rel="contents">Contents</a>][<a href="Indexes.html" title="Index" rel="index">Index</a>]</p>
+</div>
+<hr>
+<span id="Conditions"></span><h4 class="subsection">5.1.4 Conditions</h4>
+<dl>
+<dt id="index-access_002ddenied_002don_002dunlink">Condition: <strong>access-denied-on-unlink</strong> <em>()</em></dt>
+<dd><span id="go-to-the-POSIX_002dMQUEUE_2236_2236ACCESS_002dDENIED_002dON_002dUNLINK-condition"></span><span id="index-Condition_002c-access_002ddenied_002don_002dunlink"></span>
+<dl compact="compact">
+<dt><strong>Package</strong></dt>
+<dd><p><a href="The-posix_002dmqueue-package.html#go-to-the-POSIX_002dMQUEUE-package"><tt>posix-mqueue</tt></a>
+</p></dd>
+<dt><strong>Source</strong></dt>
+<dd><p><a href="The-cl_002dposix_002dmqueue_002fsrc_002fcondition_002elisp-file.html#go-to-the-cl_002dposix_002dmqueue_002fsrc_002fcondition_2024lisp-file"><tt>condition.lisp</tt></a> (file)
+</p></dd>
+<dt><strong>Direct superclasses</strong></dt>
+<dd><p><a href="Internal-conditions.html#go-to-the-POSIX_002dMQUEUE_2236_2236ACCESS_002dDENIED-condition"><tt>access-denied</tt></a> (condition)
+</p></dd>
+<dt><strong>Direct Default Initargs</strong></dt>
+<dd><table>
+<thead><tr><th width="30%">Initarg</th><th width="50%">Value</th></tr></thead>
+<tr><td width="30%"><tt>:message</tt></td><td width="50%"><tt>&quot;the caller does not have permission to unlink this message
+queue.&quot;</tt></td></tr>
+</table>
+</dd>
+</dl>
+</dd></dl>
+<dl>
+<dt id="index-access_002ddenied_002dpermission">Condition: <strong>access-denied-permission</strong> <em>()</em></dt>
+<dd><span id="go-to-the-POSIX_002dMQUEUE_2236_2236ACCESS_002dDENIED_002dPERMISSION-condition"></span><span id="index-Condition_002c-access_002ddenied_002dpermission"></span>
+<dl compact="compact">
+<dt><strong>Package</strong></dt>
+<dd><p><a href="The-posix_002dmqueue-package.html#go-to-the-POSIX_002dMQUEUE-package"><tt>posix-mqueue</tt></a>
+</p></dd>
+<dt><strong>Source</strong></dt>
+<dd><p><a href="The-cl_002dposix_002dmqueue_002fsrc_002fcondition_002elisp-file.html#go-to-the-cl_002dposix_002dmqueue_002fsrc_002fcondition_2024lisp-file"><tt>condition.lisp</tt></a> (file)
+</p></dd>
+<dt><strong>Direct superclasses</strong></dt>
+<dd><p><a href="Internal-conditions.html#go-to-the-POSIX_002dMQUEUE_2236_2236ACCESS_002dDENIED-condition"><tt>access-denied</tt></a> (condition)
+</p></dd>
+<dt><strong>Direct Default Initargs</strong></dt>
+<dd><table>
+<thead><tr><th width="30%">Initarg</th><th width="50%">Value</th></tr></thead>
+<tr><td width="30%"><tt>:message</tt></td><td width="50%"><tt>&quot;the queue exists, but the caller does not have permission to open
+it in the specified mode.&quot;</tt></td></tr>
+</table>
+</dd>
+</dl>
+</dd></dl>
+<dl>
+<dt id="index-access_002ddenied_002dslashes">Condition: <strong>access-denied-slashes</strong> <em>()</em></dt>
+<dd><span id="go-to-the-POSIX_002dMQUEUE_2236_2236ACCESS_002dDENIED_002dSLASHES-condition"></span><span id="index-Condition_002c-access_002ddenied_002dslashes"></span>
+<dl compact="compact">
+<dt><strong>Package</strong></dt>
+<dd><p><a href="The-posix_002dmqueue-package.html#go-to-the-POSIX_002dMQUEUE-package"><tt>posix-mqueue</tt></a>
+</p></dd>
+<dt><strong>Source</strong></dt>
+<dd><p><a href="The-cl_002dposix_002dmqueue_002fsrc_002fcondition_002elisp-file.html#go-to-the-cl_002dposix_002dmqueue_002fsrc_002fcondition_2024lisp-file"><tt>condition.lisp</tt></a> (file)
+</p></dd>
+<dt><strong>Direct superclasses</strong></dt>
+<dd><p><a href="Internal-conditions.html#go-to-the-POSIX_002dMQUEUE_2236_2236ACCESS_002dDENIED-condition"><tt>access-denied</tt></a> (condition)
+</p></dd>
+<dt><strong>Direct Default Initargs</strong></dt>
+<dd><table>
+<thead><tr><th width="30%">Initarg</th><th width="50%">Value</th></tr></thead>
+<tr><td width="30%"><tt>:message</tt></td><td width="50%"><tt>&quot;name contained more than one slash.&quot;</tt></td></tr>
+</table>
+</dd>
+</dl>
+</dd></dl>
+<dl>
+<dt id="index-bad_002dfile_002ddescriptor_002dinvalid">Condition: <strong>bad-file-descriptor-invalid</strong> <em>()</em></dt>
+<dd><span id="go-to-the-POSIX_002dMQUEUE_2236_2236BAD_002dFILE_002dDESCRIPTOR_002dINVALID-condition"></span><span id="index-Condition_002c-bad_002dfile_002ddescriptor_002dinvalid"></span>
+<dl compact="compact">
+<dt><strong>Package</strong></dt>
+<dd><p><a href="The-posix_002dmqueue-package.html#go-to-the-POSIX_002dMQUEUE-package"><tt>posix-mqueue</tt></a>
+</p></dd>
+<dt><strong>Source</strong></dt>
+<dd><p><a href="The-cl_002dposix_002dmqueue_002fsrc_002fcondition_002elisp-file.html#go-to-the-cl_002dposix_002dmqueue_002fsrc_002fcondition_2024lisp-file"><tt>condition.lisp</tt></a> (file)
+</p></dd>
+<dt><strong>Direct superclasses</strong></dt>
+<dd><p><a href="Internal-conditions.html#go-to-the-POSIX_002dMQUEUE_2236_2236BAD_002dFILE_002dDESCRIPTOR-condition"><tt>bad-file-descriptor</tt></a> (condition)
+</p></dd>
+<dt><strong>Direct Default Initargs</strong></dt>
+<dd><table>
+<thead><tr><th width="30%">Initarg</th><th width="50%">Value</th></tr></thead>
+<tr><td width="30%"><tt>:message</tt></td><td width="50%"><tt>&quot;the message queue file descriptor (mqd) is invalid.&quot;</tt></td></tr>
+</table>
+</dd>
+</dl>
+</dd></dl>
+<dl>
+<dt id="index-bad_002dfile_002ddescriptor_002don_002dreceive">Condition: <strong>bad-file-descriptor-on-receive</strong> <em>()</em></dt>
+<dd><span id="go-to-the-POSIX_002dMQUEUE_2236_2236BAD_002dFILE_002dDESCRIPTOR_002dON_002dRECEIVE-condition"></span><span id="index-Condition_002c-bad_002dfile_002ddescriptor_002don_002dreceive"></span>
+<dl compact="compact">
+<dt><strong>Package</strong></dt>
+<dd><p><a href="The-posix_002dmqueue-package.html#go-to-the-POSIX_002dMQUEUE-package"><tt>posix-mqueue</tt></a>
+</p></dd>
+<dt><strong>Source</strong></dt>
+<dd><p><a href="The-cl_002dposix_002dmqueue_002fsrc_002fcondition_002elisp-file.html#go-to-the-cl_002dposix_002dmqueue_002fsrc_002fcondition_2024lisp-file"><tt>condition.lisp</tt></a> (file)
+</p></dd>
+<dt><strong>Direct superclasses</strong></dt>
+<dd><p><a href="Internal-conditions.html#go-to-the-POSIX_002dMQUEUE_2236_2236BAD_002dFILE_002dDESCRIPTOR-condition"><tt>bad-file-descriptor</tt></a> (condition)
+</p></dd>
+<dt><strong>Direct Default Initargs</strong></dt>
+<dd><table>
+<thead><tr><th width="30%">Initarg</th><th width="50%">Value</th></tr></thead>
+<tr><td width="30%"><tt>:message</tt></td><td width="50%"><tt>&quot;the file descriptor specified mqd was invalid or not opened for
+reading.&quot;</tt></td></tr>
+</table>
+</dd>
+</dl>
+</dd></dl>
+<dl>
+<dt id="index-bad_002dfile_002ddescriptor_002don_002dsend">Condition: <strong>bad-file-descriptor-on-send</strong> <em>()</em></dt>
+<dd><span id="go-to-the-POSIX_002dMQUEUE_2236_2236BAD_002dFILE_002dDESCRIPTOR_002dON_002dSEND-condition"></span><span id="index-Condition_002c-bad_002dfile_002ddescriptor_002don_002dsend"></span>
+<dl compact="compact">
+<dt><strong>Package</strong></dt>
+<dd><p><a href="The-posix_002dmqueue-package.html#go-to-the-POSIX_002dMQUEUE-package"><tt>posix-mqueue</tt></a>
+</p></dd>
+<dt><strong>Source</strong></dt>
+<dd><p><a href="The-cl_002dposix_002dmqueue_002fsrc_002fcondition_002elisp-file.html#go-to-the-cl_002dposix_002dmqueue_002fsrc_002fcondition_2024lisp-file"><tt>condition.lisp</tt></a> (file)
+</p></dd>
+<dt><strong>Direct superclasses</strong></dt>
+<dd><p><a href="Internal-conditions.html#go-to-the-POSIX_002dMQUEUE_2236_2236BAD_002dFILE_002dDESCRIPTOR-condition"><tt>bad-file-descriptor</tt></a> (condition)
+</p></dd>
+<dt><strong>Direct Default Initargs</strong></dt>
+<dd><table>
+<thead><tr><th width="30%">Initarg</th><th width="50%">Value</th></tr></thead>
+<tr><td width="30%"><tt>:message</tt></td><td width="50%"><tt>&quot;the file descriptor specified mqd was invalid or not opened for
+writing.&quot;</tt></td></tr>
+</table>
+</dd>
+</dl>
+</dd></dl>
+<dl>
+<dt id="index-file_002dexists">Condition: <strong>file-exists</strong> <em>()</em></dt>
+<dd><span id="go-to-the-POSIX_002dMQUEUE_2236_2236FILE_002dEXISTS-condition"></span><span id="index-Condition_002c-file_002dexists"></span>
+<dl compact="compact">
+<dt><strong>Package</strong></dt>
+<dd><p><a href="The-posix_002dmqueue-package.html#go-to-the-POSIX_002dMQUEUE-package"><tt>posix-mqueue</tt></a>
+</p></dd>
+<dt><strong>Source</strong></dt>
+<dd><p><a href="The-cl_002dposix_002dmqueue_002fsrc_002fcondition_002elisp-file.html#go-to-the-cl_002dposix_002dmqueue_002fsrc_002fcondition_2024lisp-file"><tt>condition.lisp</tt></a> (file)
+</p></dd>
+<dt><strong>Direct superclasses</strong></dt>
+<dd><p><a href="Internal-conditions.html#go-to-the-POSIX_002dMQUEUE_2236_2236GENERIC-condition"><tt>generic</tt></a> (condition)
+</p></dd>
+<dt><strong>Direct Default Initargs</strong></dt>
+<dd><table>
+<thead><tr><th width="30%">Initarg</th><th width="50%">Value</th></tr></thead>
+<tr><td width="30%"><tt>:message</tt></td><td width="50%"><tt>&quot;both :create and :exclusive were specified in open-flags, but a
+queue with this name already exists.&quot;</tt></td></tr>
+<tr><td width="30%"><tt>:strerror</tt></td><td width="50%"><tt>&quot;file exists&quot;</tt></td></tr>
+</table>
+</dd>
+</dl>
+</dd></dl>
+<dl>
+<dt id="index-file_002dtable_002doverflow">Condition: <strong>file-table-overflow</strong> <em>()</em></dt>
+<dd><span id="go-to-the-POSIX_002dMQUEUE_2236_2236FILE_002dTABLE_002dOVERFLOW-condition"></span><span id="index-Condition_002c-file_002dtable_002doverflow"></span>
+<dl compact="compact">
+<dt><strong>Package</strong></dt>
+<dd><p><a href="The-posix_002dmqueue-package.html#go-to-the-POSIX_002dMQUEUE-package"><tt>posix-mqueue</tt></a>
+</p></dd>
+<dt><strong>Source</strong></dt>
+<dd><p><a href="The-cl_002dposix_002dmqueue_002fsrc_002fcondition_002elisp-file.html#go-to-the-cl_002dposix_002dmqueue_002fsrc_002fcondition_2024lisp-file"><tt>condition.lisp</tt></a> (file)
+</p></dd>
+<dt><strong>Direct superclasses</strong></dt>
+<dd><p><a href="Internal-conditions.html#go-to-the-POSIX_002dMQUEUE_2236_2236GENERIC-condition"><tt>generic</tt></a> (condition)
+</p></dd>
+<dt><strong>Direct Default Initargs</strong></dt>
+<dd><table>
+<thead><tr><th width="30%">Initarg</th><th width="50%">Value</th></tr></thead>
+<tr><td width="30%"><tt>:message</tt></td><td width="50%"><tt>&quot;the system-wide limit on the total number of open files and message
+queues has been reached.&quot;</tt></td></tr>
+<tr><td width="30%"><tt>:strerror</tt></td><td width="50%"><tt>&quot;too many open files in system&quot;</tt></td></tr>
+</table>
+</dd>
+</dl>
+</dd></dl>
+<dl>
+<dt id="index-interrupted_002dsystem_002dcall">Condition: <strong>interrupted-system-call</strong> <em>()</em></dt>
+<dd><span id="go-to-the-POSIX_002dMQUEUE_2236_2236INTERRUPTED_002dSYSTEM_002dCALL-condition"></span><span id="index-Condition_002c-interrupted_002dsystem_002dcall"></span>
+<dl compact="compact">
+<dt><strong>Package</strong></dt>
+<dd><p><a href="The-posix_002dmqueue-package.html#go-to-the-POSIX_002dMQUEUE-package"><tt>posix-mqueue</tt></a>
+</p></dd>
+<dt><strong>Source</strong></dt>
+<dd><p><a href="The-cl_002dposix_002dmqueue_002fsrc_002fcondition_002elisp-file.html#go-to-the-cl_002dposix_002dmqueue_002fsrc_002fcondition_2024lisp-file"><tt>condition.lisp</tt></a> (file)
+</p></dd>
+<dt><strong>Direct superclasses</strong></dt>
+<dd><p><a href="Internal-conditions.html#go-to-the-POSIX_002dMQUEUE_2236_2236GENERIC-condition"><tt>generic</tt></a> (condition)
+</p></dd>
+<dt><strong>Direct Default Initargs</strong></dt>
+<dd><table>
+<thead><tr><th width="30%">Initarg</th><th width="50%">Value</th></tr></thead>
+<tr><td width="30%"><tt>:message</tt></td><td width="50%"><tt>&quot;the call was interrupted by a signal handler; see signal(7).&quot;</tt></td></tr>
+<tr><td width="30%"><tt>:strerror</tt></td><td width="50%"><tt>&quot;interrupted system call&quot;</tt></td></tr>
+</table>
+</dd>
+</dl>
+</dd></dl>
+<dl>
+<dt id="index-invalid_002dargument_002dattributes">Condition: <strong>invalid-argument-attributes</strong> <em>()</em></dt>
+<dd><span id="go-to-the-POSIX_002dMQUEUE_2236_2236INVALID_002dARGUMENT_002dATTRIBUTES-condition"></span><span id="index-Condition_002c-invalid_002dargument_002dattributes"></span>
+<dl compact="compact">
+<dt><strong>Package</strong></dt>
+<dd><p><a href="The-posix_002dmqueue-package.html#go-to-the-POSIX_002dMQUEUE-package"><tt>posix-mqueue</tt></a>
+</p></dd>
+<dt><strong>Source</strong></dt>
+<dd><p><a href="The-cl_002dposix_002dmqueue_002fsrc_002fcondition_002elisp-file.html#go-to-the-cl_002dposix_002dmqueue_002fsrc_002fcondition_2024lisp-file"><tt>condition.lisp</tt></a> (file)
+</p></dd>
+<dt><strong>Direct superclasses</strong></dt>
+<dd><p><a href="Internal-conditions.html#go-to-the-POSIX_002dMQUEUE_2236_2236INVALID_002dARGUMENT-condition"><tt>invalid-argument</tt></a> (condition)
+</p></dd>
+<dt><strong>Direct Default Initargs</strong></dt>
+<dd><table>
+<thead><tr><th width="30%">Initarg</th><th width="50%">Value</th></tr></thead>
+<tr><td width="30%"><tt>:message</tt></td><td width="50%"><tt>&quot;mq-flags contained flags other than :non-blocking.&quot;</tt></td></tr>
+</table>
+</dd>
+</dl>
+</dd></dl>
+<dl>
+<dt id="index-invalid_002dargument_002dname">Condition: <strong>invalid-argument-name</strong> <em>()</em></dt>
+<dd><span id="go-to-the-POSIX_002dMQUEUE_2236_2236INVALID_002dARGUMENT_002dNAME-condition"></span><span id="index-Condition_002c-invalid_002dargument_002dname"></span>
+<dl compact="compact">
+<dt><strong>Package</strong></dt>
+<dd><p><a href="The-posix_002dmqueue-package.html#go-to-the-POSIX_002dMQUEUE-package"><tt>posix-mqueue</tt></a>
+</p></dd>
+<dt><strong>Source</strong></dt>
+<dd><p><a href="The-cl_002dposix_002dmqueue_002fsrc_002fcondition_002elisp-file.html#go-to-the-cl_002dposix_002dmqueue_002fsrc_002fcondition_2024lisp-file"><tt>condition.lisp</tt></a> (file)
+</p></dd>
+<dt><strong>Direct superclasses</strong></dt>
+<dd><p><a href="Internal-conditions.html#go-to-the-POSIX_002dMQUEUE_2236_2236INVALID_002dARGUMENT-condition"><tt>invalid-argument</tt></a> (condition)
+</p></dd>
+<dt><strong>Direct Default Initargs</strong></dt>
+<dd><table>
+<thead><tr><th width="30%">Initarg</th><th width="50%">Value</th></tr></thead>
+<tr><td width="30%"><tt>:message</tt></td><td width="50%"><tt>&quot;name doesn't follow the format described in mq_overview(7).&quot;</tt></td></tr>
+</table>
+</dd>
+</dl>
+</dd></dl>
+<dl>
+<dt id="index-invalid_002dargument_002don_002dsend_002dreceive">Condition: <strong>invalid-argument-on-send-receive</strong> <em>()</em></dt>
+<dd><span id="go-to-the-POSIX_002dMQUEUE_2236_2236INVALID_002dARGUMENT_002dON_002dSEND_002dRECEIVE-condition"></span><span id="index-Condition_002c-invalid_002dargument_002don_002dsend_002dreceive"></span>
+<dl compact="compact">
+<dt><strong>Package</strong></dt>
+<dd><p><a href="The-posix_002dmqueue-package.html#go-to-the-POSIX_002dMQUEUE-package"><tt>posix-mqueue</tt></a>
+</p></dd>
+<dt><strong>Source</strong></dt>
+<dd><p><a href="The-cl_002dposix_002dmqueue_002fsrc_002fcondition_002elisp-file.html#go-to-the-cl_002dposix_002dmqueue_002fsrc_002fcondition_2024lisp-file"><tt>condition.lisp</tt></a> (file)
+</p></dd>
+<dt><strong>Direct superclasses</strong></dt>
+<dd><p><a href="Internal-conditions.html#go-to-the-POSIX_002dMQUEUE_2236_2236INVALID_002dARGUMENT-condition"><tt>invalid-argument</tt></a> (condition)
+</p></dd>
+<dt><strong>Direct Default Initargs</strong></dt>
+<dd><table>
+<thead><tr><th width="30%">Initarg</th><th width="50%">Value</th></tr></thead>
+<tr><td width="30%"><tt>:message</tt></td><td width="50%"><tt>&quot;the call would have blocked, and timeout arguments were invalid,
+either because :sec was less than zero, or because :nsec was less than zero or
+greater than 1000 million.&quot;</tt></td></tr>
+</table>
+</dd>
+</dl>
+</dd></dl>
+<dl>
+<dt id="index-invalid_002dargument_002don_002dunlink">Condition: <strong>invalid-argument-on-unlink</strong> <em>()</em></dt>
+<dd><span id="go-to-the-POSIX_002dMQUEUE_2236_2236INVALID_002dARGUMENT_002dON_002dUNLINK-condition"></span><span id="index-Condition_002c-invalid_002dargument_002don_002dunlink"></span>
+<dl compact="compact">
+<dt><strong>Package</strong></dt>
+<dd><p><a href="The-posix_002dmqueue-package.html#go-to-the-POSIX_002dMQUEUE-package"><tt>posix-mqueue</tt></a>
+</p></dd>
+<dt><strong>Source</strong></dt>
+<dd><p><a href="The-cl_002dposix_002dmqueue_002fsrc_002fcondition_002elisp-file.html#go-to-the-cl_002dposix_002dmqueue_002fsrc_002fcondition_2024lisp-file"><tt>condition.lisp</tt></a> (file)
+</p></dd>
+<dt><strong>Direct superclasses</strong></dt>
+<dd><p><a href="Internal-conditions.html#go-to-the-POSIX_002dMQUEUE_2236_2236INVALID_002dARGUMENT-condition"><tt>invalid-argument</tt></a> (condition)
+</p></dd>
+<dt><strong>Direct Default Initargs</strong></dt>
+<dd><table>
+<thead><tr><th width="30%">Initarg</th><th width="50%">Value</th></tr></thead>
+<tr><td width="30%"><tt>:message</tt></td><td width="50%"><tt>&quot;the caller does not have permission to unlink this message
+queue.&quot;</tt></td></tr>
+</table>
+</dd>
+</dl>
+</dd></dl>
+<dl>
+<dt id="index-invalid_002dargument_002dsizes">Condition: <strong>invalid-argument-sizes</strong> <em>()</em></dt>
+<dd><span id="go-to-the-POSIX_002dMQUEUE_2236_2236INVALID_002dARGUMENT_002dSIZES-condition"></span><span id="index-Condition_002c-invalid_002dargument_002dsizes"></span>
+<dl compact="compact">
+<dt><strong>Package</strong></dt>
+<dd><p><a href="The-posix_002dmqueue-package.html#go-to-the-POSIX_002dMQUEUE-package"><tt>posix-mqueue</tt></a>
+</p></dd>
+<dt><strong>Source</strong></dt>
+<dd><p><a href="The-cl_002dposix_002dmqueue_002fsrc_002fcondition_002elisp-file.html#go-to-the-cl_002dposix_002dmqueue_002fsrc_002fcondition_2024lisp-file"><tt>condition.lisp</tt></a> (file)
+</p></dd>
+<dt><strong>Direct superclasses</strong></dt>
+<dd><p><a href="Internal-conditions.html#go-to-the-POSIX_002dMQUEUE_2236_2236INVALID_002dARGUMENT-condition"><tt>invalid-argument</tt></a> (condition)
+</p></dd>
+<dt><strong>Direct Default Initargs</strong></dt>
+<dd><table>
+<thead><tr><th width="30%">Initarg</th><th width="50%">Value</th></tr></thead>
+<tr><td width="30%"><tt>:message</tt></td><td width="50%"><tt>&quot;:create was specified in open-flags, but max-messages or
+message-size was invalid. both of these fields must be greater than zero.  in a
+process that is unprivileged (does not have the cap_sys_resource capability),
+max-messages must be less than or equal to the msg_max limit, and message-size
+must be less than or equal to the msgsize_max limit.  in addition, even in a
+privileged process, :max-messages cannot exceed the hard_max limit.  (see
+mq_overview(7) for details of these limits.).
+both of these limits can be changed through the /proc/sys/fs/mqueue/
+interface.&quot;</tt></td></tr>
+</table>
+</dd>
+</dl>
+</dd></dl>
+<dl>
+<dt id="index-message_002dtoo_002dlong_002don_002dreceive">Condition: <strong>message-too-long-on-receive</strong> <em>()</em></dt>
+<dd><span id="go-to-the-POSIX_002dMQUEUE_2236_2236MESSAGE_002dTOO_002dLONG_002dON_002dRECEIVE-condition"></span><span id="index-Condition_002c-message_002dtoo_002dlong_002don_002dreceive"></span>
+<dl compact="compact">
+<dt><strong>Package</strong></dt>
+<dd><p><a href="The-posix_002dmqueue-package.html#go-to-the-POSIX_002dMQUEUE-package"><tt>posix-mqueue</tt></a>
+</p></dd>
+<dt><strong>Source</strong></dt>
+<dd><p><a href="The-cl_002dposix_002dmqueue_002fsrc_002fcondition_002elisp-file.html#go-to-the-cl_002dposix_002dmqueue_002fsrc_002fcondition_2024lisp-file"><tt>condition.lisp</tt></a> (file)
+</p></dd>
+<dt><strong>Direct superclasses</strong></dt>
+<dd><p><a href="Internal-conditions.html#go-to-the-POSIX_002dMQUEUE_2236_2236MESSAGE_002dTOO_002dLONG-condition"><tt>message-too-long</tt></a> (condition)
+</p></dd>
+<dt><strong>Direct Default Initargs</strong></dt>
+<dd><table>
+<thead><tr><th width="30%">Initarg</th><th width="50%">Value</th></tr></thead>
+<tr><td width="30%"><tt>:message</tt></td><td width="50%"><tt>&quot;message length was less than the :message-size attribute of the
+message queue.&quot;</tt></td></tr>
+</table>
+</dd>
+</dl>
+</dd></dl>
+<dl>
+<dt id="index-message_002dtoo_002dlong_002don_002dsend">Condition: <strong>message-too-long-on-send</strong> <em>()</em></dt>
+<dd><span id="go-to-the-POSIX_002dMQUEUE_2236_2236MESSAGE_002dTOO_002dLONG_002dON_002dSEND-condition"></span><span id="index-Condition_002c-message_002dtoo_002dlong_002don_002dsend"></span>
+<dl compact="compact">
+<dt><strong>Package</strong></dt>
+<dd><p><a href="The-posix_002dmqueue-package.html#go-to-the-POSIX_002dMQUEUE-package"><tt>posix-mqueue</tt></a>
+</p></dd>
+<dt><strong>Source</strong></dt>
+<dd><p><a href="The-cl_002dposix_002dmqueue_002fsrc_002fcondition_002elisp-file.html#go-to-the-cl_002dposix_002dmqueue_002fsrc_002fcondition_2024lisp-file"><tt>condition.lisp</tt></a> (file)
+</p></dd>
+<dt><strong>Direct superclasses</strong></dt>
+<dd><p><a href="Internal-conditions.html#go-to-the-POSIX_002dMQUEUE_2236_2236MESSAGE_002dTOO_002dLONG-condition"><tt>message-too-long</tt></a> (condition)
+</p></dd>
+<dt><strong>Direct Default Initargs</strong></dt>
+<dd><table>
+<thead><tr><th width="30%">Initarg</th><th width="50%">Value</th></tr></thead>
+<tr><td width="30%"><tt>:message</tt></td><td width="50%"><tt>&quot;message length was greater than the :message-size attribute of the
+message queue.&quot;</tt></td></tr>
+</table>
+</dd>
+</dl>
+</dd></dl>
+<dl>
+<dt id="index-name_002dtoo_002dlong">Condition: <strong>name-too-long</strong> <em>()</em></dt>
+<dd><span id="go-to-the-POSIX_002dMQUEUE_2236_2236NAME_002dTOO_002dLONG-condition"></span><span id="index-Condition_002c-name_002dtoo_002dlong"></span>
+<dl compact="compact">
+<dt><strong>Package</strong></dt>
+<dd><p><a href="The-posix_002dmqueue-package.html#go-to-the-POSIX_002dMQUEUE-package"><tt>posix-mqueue</tt></a>
+</p></dd>
+<dt><strong>Source</strong></dt>
+<dd><p><a href="The-cl_002dposix_002dmqueue_002fsrc_002fcondition_002elisp-file.html#go-to-the-cl_002dposix_002dmqueue_002fsrc_002fcondition_2024lisp-file"><tt>condition.lisp</tt></a> (file)
+</p></dd>
+<dt><strong>Direct superclasses</strong></dt>
+<dd><p><a href="Internal-conditions.html#go-to-the-POSIX_002dMQUEUE_2236_2236GENERIC-condition"><tt>generic</tt></a> (condition)
+</p></dd>
+<dt><strong>Direct Default Initargs</strong></dt>
+<dd><table>
+<thead><tr><th width="30%">Initarg</th><th width="50%">Value</th></tr></thead>
+<tr><td width="30%"><tt>:message</tt></td><td width="50%"><tt>&quot;name was too long.&quot;</tt></td></tr>
+<tr><td width="30%"><tt>:strerror</tt></td><td width="50%"><tt>&quot;file name too long&quot;</tt></td></tr>
+</table>
+</dd>
+</dl>
+</dd></dl>
+<dl>
+<dt id="index-no_002dfile_002dor_002ddirectory_002djust_002dslash">Condition: <strong>no-file-or-directory-just-slash</strong> <em>()</em></dt>
+<dd><span id="go-to-the-POSIX_002dMQUEUE_2236_2236NO_002dFILE_002dOR_002dDIRECTORY_002dJUST_002dSLASH-condition"></span><span id="index-Condition_002c-no_002dfile_002dor_002ddirectory_002djust_002dslash"></span>
+<dl compact="compact">
+<dt><strong>Package</strong></dt>
+<dd><p><a href="The-posix_002dmqueue-package.html#go-to-the-POSIX_002dMQUEUE-package"><tt>posix-mqueue</tt></a>
+</p></dd>
+<dt><strong>Source</strong></dt>
+<dd><p><a href="The-cl_002dposix_002dmqueue_002fsrc_002fcondition_002elisp-file.html#go-to-the-cl_002dposix_002dmqueue_002fsrc_002fcondition_2024lisp-file"><tt>condition.lisp</tt></a> (file)
+</p></dd>
+<dt><strong>Direct superclasses</strong></dt>
+<dd><p><a href="Internal-conditions.html#go-to-the-POSIX_002dMQUEUE_2236_2236NO_002dFILE_002dOR_002dDIRECTORY-condition"><tt>no-file-or-directory</tt></a> (condition)
+</p></dd>
+<dt><strong>Direct Default Initargs</strong></dt>
+<dd><table>
+<thead><tr><th width="30%">Initarg</th><th width="50%">Value</th></tr></thead>
+<tr><td width="30%"><tt>:message</tt></td><td width="50%"><tt>&quot;name was just \&quot;/\&quot; followed by no other characters.&quot;</tt></td></tr>
+</table>
+</dd>
+</dl>
+</dd></dl>
+<dl>
+<dt id="index-no_002dfile_002dor_002ddirectory_002dno_002dcreate">Condition: <strong>no-file-or-directory-no-create</strong> <em>()</em></dt>
+<dd><span id="go-to-the-POSIX_002dMQUEUE_2236_2236NO_002dFILE_002dOR_002dDIRECTORY_002dNO_002dCREATE-condition"></span><span id="index-Condition_002c-no_002dfile_002dor_002ddirectory_002dno_002dcreate"></span>
+<dl compact="compact">
+<dt><strong>Package</strong></dt>
+<dd><p><a href="The-posix_002dmqueue-package.html#go-to-the-POSIX_002dMQUEUE-package"><tt>posix-mqueue</tt></a>
+</p></dd>
+<dt><strong>Source</strong></dt>
+<dd><p><a href="The-cl_002dposix_002dmqueue_002fsrc_002fcondition_002elisp-file.html#go-to-the-cl_002dposix_002dmqueue_002fsrc_002fcondition_2024lisp-file"><tt>condition.lisp</tt></a> (file)
+</p></dd>
+<dt><strong>Direct superclasses</strong></dt>
+<dd><p><a href="Internal-conditions.html#go-to-the-POSIX_002dMQUEUE_2236_2236NO_002dFILE_002dOR_002dDIRECTORY-condition"><tt>no-file-or-directory</tt></a> (condition)
+</p></dd>
+<dt><strong>Direct Default Initargs</strong></dt>
+<dd><table>
+<thead><tr><th width="30%">Initarg</th><th width="50%">Value</th></tr></thead>
+<tr><td width="30%"><tt>:message</tt></td><td width="50%"><tt>&quot;the :create flag was not specified in open-flags, and no queue with
+this name exists.&quot;</tt></td></tr>
+</table>
+</dd>
+</dl>
+</dd></dl>
+<dl>
+<dt id="index-no_002dfile_002dor_002ddirectory_002don_002dunlink">Condition: <strong>no-file-or-directory-on-unlink</strong> <em>()</em></dt>
+<dd><span id="go-to-the-POSIX_002dMQUEUE_2236_2236NO_002dFILE_002dOR_002dDIRECTORY_002dON_002dUNLINK-condition"></span><span id="index-Condition_002c-no_002dfile_002dor_002ddirectory_002don_002dunlink"></span>
+<dl compact="compact">
+<dt><strong>Package</strong></dt>
+<dd><p><a href="The-posix_002dmqueue-package.html#go-to-the-POSIX_002dMQUEUE-package"><tt>posix-mqueue</tt></a>
+</p></dd>
+<dt><strong>Source</strong></dt>
+<dd><p><a href="The-cl_002dposix_002dmqueue_002fsrc_002fcondition_002elisp-file.html#go-to-the-cl_002dposix_002dmqueue_002fsrc_002fcondition_2024lisp-file"><tt>condition.lisp</tt></a> (file)
+</p></dd>
+<dt><strong>Direct superclasses</strong></dt>
+<dd><p><a href="Internal-conditions.html#go-to-the-POSIX_002dMQUEUE_2236_2236NO_002dFILE_002dOR_002dDIRECTORY-condition"><tt>no-file-or-directory</tt></a> (condition)
+</p></dd>
+<dt><strong>Direct Default Initargs</strong></dt>
+<dd><table>
+<thead><tr><th width="30%">Initarg</th><th width="50%">Value</th></tr></thead>
+<tr><td width="30%"><tt>:message</tt></td><td width="50%"><tt>&quot;there is no message queue with the given name.&quot;</tt></td></tr>
+</table>
+</dd>
+</dl>
+</dd></dl>
+<dl>
+<dt id="index-no_002dspace_002dleft_002don_002ddevice">Condition: <strong>no-space-left-on-device</strong> <em>()</em></dt>
+<dd><span id="go-to-the-POSIX_002dMQUEUE_2236_2236NO_002dSPACE_002dLEFT_002dON_002dDEVICE-condition"></span><span id="index-Condition_002c-no_002dspace_002dleft_002don_002ddevice"></span>
+<dl compact="compact">
+<dt><strong>Package</strong></dt>
+<dd><p><a href="The-posix_002dmqueue-package.html#go-to-the-POSIX_002dMQUEUE-package"><tt>posix-mqueue</tt></a>
+</p></dd>
+<dt><strong>Source</strong></dt>
+<dd><p><a href="The-cl_002dposix_002dmqueue_002fsrc_002fcondition_002elisp-file.html#go-to-the-cl_002dposix_002dmqueue_002fsrc_002fcondition_2024lisp-file"><tt>condition.lisp</tt></a> (file)
+</p></dd>
+<dt><strong>Direct superclasses</strong></dt>
+<dd><p><a href="Internal-conditions.html#go-to-the-POSIX_002dMQUEUE_2236_2236GENERIC-condition"><tt>generic</tt></a> (condition)
+</p></dd>
+<dt><strong>Direct Default Initargs</strong></dt>
+<dd><table>
+<thead><tr><th width="30%">Initarg</th><th width="50%">Value</th></tr></thead>
+<tr><td width="30%"><tt>:message</tt></td><td width="50%"><tt>&quot;insufficient space for the creation of a new message queue.  this
+probably occurred because the queues_max limit was encountered; see
+mq_overview(7).&quot;</tt></td></tr>
+<tr><td width="30%"><tt>:strerror</tt></td><td width="50%"><tt>&quot;no space left on device&quot;</tt></td></tr>
+</table>
+</dd>
+</dl>
+</dd></dl>
+<dl>
+<dt id="index-out_002dof_002dmemory">Condition: <strong>out-of-memory</strong> <em>()</em></dt>
+<dd><span id="go-to-the-POSIX_002dMQUEUE_2236_2236OUT_002dOF_002dMEMORY-condition"></span><span id="index-Condition_002c-out_002dof_002dmemory"></span>
+<dl compact="compact">
+<dt><strong>Package</strong></dt>
+<dd><p><a href="The-posix_002dmqueue-package.html#go-to-the-POSIX_002dMQUEUE-package"><tt>posix-mqueue</tt></a>
+</p></dd>
+<dt><strong>Source</strong></dt>
+<dd><p><a href="The-cl_002dposix_002dmqueue_002fsrc_002fcondition_002elisp-file.html#go-to-the-cl_002dposix_002dmqueue_002fsrc_002fcondition_2024lisp-file"><tt>condition.lisp</tt></a> (file)
+</p></dd>
+<dt><strong>Direct superclasses</strong></dt>
+<dd><p><a href="Internal-conditions.html#go-to-the-POSIX_002dMQUEUE_2236_2236GENERIC-condition"><tt>generic</tt></a> (condition)
+</p></dd>
+<dt><strong>Direct Default Initargs</strong></dt>
+<dd><table>
+<thead><tr><th width="30%">Initarg</th><th width="50%">Value</th></tr></thead>
+<tr><td width="30%"><tt>:message</tt></td><td width="50%"><tt>&quot;insufficient memory.&quot;</tt></td></tr>
+<tr><td width="30%"><tt>:strerror</tt></td><td width="50%"><tt>&quot;cannot allocate memory&quot;</tt></td></tr>
+</table>
+</dd>
+</dl>
+</dd></dl>
+<dl>
+<dt id="index-too_002dmany_002dopen_002dfiles">Condition: <strong>too-many-open-files</strong> <em>()</em></dt>
+<dd><span id="go-to-the-POSIX_002dMQUEUE_2236_2236TOO_002dMANY_002dOPEN_002dFILES-condition"></span><span id="index-Condition_002c-too_002dmany_002dopen_002dfiles"></span>
+<dl compact="compact">
+<dt><strong>Package</strong></dt>
+<dd><p><a href="The-posix_002dmqueue-package.html#go-to-the-POSIX_002dMQUEUE-package"><tt>posix-mqueue</tt></a>
+</p></dd>
+<dt><strong>Source</strong></dt>
+<dd><p><a href="The-cl_002dposix_002dmqueue_002fsrc_002fcondition_002elisp-file.html#go-to-the-cl_002dposix_002dmqueue_002fsrc_002fcondition_2024lisp-file"><tt>condition.lisp</tt></a> (file)
+</p></dd>
+<dt><strong>Direct superclasses</strong></dt>
+<dd><p><a href="Internal-conditions.html#go-to-the-POSIX_002dMQUEUE_2236_2236GENERIC-condition"><tt>generic</tt></a> (condition)
+</p></dd>
+<dt><strong>Direct Default Initargs</strong></dt>
+<dd><table>
+<thead><tr><th width="30%">Initarg</th><th width="50%">Value</th></tr></thead>
+<tr><td width="30%"><tt>:message</tt></td><td width="50%"><tt>&quot;the per-process limit on the number of open file and message queue
+descriptors has been reached (see the description of rlimit_nofile in
+getrlimit(2)).&quot;</tt></td></tr>
+<tr><td width="30%"><tt>:strerror</tt></td><td width="50%"><tt>&quot;too many open files&quot;</tt></td></tr>
+</table>
+</dd>
+</dl>
+</dd></dl>
+
+<hr>
+<div class="header">
+<p>
+Next: <a href="Exported-structures.html" accesskey="n" rel="next">Exported structures</a>, Previous: <a href="Exported-functions.html" accesskey="p" rel="prev">Exported functions</a>, Up: <a href="Exported-definitions.html" accesskey="u" rel="up">Exported definitions</a> &nbsp; [<a href="index.html#SEC_Contents" title="Table of contents" rel="contents">Contents</a>][<a href="Indexes.html" title="Index" rel="index">Index</a>]</p>
+</div>
+
+
+
+</body>
+</html>
