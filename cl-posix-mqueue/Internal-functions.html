@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>Internal functions (The cl-posix-mqueue Reference Manual)</title>
 
-<meta name="description" content="The cl-posix-mqueue Reference Manual, version 0.1.0.">
+<meta name="description" content="The cl-posix-mqueue Reference Manual, version 0.1.1.">
 <meta name="keywords" content="Internal functions (The cl-posix-mqueue Reference Manual)">
 <meta name="resource-type" content="document">
 <meta name="distribution" content="global">
@@ -72,20 +72,6 @@ Next: <a href="Internal-generic-functions.html" accesskey="n" rel="next">Interna
 </dl>
 </dd></dl>
 <dl>
-<dt id="index-buffer">Function: <strong>buffer</strong> <em>INSTANCE</em></dt>
-<dd><span id="go-to-the-POSIX_002dMQUEUE_2236_2236BUFFER-function"></span><span id="index-Function_002c-buffer"></span>
-</dd><dt id="index-_0028setf-buffer_0029">Function: <strong>(setf buffer)</strong> <em>VALUE INSTANCE</em></dt>
-<dd><span id="go-to-the-POSIX_002dMQUEUE_2236_2236_2768SETF-BUFFER_2769-function"></span><span id="index-Function_002c-_0028setf-buffer_0029"></span>
-<dl compact="compact">
-<dt><strong>Package</strong></dt>
-<dd><p><a href="The-posix_002dmqueue-package.html#go-to-the-POSIX_002dMQUEUE-package"><tt>posix-mqueue</tt></a>
-</p></dd>
-<dt><strong>Source</strong></dt>
-<dd><p><a href="The-cl_002dposix_002dmqueue_002fsrc_002fqueue_002elisp-file.html#go-to-the-cl_002dposix_002dmqueue_002fsrc_002fqueue_2024lisp-file"><tt>queue.lisp</tt></a> (file)
-</p></dd>
-</dl>
-</dd></dl>
-<dl>
 <dt id="index-copy_002dattributes">Function: <strong>copy-attributes</strong> <em>INSTANCE</em></dt>
 <dd><span id="go-to-the-POSIX_002dMQUEUE_2236_2236COPY_002dATTRIBUTES-function"></span><span id="index-Function_002c-copy_002dattributes"></span>
 <dl compact="compact">
@@ -94,22 +80,6 @@ Next: <a href="Internal-generic-functions.html" accesskey="n" rel="next">Interna
 </p></dd>
 <dt><strong>Source</strong></dt>
 <dd><p><a href="The-cl_002dposix_002dmqueue_002fsrc_002fqueue_002elisp-file.html#go-to-the-cl_002dposix_002dmqueue_002fsrc_002fqueue_2024lisp-file"><tt>queue.lisp</tt></a> (file)
-</p></dd>
-</dl>
-</dd></dl>
-<dl>
-<dt id="index-default_002dsizes">Function: <strong>default-sizes</strong> <em>()</em></dt>
-<dd><span id="go-to-the-POSIX_002dMQUEUE_2236_2236DEFAULT_002dSIZES-function"></span><span id="index-Function_002c-default_002dsizes"></span>
-<p>Return default sizes of a queue with unspecified MAX-MESSAGES and
-MESSAGE-SIZE in a form of cons (MAX-MESSAGES . MESSAGE-SIZE).  This is done by
-creating a queue with a random name and by extracting its attributes.  By using
-a 255 length name, we protect ourselves from name collision.
-</p><dl compact="compact">
-<dt><strong>Package</strong></dt>
-<dd><p><a href="The-posix_002dmqueue-package.html#go-to-the-POSIX_002dMQUEUE-package"><tt>posix-mqueue</tt></a>
-</p></dd>
-<dt><strong>Source</strong></dt>
-<dd><p><a href="The-cl_002dposix_002dmqueue_002fsrc_002flib_002elisp-file.html#go-to-the-cl_002dposix_002dmqueue_002fsrc_002flib_2024lisp-file"><tt>lib.lisp</tt></a> (file)
 </p></dd>
 </dl>
 </dd></dl>
@@ -328,20 +298,6 @@ details.
 <dd><span id="go-to-the-POSIX_002dMQUEUE_2236_2236RANDOM_002dQUEUE_002dNAME-function"></span><span id="index-Function_002c-random_002dqueue_002dname"></span>
 <p>Generate random queue name with specified LENGTH, with characters starting
 from START to END.  With slash at the beginning.
-</p><dl compact="compact">
-<dt><strong>Package</strong></dt>
-<dd><p><a href="The-posix_002dmqueue-package.html#go-to-the-POSIX_002dMQUEUE-package"><tt>posix-mqueue</tt></a>
-</p></dd>
-<dt><strong>Source</strong></dt>
-<dd><p><a href="The-cl_002dposix_002dmqueue_002fsrc_002flib_002elisp-file.html#go-to-the-cl_002dposix_002dmqueue_002fsrc_002flib_2024lisp-file"><tt>lib.lisp</tt></a> (file)
-</p></dd>
-</dl>
-</dd></dl>
-<dl>
-<dt id="index-timed_002dreceive_002dbuffer">Function: <strong>timed-receive-buffer</strong> <em>QUEUE TIMESTAMP</em></dt>
-<dd><span id="go-to-the-POSIX_002dMQUEUE_2236_2236TIMED_002dRECEIVE_002dBUFFER-function"></span><span id="index-Function_002c-timed_002dreceive_002dbuffer"></span>
-<p>Behaves just like TIMED-RECEIVE, except that it creates a new buffer with
-ONLY message data.
 </p><dl compact="compact">
 <dt><strong>Package</strong></dt>
 <dd><p><a href="The-posix_002dmqueue-package.html#go-to-the-POSIX_002dMQUEUE-package"><tt>posix-mqueue</tt></a>

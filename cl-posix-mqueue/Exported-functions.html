@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>Exported functions (The cl-posix-mqueue Reference Manual)</title>
 
-<meta name="description" content="The cl-posix-mqueue Reference Manual, version 0.1.0.">
+<meta name="description" content="The cl-posix-mqueue Reference Manual, version 0.1.1.">
 <meta name="keywords" content="Exported functions (The cl-posix-mqueue Reference Manual)">
 <meta name="resource-type" content="document">
 <meta name="distribution" content="global">
@@ -65,6 +65,20 @@ Next: <a href="Exported-conditions.html" accesskey="n" rel="next">Exported condi
 </dl>
 </dd></dl>
 <dl>
+<dt id="index-buffer">Function: <strong>buffer</strong> <em>INSTANCE</em></dt>
+<dd><span id="go-to-the-POSIX_002dMQUEUE_2236_2236BUFFER-function"></span><span id="index-Function_002c-buffer"></span>
+</dd><dt id="index-_0028setf-buffer_0029">Function: <strong>(setf buffer)</strong> <em>VALUE INSTANCE</em></dt>
+<dd><span id="go-to-the-POSIX_002dMQUEUE_2236_2236_2768SETF-BUFFER_2769-function"></span><span id="index-Function_002c-_0028setf-buffer_0029"></span>
+<dl compact="compact">
+<dt><strong>Package</strong></dt>
+<dd><p><a href="The-posix_002dmqueue-package.html#go-to-the-POSIX_002dMQUEUE-package"><tt>posix-mqueue</tt></a>
+</p></dd>
+<dt><strong>Source</strong></dt>
+<dd><p><a href="The-cl_002dposix_002dmqueue_002fsrc_002fqueue_002elisp-file.html#go-to-the-cl_002dposix_002dmqueue_002fsrc_002fqueue_2024lisp-file"><tt>queue.lisp</tt></a> (file)
+</p></dd>
+</dl>
+</dd></dl>
+<dl>
 <dt id="index-close_002dqueue">Function: <strong>close-queue</strong> <em>QUEUE</em></dt>
 <dd><span id="go-to-the-POSIX_002dMQUEUE_2236_2236CLOSE_002dQUEUE-function"></span><span id="index-Function_002c-close_002dqueue"></span>
 <p>Close the message queue.<br>
@@ -107,6 +121,22 @@ Next: <a href="Exported-conditions.html" accesskey="n" rel="next">Exported condi
 </p></dd>
 <dt><strong>Source</strong></dt>
 <dd><p><a href="The-cl_002dposix_002dmqueue_002fsrc_002fqueue_002elisp-file.html#go-to-the-cl_002dposix_002dmqueue_002fsrc_002fqueue_2024lisp-file"><tt>queue.lisp</tt></a> (file)
+</p></dd>
+</dl>
+</dd></dl>
+<dl>
+<dt id="index-default_002dsizes">Function: <strong>default-sizes</strong> <em>()</em></dt>
+<dd><span id="go-to-the-POSIX_002dMQUEUE_2236_2236DEFAULT_002dSIZES-function"></span><span id="index-Function_002c-default_002dsizes"></span>
+<p>Return default sizes of a queue in a form (MAX-MESSAGES . MESSAGE-SIZE).
+This is done by creating a queue with a random name and by extracting its
+attributes.  By using a 255 length name, we protect ourselves from name
+collision.
+</p><dl compact="compact">
+<dt><strong>Package</strong></dt>
+<dd><p><a href="The-posix_002dmqueue-package.html#go-to-the-POSIX_002dMQUEUE-package"><tt>posix-mqueue</tt></a>
+</p></dd>
+<dt><strong>Source</strong></dt>
+<dd><p><a href="The-cl_002dposix_002dmqueue_002fsrc_002flib_002elisp-file.html#go-to-the-cl_002dposix_002dmqueue_002fsrc_002flib_2024lisp-file"><tt>lib.lisp</tt></a> (file)
 </p></dd>
 </dl>
 </dd></dl>
@@ -223,7 +253,9 @@ queue.  It is a list of the following possible flags:<br>
 <p>In addition, MAX-MESSAGES and MESSAGE-SIZE specify the maximum number of
 messages and the maximum size of messages that the queue will allow.  Usually,
 they default to their maximum values, 10 and 8192 respectively, but these values
-can be changes through /proc/sys/fs/mqueue/ interface.<br>
+can be changes through /proc/sys/fs/mqueue/ interface.  They must be provided in
+pair, as in the mq_open(3), but DEFAULT-SIZES function is provided to get
+default sizes of a queue.<br>
 </p>
 <p>This function can signal the following conditions:<br>
 </p>
@@ -509,6 +541,20 @@ the time of the call, TIMED-RECEIVE returns immediately with
 <p>The call would have blocked, and timeout arguments were invalid, either
     because :sec was less than zero, or because :nsec was less than zero or
     greater than 1000 million.
+</p><dl compact="compact">
+<dt><strong>Package</strong></dt>
+<dd><p><a href="The-posix_002dmqueue-package.html#go-to-the-POSIX_002dMQUEUE-package"><tt>posix-mqueue</tt></a>
+</p></dd>
+<dt><strong>Source</strong></dt>
+<dd><p><a href="The-cl_002dposix_002dmqueue_002fsrc_002flib_002elisp-file.html#go-to-the-cl_002dposix_002dmqueue_002fsrc_002flib_2024lisp-file"><tt>lib.lisp</tt></a> (file)
+</p></dd>
+</dl>
+</dd></dl>
+<dl>
+<dt id="index-timed_002dreceive_002dbuffer">Function: <strong>timed-receive-buffer</strong> <em>QUEUE TIMESTAMP</em></dt>
+<dd><span id="go-to-the-POSIX_002dMQUEUE_2236_2236TIMED_002dRECEIVE_002dBUFFER-function"></span><span id="index-Function_002c-timed_002dreceive_002dbuffer"></span>
+<p>Behaves just like TIMED-RECEIVE, except that it creates a new buffer with
+ONLY message data.
 </p><dl compact="compact">
 <dt><strong>Package</strong></dt>
 <dd><p><a href="The-posix_002dmqueue-package.html#go-to-the-POSIX_002dMQUEUE-package"><tt>posix-mqueue</tt></a>

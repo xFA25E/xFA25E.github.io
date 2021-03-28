@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>The posix-mqueue package (The cl-posix-mqueue Reference Manual)</title>
 
-<meta name="description" content="The cl-posix-mqueue Reference Manual, version 0.1.0.">
+<meta name="description" content="The cl-posix-mqueue Reference Manual, version 0.1.1.">
 <meta name="keywords" content="The posix-mqueue package (The cl-posix-mqueue Reference Manual)">
 <meta name="resource-type" content="document">
 <meta name="distribution" content="global">
@@ -66,11 +66,14 @@ Previous: <a href="Packages.html" accesskey="p" rel="prev">Packages</a>, Up: <a 
 </li><li> <a href="Exported-conditions.html#go-to-the-POSIX_002dMQUEUE_2236_2236BAD_002dFILE_002dDESCRIPTOR_002dINVALID-condition"><tt>bad-file-descriptor-invalid</tt></a> (condition)
 </li><li> <a href="Exported-conditions.html#go-to-the-POSIX_002dMQUEUE_2236_2236BAD_002dFILE_002dDESCRIPTOR_002dON_002dRECEIVE-condition"><tt>bad-file-descriptor-on-receive</tt></a> (condition)
 </li><li> <a href="Exported-conditions.html#go-to-the-POSIX_002dMQUEUE_2236_2236BAD_002dFILE_002dDESCRIPTOR_002dON_002dSEND-condition"><tt>bad-file-descriptor-on-send</tt></a> (condition)
+</li><li> <a href="Exported-functions.html#go-to-the-POSIX_002dMQUEUE_2236_2236BUFFER-function"><tt>buffer</tt></a> (function)
+</li><li> <a href="Exported-functions.html#go-to-the-POSIX_002dMQUEUE_2236_2236_2768SETF-BUFFER_2769-function"><tt>(setf buffer)</tt></a> (function)
 </li><li> <a href="Exported-functions.html#go-to-the-POSIX_002dMQUEUE_2236_2236CLOSE_002dQUEUE-function"><tt>close-queue</tt></a> (function)
 </li><li> <a href="Exported-types.html#go-to-the-POSIX_002dMQUEUE_2236_2236CREATE_002dMODES-type"><tt>create-modes</tt></a> (type)
 </li><li> <a href="Exported-functions.html#go-to-the-POSIX_002dMQUEUE_2236_2236CREATE_002dMODESP-function"><tt>create-modesp</tt></a> (function)
 </li><li> <a href="Exported-functions.html#go-to-the-POSIX_002dMQUEUE_2236_2236CURRENT_002dMESSAGES-function"><tt>current-messages</tt></a> (function)
 </li><li> <a href="Exported-functions.html#go-to-the-POSIX_002dMQUEUE_2236_2236_2768SETF-CURRENT_002dMESSAGES_2769-function"><tt>(setf current-messages)</tt></a> (function)
+</li><li> <a href="Exported-functions.html#go-to-the-POSIX_002dMQUEUE_2236_2236DEFAULT_002dSIZES-function"><tt>default-sizes</tt></a> (function)
 </li><li> <a href="Exported-conditions.html#go-to-the-POSIX_002dMQUEUE_2236_2236FILE_002dEXISTS-condition"><tt>file-exists</tt></a> (condition)
 </li><li> <a href="Exported-conditions.html#go-to-the-POSIX_002dMQUEUE_2236_2236FILE_002dTABLE_002dOVERFLOW-condition"><tt>file-table-overflow</tt></a> (condition)
 </li><li> <a href="Exported-conditions.html#go-to-the-POSIX_002dMQUEUE_2236_2236INTERRUPTED_002dSYSTEM_002dCALL-condition"><tt>interrupted-system-call</tt></a> (condition)
@@ -105,6 +108,7 @@ Previous: <a href="Packages.html" accesskey="p" rel="prev">Packages</a>, Up: <a 
 </li><li> <a href="Exported-functions.html#go-to-the-POSIX_002dMQUEUE_2236_2236SEND_002dSTRING-function"><tt>send-string</tt></a> (function)
 </li><li> <a href="Exported-functions.html#go-to-the-POSIX_002dMQUEUE_2236_2236SET_002dNON_002dBLOCKING-function"><tt>set-non-blocking</tt></a> (function)
 </li><li> <a href="Exported-functions.html#go-to-the-POSIX_002dMQUEUE_2236_2236TIMED_002dRECEIVE-function"><tt>timed-receive</tt></a> (function)
+</li><li> <a href="Exported-functions.html#go-to-the-POSIX_002dMQUEUE_2236_2236TIMED_002dRECEIVE_002dBUFFER-function"><tt>timed-receive-buffer</tt></a> (function)
 </li><li> <a href="Exported-functions.html#go-to-the-POSIX_002dMQUEUE_2236_2236TIMED_002dRECEIVE_002dDISPLACED-function"><tt>timed-receive-displaced</tt></a> (function)
 </li><li> <a href="Exported-functions.html#go-to-the-POSIX_002dMQUEUE_2236_2236TIMED_002dRECEIVE_002dSTRING-function"><tt>timed-receive-string</tt></a> (function)
 </li><li> <a href="Exported-functions.html#go-to-the-POSIX_002dMQUEUE_2236_2236TIMED_002dSEND-function"><tt>timed-send</tt></a> (function)
@@ -124,10 +128,7 @@ Previous: <a href="Packages.html" accesskey="p" rel="prev">Packages</a>, Up: <a 
 </li><li> <a href="Internal-conditions.html#go-to-the-POSIX_002dMQUEUE_2236_2236ACCESS_002dDENIED-condition"><tt>access-denied</tt></a> (condition)
 </li><li> <a href="Internal-functions.html#go-to-the-POSIX_002dMQUEUE_2236_2236ATTRIBUTES_002dP-function"><tt>attributes-p</tt></a> (function)
 </li><li> <a href="Internal-conditions.html#go-to-the-POSIX_002dMQUEUE_2236_2236BAD_002dFILE_002dDESCRIPTOR-condition"><tt>bad-file-descriptor</tt></a> (condition)
-</li><li> <a href="Internal-functions.html#go-to-the-POSIX_002dMQUEUE_2236_2236BUFFER-function"><tt>buffer</tt></a> (function)
-</li><li> <a href="Internal-functions.html#go-to-the-POSIX_002dMQUEUE_2236_2236_2768SETF-BUFFER_2769-function"><tt>(setf buffer)</tt></a> (function)
 </li><li> <a href="Internal-functions.html#go-to-the-POSIX_002dMQUEUE_2236_2236COPY_002dATTRIBUTES-function"><tt>copy-attributes</tt></a> (function)
-</li><li> <a href="Internal-functions.html#go-to-the-POSIX_002dMQUEUE_2236_2236DEFAULT_002dSIZES-function"><tt>default-sizes</tt></a> (function)
 </li><li> <a href="Internal-conditions.html#go-to-the-POSIX_002dMQUEUE_2236_2236GENERIC-condition"><tt>generic</tt></a> (condition)
 </li><li> <a href="Internal-conditions.html#go-to-the-POSIX_002dMQUEUE_2236_2236INVALID_002dARGUMENT-condition"><tt>invalid-argument</tt></a> (condition)
 </li><li> <a href="Internal-functions.html#go-to-the-POSIX_002dMQUEUE_2236_2236MAKE_002dATTRIBUTES-function"><tt>make-attributes</tt></a> (function)
@@ -160,7 +161,6 @@ Previous: <a href="Packages.html" accesskey="p" rel="prev">Packages</a>, Up: <a 
 </li><li> <a href="Internal-classes.html#go-to-the-POSIX_002dMQUEUE_2236_2236RESULT_002dTYPE-class"><tt>result-type</tt></a> (class)
 </li><li> <a href="Internal-generic-functions.html#go-to-the-POSIX_002dMQUEUE_2236_2236STRERROR-generic-function"><tt>strerror</tt></a> (generic function)
 </li><li> <a href="Internal-generic-functions.html#go-to-the-POSIX_002dMQUEUE_2236_2236STRERROR-POSIX_002dMQUEUE_2236_2236GENERIC-method"><tt>strerror</tt></a> (method)
-</li><li> <a href="Internal-functions.html#go-to-the-POSIX_002dMQUEUE_2236_2236TIMED_002dRECEIVE_002dBUFFER-function"><tt>timed-receive-buffer</tt></a> (function)
 </li><li> <a href="Internal-classes.html#go-to-the-POSIX_002dMQUEUE_2236_2236TIMESPEC_002dTCLASS-class"><tt>timespec-tclass</tt></a> (class)
 </li><li> <a href="Internal-classes.html#go-to-the-POSIX_002dMQUEUE_2236_2236TIMESPEC_002dTYPE-class"><tt>timespec-type</tt></a> (class)
 </li></ul>
