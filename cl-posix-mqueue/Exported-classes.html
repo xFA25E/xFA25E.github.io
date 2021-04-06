@@ -1,0 +1,205 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<!-- Created by GNU Texinfo 6.7, http://www.gnu.org/software/texinfo/ -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Exported classes (The cl-posix-mqueue Reference Manual)</title>
+
+<meta name="description" content="The cl-posix-mqueue Reference Manual, version 0.1.2.">
+<meta name="keywords" content="Exported classes (The cl-posix-mqueue Reference Manual)">
+<meta name="resource-type" content="document">
+<meta name="distribution" content="global">
+<meta name="Generator" content="makeinfo">
+<link href="index.html" rel="start" title="Top">
+<link href="Indexes.html" rel="index" title="Indexes">
+<link href="index.html#SEC_Contents" rel="contents" title="Table of Contents">
+<link href="Exported-definitions.html" rel="up" title="Exported definitions">
+<link href="Exported-types.html" rel="next" title="Exported types">
+<link href="Exported-conditions.html" rel="prev" title="Exported conditions">
+<style type="text/css">
+<!--
+a.summary-letter {text-decoration: none}
+blockquote.indentedblock {margin-right: 0em}
+div.display {margin-left: 3.2em}
+div.example {margin-left: 3.2em}
+div.lisp {margin-left: 3.2em}
+kbd {font-style: oblique}
+pre.display {font-family: inherit}
+pre.format {font-family: inherit}
+pre.menu-comment {font-family: serif}
+pre.menu-preformatted {font-family: serif}
+span.nolinebreak {white-space: nowrap}
+span.roman {font-family: initial; font-weight: normal}
+span.sansserif {font-family: sans-serif; font-weight: normal}
+ul.no-bullet {list-style: none}
+-->
+</style>
+
+
+</head>
+
+<body lang="en">
+<span id="Exported-classes"></span><div class="header">
+<p>
+Next: <a href="Exported-types.html" accesskey="n" rel="next">Exported types</a>, Previous: <a href="Exported-conditions.html" accesskey="p" rel="prev">Exported conditions</a>, Up: <a href="Exported-definitions.html" accesskey="u" rel="up">Exported definitions</a> &nbsp; [<a href="index.html#SEC_Contents" title="Table of contents" rel="contents">Contents</a>][<a href="Indexes.html" title="Index" rel="index">Index</a>]</p>
+</div>
+<hr>
+<span id="Classes"></span><h4 class="subsection">5.1.6 Classes</h4>
+<dl>
+<dt id="index-attributes-1">Class: <strong>attributes</strong> <em>()</em></dt>
+<dd><span id="go-to-the-POSIX_002dMQUEUE_2236_2236ATTRIBUTES-class"></span><span id="index-Class_002c-attributes"></span>
+<p>POSIX message queue attributes.
+</p><dl compact="compact">
+<dt><strong>Package</strong></dt>
+<dd><p><a href="The-posix_002dmqueue-package.html#go-to-the-POSIX_002dMQUEUE-package"><tt>posix-mqueue</tt></a>
+</p></dd>
+<dt><strong>Source</strong></dt>
+<dd><p><a href="The-cl_002dposix_002dmqueue_002fsrc_002fqueue_002elisp-file.html#go-to-the-cl_002dposix_002dmqueue_002fsrc_002fqueue_2024lisp-file"><tt>queue.lisp</tt></a> (file)
+</p></dd>
+<dt><strong>Direct superclasses</strong></dt>
+<dd><p><tt>standard-object</tt> (class)
+</p></dd>
+<dt><strong>Direct methods</strong></dt>
+<dd><ul>
+<li> <a href="Exported-generic-functions.html#go-to-the-POSIX_002dMQUEUE_2236_2236CURRENT_002dMESSAGES-POSIX_002dMQUEUE_2236_2236ATTRIBUTES-method"><tt>current-messages</tt></a> (method)
+</li><li> <a href="Exported-generic-functions.html#go-to-the-POSIX_002dMQUEUE_2236_2236MESSAGE_002dSIZE-POSIX_002dMQUEUE_2236_2236ATTRIBUTES-method"><tt>message-size</tt></a> (method)
+</li><li> <a href="Exported-generic-functions.html#go-to-the-POSIX_002dMQUEUE_2236_2236MAX_002dMESSAGES-POSIX_002dMQUEUE_2236_2236ATTRIBUTES-method"><tt>max-messages</tt></a> (method)
+</li><li> <a href="Exported-generic-functions.html#go-to-the-POSIX_002dMQUEUE_2236_2236NON_002dBLOCKING_002dP-POSIX_002dMQUEUE_2236_2236ATTRIBUTES-method"><tt>non-blocking-p</tt></a> (method)
+</li></ul>
+</dd>
+<dt><strong>Direct slots</strong></dt>
+<dd><dl>
+<dt id="index-non_002dblocking_002dp-2">Slot: <strong>non-blocking-p</strong></dt>
+<dd><span id="index-Slot_002c-non_002dblocking_002dp"></span>
+<p>Whether the receive/send operations would block
+</p><dl compact="compact">
+<dt><strong>Type</strong></dt>
+<dd><p><tt>boolean</tt>
+</p></dd>
+<dt><strong>Initargs</strong></dt>
+<dd><p><tt>:non-blocking-p</tt>
+</p></dd>
+<dt><strong>Readers</strong></dt>
+<dd><p><a href="Exported-generic-functions.html#go-to-the-POSIX_002dMQUEUE_2236_2236NON_002dBLOCKING_002dP-generic-function"><tt>non-blocking-p</tt></a> (generic function)
+</p></dd>
+</dl>
+</dd></dl>
+<dl>
+<dt id="index-max_002dmessages-2">Slot: <strong>max-messages</strong></dt>
+<dd><span id="index-Slot_002c-max_002dmessages"></span>
+<p>Max possible number of messages.
+</p><dl compact="compact">
+<dt><strong>Type</strong></dt>
+<dd><p><tt>(unsigned-byte 64)</tt>
+</p></dd>
+<dt><strong>Initargs</strong></dt>
+<dd><p><tt>:max-messages</tt>
+</p></dd>
+<dt><strong>Readers</strong></dt>
+<dd><p><a href="Exported-generic-functions.html#go-to-the-POSIX_002dMQUEUE_2236_2236MAX_002dMESSAGES-generic-function"><tt>max-messages</tt></a> (generic function)
+</p></dd>
+</dl>
+</dd></dl>
+<dl>
+<dt id="index-message_002dsize-2">Slot: <strong>message-size</strong></dt>
+<dd><span id="index-Slot_002c-message_002dsize"></span>
+<p>Message size.
+</p><dl compact="compact">
+<dt><strong>Type</strong></dt>
+<dd><p><tt>(unsigned-byte 64)</tt>
+</p></dd>
+<dt><strong>Initargs</strong></dt>
+<dd><p><tt>:message-size</tt>
+</p></dd>
+<dt><strong>Readers</strong></dt>
+<dd><p><a href="Exported-generic-functions.html#go-to-the-POSIX_002dMQUEUE_2236_2236MESSAGE_002dSIZE-generic-function"><tt>message-size</tt></a> (generic function)
+</p></dd>
+</dl>
+</dd></dl>
+<dl>
+<dt id="index-current_002dmessages-2">Slot: <strong>current-messages</strong></dt>
+<dd><span id="index-Slot_002c-current_002dmessages"></span>
+<p>Number of messages currently on queue.
+</p><dl compact="compact">
+<dt><strong>Type</strong></dt>
+<dd><p><tt>(unsigned-byte 64)</tt>
+</p></dd>
+<dt><strong>Initargs</strong></dt>
+<dd><p><tt>:current-messages</tt>
+</p></dd>
+<dt><strong>Readers</strong></dt>
+<dd><p><a href="Exported-generic-functions.html#go-to-the-POSIX_002dMQUEUE_2236_2236CURRENT_002dMESSAGES-generic-function"><tt>current-messages</tt></a> (generic function)
+</p></dd>
+</dl>
+</dd></dl>
+</dd>
+</dl>
+</dd></dl>
+<dl>
+<dt id="index-queue">Class: <strong>queue</strong> <em>()</em></dt>
+<dd><span id="go-to-the-POSIX_002dMQUEUE_2236_2236QUEUE-class"></span><span id="index-Class_002c-queue"></span>
+<p>Main type used to interact with POSIX message queues.  It contains a queue&rsquo;s
+file descriptor (MQD) and a BUFFER used to receive messages.
+</p><dl compact="compact">
+<dt><strong>Package</strong></dt>
+<dd><p><a href="The-posix_002dmqueue-package.html#go-to-the-POSIX_002dMQUEUE-package"><tt>posix-mqueue</tt></a>
+</p></dd>
+<dt><strong>Source</strong></dt>
+<dd><p><a href="The-cl_002dposix_002dmqueue_002fsrc_002fqueue_002elisp-file.html#go-to-the-cl_002dposix_002dmqueue_002fsrc_002fqueue_2024lisp-file"><tt>queue.lisp</tt></a> (file)
+</p></dd>
+<dt><strong>Direct superclasses</strong></dt>
+<dd><p><tt>standard-object</tt> (class)
+</p></dd>
+<dt><strong>Direct methods</strong></dt>
+<dd><ul>
+<li> <a href="Exported-generic-functions.html#go-to-the-POSIX_002dMQUEUE_2236_2236BUFFER-POSIX_002dMQUEUE_2236_2236QUEUE-method"><tt>buffer</tt></a> (method)
+</li><li> <a href="Internal-generic-functions.html#go-to-the-POSIX_002dMQUEUE_2236_2236MQD-POSIX_002dMQUEUE_2236_2236QUEUE-method"><tt>mqd</tt></a> (method)
+</li></ul>
+</dd>
+<dt><strong>Direct slots</strong></dt>
+<dd><dl>
+<dt id="index-mqd-2">Slot: <strong>mqd</strong></dt>
+<dd><span id="index-Slot_002c-mqd"></span>
+<p>Message queue&rsquo;s file descriptor.
+</p><dl compact="compact">
+<dt><strong>Type</strong></dt>
+<dd><p><tt>(unsigned-byte 32)</tt>
+</p></dd>
+<dt><strong>Initargs</strong></dt>
+<dd><p><tt>:mqd</tt>
+</p></dd>
+<dt><strong>Readers</strong></dt>
+<dd><p><a href="Internal-generic-functions.html#go-to-the-POSIX_002dMQUEUE_2236_2236MQD-generic-function"><tt>mqd</tt></a> (generic function)
+</p></dd>
+</dl>
+</dd></dl>
+<dl>
+<dt id="index-buffer-2">Slot: <strong>buffer</strong></dt>
+<dd><span id="index-Slot_002c-buffer"></span>
+<p>Buffer used to receive messages form queue.
+</p><dl compact="compact">
+<dt><strong>Type</strong></dt>
+<dd><p><tt>(array (unsigned-byte 8))</tt>
+</p></dd>
+<dt><strong>Initargs</strong></dt>
+<dd><p><tt>:buffer</tt>
+</p></dd>
+<dt><strong>Readers</strong></dt>
+<dd><p><a href="Exported-generic-functions.html#go-to-the-POSIX_002dMQUEUE_2236_2236BUFFER-generic-function"><tt>buffer</tt></a> (generic function)
+</p></dd>
+</dl>
+</dd></dl>
+</dd>
+</dl>
+</dd></dl>
+
+<hr>
+<div class="header">
+<p>
+Next: <a href="Exported-types.html" accesskey="n" rel="next">Exported types</a>, Previous: <a href="Exported-conditions.html" accesskey="p" rel="prev">Exported conditions</a>, Up: <a href="Exported-definitions.html" accesskey="u" rel="up">Exported definitions</a> &nbsp; [<a href="index.html#SEC_Contents" title="Table of contents" rel="contents">Contents</a>][<a href="Indexes.html" title="Index" rel="index">Index</a>]</p>
+</div>
+
+
+
+</body>
+</html>
