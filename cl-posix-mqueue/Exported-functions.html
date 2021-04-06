@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>Exported functions (The cl-posix-mqueue Reference Manual)</title>
 
-<meta name="description" content="The cl-posix-mqueue Reference Manual, version 0.1.1.">
+<meta name="description" content="The cl-posix-mqueue Reference Manual, version 0.1.2.">
 <meta name="keywords" content="Exported functions (The cl-posix-mqueue Reference Manual)">
 <meta name="resource-type" content="document">
 <meta name="distribution" content="global">
@@ -14,7 +14,7 @@
 <link href="Indexes.html" rel="index" title="Indexes">
 <link href="index.html#SEC_Contents" rel="contents" title="Table of Contents">
 <link href="Exported-definitions.html" rel="up" title="Exported definitions">
-<link href="Exported-conditions.html" rel="next" title="Exported conditions">
+<link href="Exported-generic-functions.html" rel="next" title="Exported generic functions">
 <link href="Exported-macros.html" rel="prev" title="Exported macros">
 <style type="text/css">
 <!--
@@ -41,7 +41,7 @@ ul.no-bullet {list-style: none}
 <body lang="en">
 <span id="Exported-functions"></span><div class="header">
 <p>
-Next: <a href="Exported-conditions.html" accesskey="n" rel="next">Exported conditions</a>, Previous: <a href="Exported-macros.html" accesskey="p" rel="prev">Exported macros</a>, Up: <a href="Exported-definitions.html" accesskey="u" rel="up">Exported definitions</a> &nbsp; [<a href="index.html#SEC_Contents" title="Table of contents" rel="contents">Contents</a>][<a href="Indexes.html" title="Index" rel="index">Index</a>]</p>
+Next: <a href="Exported-generic-functions.html" accesskey="n" rel="next">Exported generic functions</a>, Previous: <a href="Exported-macros.html" accesskey="p" rel="prev">Exported macros</a>, Up: <a href="Exported-definitions.html" accesskey="u" rel="up">Exported definitions</a> &nbsp; [<a href="index.html#SEC_Contents" title="Table of contents" rel="contents">Contents</a>][<a href="Indexes.html" title="Index" rel="index">Index</a>]</p>
 </div>
 <hr>
 <span id="Functions"></span><h4 class="subsection">5.1.3 Functions</h4>
@@ -61,20 +61,6 @@ Next: <a href="Exported-conditions.html" accesskey="n" rel="next">Exported condi
 </p></dd>
 <dt><strong>Source</strong></dt>
 <dd><p><a href="The-cl_002dposix_002dmqueue_002fsrc_002flib_002elisp-file.html#go-to-the-cl_002dposix_002dmqueue_002fsrc_002flib_2024lisp-file"><tt>lib.lisp</tt></a> (file)
-</p></dd>
-</dl>
-</dd></dl>
-<dl>
-<dt id="index-buffer">Function: <strong>buffer</strong> <em>INSTANCE</em></dt>
-<dd><span id="go-to-the-POSIX_002dMQUEUE_2236_2236BUFFER-function"></span><span id="index-Function_002c-buffer"></span>
-</dd><dt id="index-_0028setf-buffer_0029">Function: <strong>(setf buffer)</strong> <em>VALUE INSTANCE</em></dt>
-<dd><span id="go-to-the-POSIX_002dMQUEUE_2236_2236_2768SETF-BUFFER_2769-function"></span><span id="index-Function_002c-_0028setf-buffer_0029"></span>
-<dl compact="compact">
-<dt><strong>Package</strong></dt>
-<dd><p><a href="The-posix_002dmqueue-package.html#go-to-the-POSIX_002dMQUEUE-package"><tt>posix-mqueue</tt></a>
-</p></dd>
-<dt><strong>Source</strong></dt>
-<dd><p><a href="The-cl_002dposix_002dmqueue_002fsrc_002fqueue_002elisp-file.html#go-to-the-cl_002dposix_002dmqueue_002fsrc_002fqueue_2024lisp-file"><tt>queue.lisp</tt></a> (file)
 </p></dd>
 </dl>
 </dd></dl>
@@ -111,20 +97,6 @@ Next: <a href="Exported-conditions.html" accesskey="n" rel="next">Exported condi
 </dl>
 </dd></dl>
 <dl>
-<dt id="index-current_002dmessages">Function: <strong>current-messages</strong> <em>INSTANCE</em></dt>
-<dd><span id="go-to-the-POSIX_002dMQUEUE_2236_2236CURRENT_002dMESSAGES-function"></span><span id="index-Function_002c-current_002dmessages"></span>
-</dd><dt id="index-_0028setf-current_002dmessages_0029">Function: <strong>(setf current-messages)</strong> <em>VALUE INSTANCE</em></dt>
-<dd><span id="go-to-the-POSIX_002dMQUEUE_2236_2236_2768SETF-CURRENT_002dMESSAGES_2769-function"></span><span id="index-Function_002c-_0028setf-current_002dmessages_0029"></span>
-<dl compact="compact">
-<dt><strong>Package</strong></dt>
-<dd><p><a href="The-posix_002dmqueue-package.html#go-to-the-POSIX_002dMQUEUE-package"><tt>posix-mqueue</tt></a>
-</p></dd>
-<dt><strong>Source</strong></dt>
-<dd><p><a href="The-cl_002dposix_002dmqueue_002fsrc_002fqueue_002elisp-file.html#go-to-the-cl_002dposix_002dmqueue_002fsrc_002fqueue_2024lisp-file"><tt>queue.lisp</tt></a> (file)
-</p></dd>
-</dl>
-</dd></dl>
-<dl>
 <dt id="index-default_002dsizes">Function: <strong>default-sizes</strong> <em>()</em></dt>
 <dd><span id="go-to-the-POSIX_002dMQUEUE_2236_2236DEFAULT_002dSIZES-function"></span><span id="index-Function_002c-default_002dsizes"></span>
 <p>Return default sizes of a queue in a form (MAX-MESSAGES . MESSAGE-SIZE).
@@ -137,48 +109,6 @@ collision.
 </p></dd>
 <dt><strong>Source</strong></dt>
 <dd><p><a href="The-cl_002dposix_002dmqueue_002fsrc_002flib_002elisp-file.html#go-to-the-cl_002dposix_002dmqueue_002fsrc_002flib_2024lisp-file"><tt>lib.lisp</tt></a> (file)
-</p></dd>
-</dl>
-</dd></dl>
-<dl>
-<dt id="index-max_002dmessages">Function: <strong>max-messages</strong> <em>INSTANCE</em></dt>
-<dd><span id="go-to-the-POSIX_002dMQUEUE_2236_2236MAX_002dMESSAGES-function"></span><span id="index-Function_002c-max_002dmessages"></span>
-</dd><dt id="index-_0028setf-max_002dmessages_0029">Function: <strong>(setf max-messages)</strong> <em>VALUE INSTANCE</em></dt>
-<dd><span id="go-to-the-POSIX_002dMQUEUE_2236_2236_2768SETF-MAX_002dMESSAGES_2769-function"></span><span id="index-Function_002c-_0028setf-max_002dmessages_0029"></span>
-<dl compact="compact">
-<dt><strong>Package</strong></dt>
-<dd><p><a href="The-posix_002dmqueue-package.html#go-to-the-POSIX_002dMQUEUE-package"><tt>posix-mqueue</tt></a>
-</p></dd>
-<dt><strong>Source</strong></dt>
-<dd><p><a href="The-cl_002dposix_002dmqueue_002fsrc_002fqueue_002elisp-file.html#go-to-the-cl_002dposix_002dmqueue_002fsrc_002fqueue_2024lisp-file"><tt>queue.lisp</tt></a> (file)
-</p></dd>
-</dl>
-</dd></dl>
-<dl>
-<dt id="index-message_002dsize">Function: <strong>message-size</strong> <em>INSTANCE</em></dt>
-<dd><span id="go-to-the-POSIX_002dMQUEUE_2236_2236MESSAGE_002dSIZE-function"></span><span id="index-Function_002c-message_002dsize"></span>
-</dd><dt id="index-_0028setf-message_002dsize_0029">Function: <strong>(setf message-size)</strong> <em>VALUE INSTANCE</em></dt>
-<dd><span id="go-to-the-POSIX_002dMQUEUE_2236_2236_2768SETF-MESSAGE_002dSIZE_2769-function"></span><span id="index-Function_002c-_0028setf-message_002dsize_0029"></span>
-<dl compact="compact">
-<dt><strong>Package</strong></dt>
-<dd><p><a href="The-posix_002dmqueue-package.html#go-to-the-POSIX_002dMQUEUE-package"><tt>posix-mqueue</tt></a>
-</p></dd>
-<dt><strong>Source</strong></dt>
-<dd><p><a href="The-cl_002dposix_002dmqueue_002fsrc_002fqueue_002elisp-file.html#go-to-the-cl_002dposix_002dmqueue_002fsrc_002fqueue_2024lisp-file"><tt>queue.lisp</tt></a> (file)
-</p></dd>
-</dl>
-</dd></dl>
-<dl>
-<dt id="index-non_002dblocking_002dp">Function: <strong>non-blocking-p</strong> <em>INSTANCE</em></dt>
-<dd><span id="go-to-the-POSIX_002dMQUEUE_2236_2236NON_002dBLOCKING_002dP-function"></span><span id="index-Function_002c-non_002dblocking_002dp"></span>
-</dd><dt id="index-_0028setf-non_002dblocking_002dp_0029">Function: <strong>(setf non-blocking-p)</strong> <em>VALUE INSTANCE</em></dt>
-<dd><span id="go-to-the-POSIX_002dMQUEUE_2236_2236_2768SETF-NON_002dBLOCKING_002dP_2769-function"></span><span id="index-Function_002c-_0028setf-non_002dblocking_002dp_0029"></span>
-<dl compact="compact">
-<dt><strong>Package</strong></dt>
-<dd><p><a href="The-posix_002dmqueue-package.html#go-to-the-POSIX_002dMQUEUE-package"><tt>posix-mqueue</tt></a>
-</p></dd>
-<dt><strong>Source</strong></dt>
-<dd><p><a href="The-cl_002dposix_002dmqueue_002fsrc_002fqueue_002elisp-file.html#go-to-the-cl_002dposix_002dmqueue_002fsrc_002fqueue_2024lisp-file"><tt>queue.lisp</tt></a> (file)
 </p></dd>
 </dl>
 </dd></dl>
@@ -659,7 +589,7 @@ the queue open close their descriptors referring to the queue.<br>
 <hr>
 <div class="header">
 <p>
-Next: <a href="Exported-conditions.html" accesskey="n" rel="next">Exported conditions</a>, Previous: <a href="Exported-macros.html" accesskey="p" rel="prev">Exported macros</a>, Up: <a href="Exported-definitions.html" accesskey="u" rel="up">Exported definitions</a> &nbsp; [<a href="index.html#SEC_Contents" title="Table of contents" rel="contents">Contents</a>][<a href="Indexes.html" title="Index" rel="index">Index</a>]</p>
+Next: <a href="Exported-generic-functions.html" accesskey="n" rel="next">Exported generic functions</a>, Previous: <a href="Exported-macros.html" accesskey="p" rel="prev">Exported macros</a>, Up: <a href="Exported-definitions.html" accesskey="u" rel="up">Exported definitions</a> &nbsp; [<a href="index.html#SEC_Contents" title="Table of contents" rel="contents">Contents</a>][<a href="Indexes.html" title="Index" rel="index">Index</a>]</p>
 </div>
 
 
