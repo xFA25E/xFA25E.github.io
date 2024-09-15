@@ -34,6 +34,214 @@
                 <!-- Overall Yearly Compliance Rate: 0.00%<br> -->
                 <!-- Number of Anomalies Detected (daily): 0<br> -->
             </div>
+
+            <section>
+                <h3>💎 Idea</h3>
+
+                <article>
+                    <h3>Emisat: Innovative NOx Emission Reporting</h3>
+
+                    <p>
+                        Corporate Sustainability Reporting Directive (CSRD) from
+                        the European Union is set to impact nearly 50,000
+                        companies across the EU, mandating comprehensive
+                        disclosure of environmental, social, and governance
+                        (ESG) impacts. This new standard requires reporting on
+                        how activities affect climate, human rights, and
+                        pollution.
+                    </p>
+
+                    <p>
+                        At Emisat, we focus on providing cheap, fast, and
+                        scalable NOx emission reporting for specific
+                        locations. Our innovative approach adresses the issue of
+                        costly on-site measurements and imprecise satellite
+                        data, offering a solution that's both accurate and
+                        accessible.
+                    </p>
+
+                    <p>
+                        Through Emisat's services, companies can transition from
+                        reactive to proactive environmental management, ensuring
+                        compliance with CSRD and contributing to a cleaner, more
+                        sustainable future.
+                    </p>
+                </article>
+
+                <article>
+                    <h3>🛰️ EU space technologies</h3>
+
+                    <p>
+                        Emisat harnesses the power of EU space technologies and
+                        geospatial data by using Sentinel-5P NRTI NO2 and Global
+                        Forecast System wind data. We combine these datasets
+                        using state-of-the-art physical modeling approaches
+                        based on scientifical research. We provide
+                        high-resolution NOx emission estimates with improved
+                        spatial granularity compared to current methods. We
+                        leverage the solution proposed by Beirle, S., Borger,
+                        C., et al. (2019). “Pinpointing nitrogen oxide emissions
+                        from space.”.
+                    </p>
+
+                    <p>
+                        Our innovative use of satellite measurements and wind
+                        data allows us to pinpoint specific emission sources
+                        like power plants, rather than just measuring raw NO2
+                        levels. We also propose to track impact of this
+                        pollution on nearby communities.
+                    </p>
+
+                </article>
+
+                <article>
+                    <h3>⛑️ Emisat directly addresses the following challenge:</h3>
+
+                    <p>
+                        Challenge #1: Emissions and carbon footprint reporting
+                    </p>
+
+                    <p>
+                        Emisat provides an effective solution for carbon
+                        accounting and reporting by:
+                    </p>
+
+                    <ul>
+                        <li>Offering precise NOx emission reporting, a crucial component of overall carbon footprint.</li>
+                        <li>Using European space data from Copernicus (Sentinel-5P).</li>
+                        <li>Enabling companies to track and manage their emissions effectively, fostering accountability and promoting sustainability.</li>
+                        <li>Supporting compliance with CSRD and other environmental regulations.</li>
+                        <li>Contributing to the collective effort to mitigate climate change through better emission monitoring and management.</li>
+                    </ul>
+                </article>
+
+                <article>
+                    <h3>🛠️ Get the service</h3>
+
+                    <p>Emisat provides the following services:</p>
+
+                    <ul>
+                        <li>
+                            Software as a Service (SaaS):
+                            <ul>
+                                <li>Post a start and end date and a coordinate polygon to our API</li>
+                                <li>Our backend model processes the emission data</li>
+                                <li>Receive a comprehensive emission report</li>
+                            </ul>
+                        </li>
+                        <li>
+                            Subscription-based pricing: Pay for what you need, when you need it
+                        </li>
+                        <li>
+                            Consultancy services:
+                            <ul>
+                                <li>Partner with experts to help mitigate and compensate for your emissions</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <p>Our services are tailored for various client groups:</p>
+
+                    <ul>
+                        <li>Heavy industry for reporting and compliance purposes</li>
+                        <li>Consultancy companies working on CSRD reporting</li>
+                    </ul>
+
+                    <img src="images/architecture.png">
+
+                </article>
+
+                <article>
+                    <h3>🗺️ Roadmap</h3>
+
+                    <ul>
+                        <li>Improve current approach for better accuracy, potentially incorporating Machine Learning techniques</li>
+                        <li>Expand to methane and CO2 estimation, possibly deriving from nitrogen emission reports</li>
+                        <li>Pursue European certification and cooperation for CSRD compliance</li>
+                        <li>Recruit an atmospheric scientist in the team</li>
+                    </ul>
+
+                    <p>expansion to new markets:</p>
+
+                    <ul>
+                        <li>Livestock farmers</li>
+                        <li>Governmental agencies (e.g., for fraud detection)</li>
+                    </ul>
+
+                </article>
+                <article>
+                    <h3>🤼 Team</h3>
+
+                    <ul>
+                        <li>Cédric Baron: French geo-data scientist with a degree from Wageningen University. Currently working as an ML engineer at Avanade Netherlands.</li>
+                        <li>Valeriy: A passionate and skilled full-stack software developer willing to deliver the best possible products. Currently working at Intex System. Designing a reliable and scalable architecture for the next generation solution to the climate change dilemma.</li>
+                        <li>Antonio Luca: A mechanical engineer with automation as the main driver of his activity and a background in data analysis on MEMS devices. An avid reader always seeking new challenges in international contexts, bringing strong technical skills and passionate about sustainable innovation.</li>
+                        <li>Alice: Dynamic and curious with a strong passion for innovation and business support. Matured experience in banking consultancy and commercial banking. Always seeking new opportunities in private equity and venture capital. Easily adaptive to complex environments, striving for simple and effective solutions to achieve ambitious goals</li>
+                        <li>David: Bringing a mix of technical understanding and strategic insight, with a background in industrial engineering and a passion for generative AI. Focused on delivering innovative, commercially viable solutions.</li>
+                        <li>Alberto: A curious person, with a strong entrepreneurial sense. Background in economics, law,  management, and finance. Well versed with working in collaborative and interdisciplinary environments. Extremely extrovert, skilled in networking, able to manage stakeholder, investors relationships, organize events, scout for partnership and growth opportunities. Natural at sales and marketing.</li>
+                    </ul>
+
+                </article>
+
+                <article>
+                    <h3>Appendix: physical modelling</h3>
+
+                    <p>
+                        Our model combines knowledge from top-down emission maps
+                        with wind fields from ECMWF, to average horizontal
+                        fluxes of NO2 which preserve strong gradients at point
+                        sources.
+                    </p>
+
+                    <p>
+                        The NOx flux is given by: F = L*V*w
+                    </p>
+
+                    <p>
+                        Where L is NOx divided by NO2, V corresponds to NO2
+                        tropospheric column and w corresponds to wind fields
+                    </p>
+
+                    <p>
+                        The divergence of the flux yields to emissions (E) and
+                        sinks (S), from continuity equation at steady state: D =
+                        E - S
+                    </p>
+
+                    <p>
+                        We can describe the sinks by a 1st order time constant:
+                        S = L*V/τ, where τ is the time constant for the
+                        degradation of NOx gas.
+                    </p>
+
+                    <p>
+                        Emissions are calculated as follows: E = D + S =
+                        ∇(L*V*w) + L*V/τ
+                    </p>
+
+                    <p>
+                        As divergence is a linear operator, the mean emission is
+                        determined by the temporal mean sinks and the divergence
+                        of the temporal mean flux.
+                    </p>
+
+                    <p>
+                        Thanks to the divergence method and by applying a peak
+                        fitting algorithm , we can provide a clear localisation
+                        of point sources (e.g., power plants, cement plants)
+                        with an accuracy below 2km.
+                    </p>
+
+                    <p>
+                        Emissions uncertainty due to V, L and τ uncertainties in
+                        optimal conditions is 42% (detection limit: 0.03 kg/s),
+                        while it can go up to 65% in case of lower sensitivity
+                        and sample sizes (detection limit: 0.11
+                        kg/s). Measurements with cloud data fraction above 30%
+                        were skipped.
+                    </p>
+                </article>
+            </section>
         </main>
 
         <footer>

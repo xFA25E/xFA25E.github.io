@@ -44,10 +44,15 @@ header {
 
 #summary {
     margin-left: 20px;
-    font-size: 20px;
+    font-size: 15px;
     font-family: Verdana, sans-serif;
     color: #001c28;
     letter-spacing: 1px;
+}
+
+section {
+    margin: 30px 10% 0 10%;
+    font-family: Verdana, sans-serif;
 }
 
 #footer-img {
