@@ -1,5 +1,11 @@
 $(document).ready(function(){
-  $('.emisat-showcase-carousel').slick({
-    // setting-name: setting-value
+  $('.carousel-container').slick({
+    adaptiveHeight: true,
+    arrows: false,
+    autoplay: true,
+    centerMode: true,
+    dots: true,
+    infinite: true,
+    variableWidth: true,
   });
 });
