@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOx Emissions Model Demo</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.js"></script>
+</head>
+<body class="bg-gray-100">
+    <header class="bg-blue-600 text-white p-4">
+        <h1 class="text-3xl font-bold">NOx Emissions Model Demo</h1>
+        <p class="mt-2">Based on the 2019 Beirle et al. study</p>
+    </header>
+
+    <main class="container mx-auto mt-8 p-4">
+        <section class="bg-white rounded-lg shadow-md p-6 mb-8">
+            <h2 class="text-2xl font-semibold mb-4">Model Overview</h2>
+            <p>Our model analyzes NOx emissions from power plants using satellite data and advanced algorithms. We've applied this model to a power plant in Poland to demonstrate its capabilities.</p>
+        </section>
+
+        <section class="bg-white rounded-lg shadow-md p-6 mb-8">
+            <h2 class="text-2xl font-semibold mb-4">Daily Emissions Example</h2>
+            <table class="w-full border-collapse border border-gray-300">
+                <thead>
+                    <tr class="bg-gray-100">
+                        <th class="border border-gray-300 p-2">Date</th>
+                        <th class="border border-gray-300 p-2">NOx Emissions (kg/day)</th>
+                        <th class="border border-gray-300 p-2">Confidence Level (%)</th>
+                        <th class="border border-gray-300 p-2">Error Bound (kg/day)</th>
+                        <th class="border border-gray-300 p-2">Permitted Level (kg/day)</th>
+                        <th class="border border-gray-300 p-2">Exceedance (kg/day)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="border border-gray-300 p-2">2023-01-01</td>
+                        <td class="border border-gray-300 p-2">9687.86</td>
+                        <td class="border border-gray-300 p-2">94.6</td>
+                        <td class="border border-gray-300 p-2">141.74</td>
+                        <td class="border border-gray-300 p-2">6000</td>
+                        <td class="border border-gray-300 p-2 text-red-600">3687.86</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="bg-white rounded-lg shadow-md p-6 mb-8">
+            <h2 class="text-2xl font-semibold mb-4">Yearly Summary</h2>
+            <p><strong>Total NOx Emissions (all years):</strong> 1,881,438.89 kg</p>
+            <p><strong>Total Exceedances (all years):</strong> 381,438.89 kg</p>
+        </section>
+
+        <section class="bg-white rounded-lg shadow-md p-6 mb-8">
+            <h2 class="text-2xl font-semibold mb-4">Emission Maps</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                    <h3 class="text-xl font-semibold mb-2">Weekly Emissions with Wind Influence</h3>
+                    <img src="/api/placeholder/600/400" alt="Weekly emissions map" class="w-full rounded-lg shadow-md">
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-2">Corrected Emissions</h3>
+                    <img src="/api/placeholder/600/400" alt="Corrected emissions map" class="w-full rounded-lg shadow-md">
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-white rounded-lg shadow-md p-6">
+            <h2 class="text-2xl font-semibold mb-4">About the Project</h2>
+            <p>This project was developed during a hackathon, leveraging the methodology from the 2019 Beirle et al. study. Our team applied this approach to analyze NOx emissions from a power plant in Poland, demonstrating the model's ability to track daily emissions, calculate yearly totals, and visualize the impact of wind on emission dispersal.</p>
+        </section>
+    </main>
+
+    <footer class="bg-gray-200 text-center p-4 mt-8">
+        <p>&copy; 2024 NOx Emissions Model Team. All rights reserved.</p>
+    </footer>
+</body>
+</html>
