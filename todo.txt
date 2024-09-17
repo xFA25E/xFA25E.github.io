@@ -4,9 +4,6 @@ I could also add a quote from ABB
 
 ---cedric
 
-remove the permitted level per day and exceedance for the table, now with the
-regulation we are more in a yearly approach
-
 and i was thinking on how to separate things more between "the problem" and "the solution":
 
     The Problem: Raw Emission Data
@@ -29,6 +26,9 @@ Interactive dashboard providing detailed insights into emission patterns and tre
 Yearly emission and compliance
 
 ---done
+
+remove the permitted level per day and exceedance for the table, now with the
+regulation we are more in a yearly approach
 
 maybe mention the name of the power plant and that its coal, the biggest thermal
 plant Elektrownia Bełchatów, is the largest thermal power station in Europe and
