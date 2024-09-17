@@ -1,396 +1,515 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+<!--
+    Strata by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html>
     <head>
-        <meta charset="UTF-8">
-        <title>EmiSat</title>
-
-        <link rel="stylesheet" type="text/css" href="style.css"/>
-        <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-        <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+        <title>EmiSat Demo Page</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
     </head>
-    <body>
+    <body class="is-preload">
 
-        <header>
-            <!-- <img src="images/satellite-logo.jpeg"> -->
-            <!-- <img src="images/only-logo.jpeg"> -->
-            <img id="logo" src="images/cropped-logo.jpeg">
-            <p id="motto">
-                Conscious of our impact,<br>
-                accountable for our actions
-            </p>
-        </header>
+        <!-- Header -->
+            <header id="header">
+                <div class="inner">
+                    <!-- <a href="#" class="image avatar"><img src="images/avatar.jpg" alt="" /></a> -->
+                    <h1>
+                        <strong>We are EmiSat,</strong><br />
+                        <strong>Innovative NOx Emission Reporting</strong><br />
+                    </h1>
+                </div>
+            </header>
 
-        <main>
-            <div class="carousel-container">
-                <div class="carousel"><img class="img-carousel" src="images/showcase-2.jpeg"></div>
-                <div class="carousel"><img class="img-carousel" src="images/showcase-6.jpeg"></div>
-                <div class="carousel"><img class="img-carousel" src="images/showcase-5.jpeg"></div>
-                <div class="carousel"><img class="img-carousel" src="images/showcase-7.jpeg"></div>
+        <!-- Main -->
+            <div id="main">
+
+                <!-- One -->
+                    <section id="one">
+                        <header class="major">
+                            <h2>NOx Emissions Model Demo</h2>
+                        </header>
+
+                        <p>
+                            Based on the 2019 Beirle et al. study
+                            <cite>"Pinpointing nitrogen oxide emissions from space"</cite>
+                        </p>
+                        <!-- <ul class="actions"> -->
+                        <!--     <li><a href="#" class="button">Learn More</a></li> -->
+                            <!-- </ul> -->
+
+                        <h2>Model Overview</h2>
+                        <p>Our model analyzes NOx emissions from power plants using satellite data and advanced algorithms. We've applied this model to a power plant in Poland to demonstrate its capabilities.</p>
+
+                        <h2>Daily Emissions Example</h2>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Date</th>
+                                    <th>NOx Emissions (kg/day)</th>
+                                    <th>Confidence Level (%)</th>
+                                    <th>Error Bound (kg/day)</th>
+                                    <th>Permitted Level (kg/day)</th>
+                                    <th>Exceedance (kg/day)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>2023-01-01</td>
+                                    <td>9687.86</td>
+                                    <td>94.6</td>
+                                    <td>141.74</td>
+                                    <td>6000</td>
+                                    <td>3687.86</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <h2>Yearly Summary</h2>
+                        <p>
+                            <strong>Total NOx Emissions (all years):</strong> 1,881,438.89 kg<br/>
+                            <strong>Total Exceedances (all years):</strong> 381,438.89 kg
+                        </p>
+                    </section>
+
+                <!-- Two -->
+                    <section id="two">
+                        <h2>Emission Maps</h2>
+                        <div class="row">
+                            <h4>Weekly Emissions with Wind Influence</h4>
+                        </div>
+
+                        <div class="row">
+                            <article class="col-6 col-12-xsmall work-item">
+                                <a href="images/fulls/map.jpg" class="image fit thumb"><img src="images/thumbs/map.jpg" alt="" /></a>
+                                <h3>Elektrownia Bełchatów</h3>
+                                <p>
+                                    Largest thermal power station in Europe and
+                                    one of the world’s largest coal-fired power
+                                    plants.
+                                </p>
+                            </article>
+                            <article class="col-6 col-12-xsmall work-item">
+                                <a href="images/fulls/wind.jpg" class="image fit thumb"><img src="images/thumbs/wind.jpg" alt="" /></a>
+                                <h3>NOx wind</h3>
+                                <!-- <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p> -->
+                            </article>
+                        </div>
+
+                        <div class="row">
+                            <h4>Corrected Emissions</h4>
+                        </div>
+
+                        <div class="row">
+                            <article class="col-6 col-12-xsmall work-item">
+                                <a href="images/fulls/fixwind.jpg" class="image fit thumb"><img src="images/thumbs/fixwind.jpg" alt="" /></a>
+                                <h3>Applied model</h3>
+                                <!-- <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p> -->
+                            </article>
+                            <article class="col-6 col-12-xsmall work-item">
+                                <a href="images/fulls/dashboard.jpg" class="image fit thumb"><img src="images/thumbs/dashboard.jpg" alt="" /></a>
+                                <h3>Dashboard</h3>
+                                <!-- <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p> -->
+                            </article>
+
+                        </div>
+                        <!-- <ul class="actions"> -->
+                        <!--     <li><a href="#" class="button">Full Portfolio</a></li> -->
+                        <!-- </ul> -->
+                    </section>
+
+                    <section id="five">
+                        <h2>About the Project</h2>
+                        <p>This project was developed during a hackathon, leveraging the methodology from the 2019 Beirle et al. study. Our team applied this approach to analyze NOx emissions from a power plant in Poland, demonstrating the model's ability to track daily emissions, calculate yearly totals, and visualize the impact of wind on emission dispersal.</p>
+                    </section>
+
+                <!-- Three -->
+                    <!-- <section id="three"> -->
+                    <!--     <h2>Get In Touch</h2> -->
+                    <!--     <p>Accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque lorem ipsum dolor.</p> -->
+                    <!--     <div class="row"> -->
+                    <!--         <div class="col-8 col-12-small"> -->
+                    <!--             <form method="post" action="#"> -->
+                    <!--                 <div class="row gtr-uniform gtr-50"> -->
+                    <!--                     <div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div> -->
+                    <!--                     <div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div> -->
+                    <!--                     <div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div> -->
+                    <!--                 </div> -->
+                    <!--             </form> -->
+                    <!--             <ul class="actions"> -->
+                    <!--                 <li><input type="submit" value="Send Message" /></li> -->
+                    <!--             </ul> -->
+                    <!--         </div> -->
+                    <!--         <div class="col-4 col-12-small"> -->
+                    <!--             <ul class="labeled-icons"> -->
+                    <!--                 <li> -->
+                    <!--                     <h3 class="icon solid fa-home"><span class="label">Address</span></h3> -->
+                    <!--                     1234 Somewhere Rd.<br /> -->
+                    <!--                     Nashville, TN 00000<br /> -->
+                    <!--                     United States -->
+                    <!--                 </li> -->
+                    <!--                 <li> -->
+                    <!--                     <h3 class="icon solid fa-mobile-alt"><span class="label">Phone</span></h3> -->
+                    <!--                     000-000-0000 -->
+                    <!--                 </li> -->
+                    <!--                 <li> -->
+                    <!--                     <h3 class="icon solid fa-envelope"><span class="label">Email</span></h3> -->
+                    <!--                     <a href="#">hello@untitled.tld</a> -->
+                    <!--                 </li> -->
+                    <!--             </ul> -->
+                    <!--         </div> -->
+                    <!--     </div> -->
+                    <!-- </section> -->
+
+                <!-- Four -->
+                    <!-- <section id="four">
+                        <h2>Elements</h2>
+
+                        <section>
+                            <h4>Text</h4>
+                            <p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
+                            This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+                            This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
+                            <hr />
+                            <header>
+                                <h4>Heading with a Subtitle</h4>
+                                <p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
+                            </header>
+                            <p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+                            <header>
+                                <h5>Heading with a Subtitle</h5>
+                                <p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
+                            </header>
+                            <p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+                            <hr />
+                            <h2>Heading Level 2</h2>
+                            <h3>Heading Level 3</h3>
+                            <h4>Heading Level 4</h4>
+                            <h5>Heading Level 5</h5>
+                            <h6>Heading Level 6</h6>
+                            <hr />
+                            <h5>Blockquote</h5>
+                            <blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
+                            <h5>Preformatted</h5>
+                            <pre><code>i = 0;
+
+while (!deck.isInOrder()) {
+print 'Iteration ' + i;
+deck.shuffle();
+i++;
+}
+
+print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
+                        </section>
+
+                        <section>
+                            <h4>Lists</h4>
+                            <div class="row">
+                                <div class="col-6 col-12-xsmall">
+                                    <h5>Unordered</h5>
+                                    <ul>
+                                        <li>Dolor pulvinar etiam magna etiam.</li>
+                                        <li>Sagittis adipiscing lorem eleifend.</li>
+                                        <li>Felis enim feugiat dolore viverra.</li>
+                                    </ul>
+                                    <h5>Alternate</h5>
+                                    <ul class="alt">
+                                        <li>Dolor pulvinar etiam magna etiam.</li>
+                                        <li>Sagittis adipiscing lorem eleifend.</li>
+                                        <li>Felis enim feugiat dolore viverra.</li>
+                                    </ul>
+                                </div>
+                                <div class="col-6 col-12-xsmall">
+                                    <h5>Ordered</h5>
+                                    <ol>
+                                        <li>Dolor pulvinar etiam magna etiam.</li>
+                                        <li>Etiam vel felis at lorem sed viverra.</li>
+                                        <li>Felis enim feugiat dolore viverra.</li>
+                                        <li>Dolor pulvinar etiam magna etiam.</li>
+                                        <li>Etiam vel felis at lorem sed viverra.</li>
+                                        <li>Felis enim feugiat dolore viverra.</li>
+                                    </ol>
+                                    <h5>Icons</h5>
+                                    <ul class="icons">
+                                        <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                                        <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+                                        <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                                        <li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+                                        <li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+                                        <li><a href="#" class="icon brands fa-tumblr"><span class="label">Tumblr</span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <h5>Actions</h5>
+                            <ul class="actions">
+                                <li><a href="#" class="button primary">Default</a></li>
+                                <li><a href="#" class="button">Default</a></li>
+                            </ul>
+                            <ul class="actions small">
+                                <li><a href="#" class="button primary small">Small</a></li>
+                                <li><a href="#" class="button small">Small</a></li>
+                            </ul>
+                            <div class="row">
+                                <div class="col-6 col-12-small">
+                                    <ul class="actions stacked">
+                                        <li><a href="#" class="button primary">Default</a></li>
+                                        <li><a href="#" class="button">Default</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-6 col-12-small">
+                                    <ul class="actions stacked">
+                                        <li><a href="#" class="button primary small">Small</a></li>
+                                        <li><a href="#" class="button small">Small</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-6 col-12-small">
+                                    <ul class="actions stacked">
+                                        <li><a href="#" class="button primary fit">Default</a></li>
+                                        <li><a href="#" class="button fit">Default</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-6 col-12-small">
+                                    <ul class="actions stacked">
+                                        <li><a href="#" class="button primary small fit">Small</a></li>
+                                        <li><a href="#" class="button small fit">Small</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section>
+                            <h4>Table</h4>
+                            <h5>Default</h5>
+                            <div class="table-wrapper">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Description</th>
+                                            <th>Price</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Item One</td>
+                                            <td>Ante turpis integer aliquet porttitor.</td>
+                                            <td>29.99</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Item Two</td>
+                                            <td>Vis ac commodo adipiscing arcu aliquet.</td>
+                                            <td>19.99</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Item Three</td>
+                                            <td> Morbi faucibus arcu accumsan lorem.</td>
+                                            <td>29.99</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Item Four</td>
+                                            <td>Vitae integer tempus condimentum.</td>
+                                            <td>19.99</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Item Five</td>
+                                            <td>Ante turpis integer aliquet porttitor.</td>
+                                            <td>29.99</td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <td colspan="2"></td>
+                                            <td>100.00</td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+
+                            <h5>Alternate</h5>
+                            <div class="table-wrapper">
+                                <table class="alt">
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Description</th>
+                                            <th>Price</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Item One</td>
+                                            <td>Ante turpis integer aliquet porttitor.</td>
+                                            <td>29.99</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Item Two</td>
+                                            <td>Vis ac commodo adipiscing arcu aliquet.</td>
+                                            <td>19.99</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Item Three</td>
+                                            <td> Morbi faucibus arcu accumsan lorem.</td>
+                                            <td>29.99</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Item Four</td>
+                                            <td>Vitae integer tempus condimentum.</td>
+                                            <td>19.99</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Item Five</td>
+                                            <td>Ante turpis integer aliquet porttitor.</td>
+                                            <td>29.99</td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <td colspan="2"></td>
+                                            <td>100.00</td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                        </section>
+
+                        <section>
+                            <h4>Buttons</h4>
+                            <ul class="actions">
+                                <li><a href="#" class="button primary">Primary</a></li>
+                                <li><a href="#" class="button">Default</a></li>
+                            </ul>
+                            <ul class="actions">
+                                <li><a href="#" class="button large">Large</a></li>
+                                <li><a href="#" class="button">Default</a></li>
+                                <li><a href="#" class="button small">Small</a></li>
+                            </ul>
+                            <ul class="actions fit">
+                                <li><a href="#" class="button primary fit">Fit</a></li>
+                                <li><a href="#" class="button fit">Fit</a></li>
+                            </ul>
+                            <ul class="actions fit small">
+                                <li><a href="#" class="button primary fit small">Fit + Small</a></li>
+                                <li><a href="#" class="button fit small">Fit + Small</a></li>
+                            </ul>
+                            <ul class="actions">
+                                <li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
+                                <li><a href="#" class="button icon solid fa-download">Icon</a></li>
+                            </ul>
+                            <ul class="actions">
+                                <li><span class="button primary disabled">Primary</span></li>
+                                <li><span class="button disabled">Default</span></li>
+                            </ul>
+                        </section>
+
+                        <section>
+                            <h4>Form</h4>
+                            <form method="post" action="#">
+                                <div class="row gtr-uniform gtr-50">
+                                    <div class="col-6 col-12-xsmall">
+                                        <input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
+                                    </div>
+                                    <div class="col-6 col-12-xsmall">
+                                        <input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
+                                    </div>
+                                    <div class="col-12">
+                                        <select name="demo-category" id="demo-category">
+                                            <option value="">- Category -</option>
+                                            <option value="1">Manufacturing</option>
+                                            <option value="1">Shipping</option>
+                                            <option value="1">Administration</option>
+                                            <option value="1">Human Resources</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-4 col-12-small">
+                                        <input type="radio" id="demo-priority-low" name="demo-priority" checked>
+                                        <label for="demo-priority-low">Low Priority</label>
+                                    </div>
+                                    <div class="col-4 col-12-small">
+                                        <input type="radio" id="demo-priority-normal" name="demo-priority">
+                                        <label for="demo-priority-normal">Normal Priority</label>
+                                    </div>
+                                    <div class="col-4 col-12-small">
+                                        <input type="radio" id="demo-priority-high" name="demo-priority">
+                                        <label for="demo-priority-high">High Priority</label>
+                                    </div>
+                                    <div class="col-6 col-12-small">
+                                        <input type="checkbox" id="demo-copy" name="demo-copy">
+                                        <label for="demo-copy">Email me a copy of this message</label>
+                                    </div>
+                                    <div class="col-6 col-12-small">
+                                        <input type="checkbox" id="demo-human" name="demo-human" checked>
+                                        <label for="demo-human">I am a human and not a robot</label>
+                                    </div>
+                                    <div class="col-12">
+                                        <textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <ul class="actions">
+                                            <li><input type="submit" value="Send Message" class="primary" /></li>
+                                            <li><input type="reset" value="Reset" /></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </form>
+                        </section>
+
+                        <section>
+                            <h4>Image</h4>
+                            <h5>Fit</h5>
+                            <div class="box alt">
+                                <div class="row gtr-50 gtr-uniform">
+                                    <div class="col-12"><span class="image fit"><img src="images/fulls/05.jpg" alt="" /></span></div>
+                                    <div class="col-4"><span class="image fit"><img src="images/thumbs/01.jpg" alt="" /></span></div>
+                                    <div class="col-4"><span class="image fit"><img src="images/thumbs/02.jpg" alt="" /></span></div>
+                                    <div class="col-4"><span class="image fit"><img src="images/thumbs/03.jpg" alt="" /></span></div>
+                                    <div class="col-4"><span class="image fit"><img src="images/thumbs/04.jpg" alt="" /></span></div>
+                                    <div class="col-4"><span class="image fit"><img src="images/thumbs/05.jpg" alt="" /></span></div>
+                                    <div class="col-4"><span class="image fit"><img src="images/thumbs/06.jpg" alt="" /></span></div>
+                                    <div class="col-4"><span class="image fit"><img src="images/thumbs/03.jpg" alt="" /></span></div>
+                                    <div class="col-4"><span class="image fit"><img src="images/thumbs/02.jpg" alt="" /></span></div>
+                                    <div class="col-4"><span class="image fit"><img src="images/thumbs/01.jpg" alt="" /></span></div>
+                                </div>
+                            </div>
+                            <h5>Left &amp; Right</h5>
+                            <p><span class="image left"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+                            <p><span class="image right"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+                        </section>
+
+                    </section> -->
+
             </div>
 
-            <div id="summary">
-                Total NOx Emissions (all years): 1881438.89 kg<br>
-                Total Exceedances (all years): 381438.89 kg<br>
-                <!-- Overall Yearly Compliance Rate: 0.00%<br> -->
-                <!-- Number of Anomalies Detected (daily): 0<br> -->
-            </div>
-
-            <section>
-                <h3>💎 Idea</h3>
-
-                <article>
-                    <h3>Emisat: Innovative NOx Emission Reporting</h3>
-
-                    <p>
-                        Corporate Sustainability Reporting Directive (CSRD) from
-                        the European Union is set to impact nearly 50,000
-                        companies across the EU, mandating comprehensive
-                        disclosure of environmental, social, and governance
-                        (ESG) impacts. This new standard requires reporting on
-                        how activities affect climate, human rights, and
-                        pollution.
-                    </p>
-
-                    <p>
-                        At Emisat, we focus on providing cheap, fast, and
-                        scalable NOx emission reporting for specific
-                        locations. Our innovative approach adresses the issue of
-                        costly on-site measurements and imprecise satellite
-                        data, offering a solution that's both accurate and
-                        accessible.
-                    </p>
-
-                    <p>
-                        Through Emisat's services, companies can transition from
-                        reactive to proactive environmental management, ensuring
-                        compliance with CSRD and contributing to a cleaner, more
-                        sustainable future.
-                    </p>
-                </article>
-
-                <article>
-                    <h3>🛰️ EU space technologies</h3>
-
-                    <p>
-                        Emisat harnesses the power of EU space technologies and
-                        geospatial data by using Sentinel-5P NRTI NO2 and Global
-                        Forecast System wind data. We combine these datasets
-                        using state-of-the-art physical modeling approaches
-                        based on scientifical research. We provide
-                        high-resolution NOx emission estimates with improved
-                        spatial granularity compared to current methods. We
-                        leverage the solution proposed by Beirle, S., Borger,
-                        C., et al. (2019). “Pinpointing nitrogen oxide emissions
-                        from space.”.
-                    </p>
-
-                    <p>
-                        Our innovative use of satellite measurements and wind
-                        data allows us to pinpoint specific emission sources
-                        like power plants, rather than just measuring raw NO2
-                        levels. We also propose to track impact of this
-                        pollution on nearby communities.
-                    </p>
-
-                </article>
-
-                <article>
-                    <h3>⛑️ Emisat directly addresses the following challenge:</h3>
-
-                    <p>
-                        Challenge #1: Emissions and carbon footprint reporting
-                    </p>
-
-                    <p>
-                        Emisat provides an effective solution for carbon
-                        accounting and reporting by:
-                    </p>
-
-                    <ul>
-                        <li>Offering precise NOx emission reporting, a crucial component of overall carbon footprint.</li>
-                        <li>Using European space data from Copernicus (Sentinel-5P).</li>
-                        <li>Enabling companies to track and manage their emissions effectively, fostering accountability and promoting sustainability.</li>
-                        <li>Supporting compliance with CSRD and other environmental regulations.</li>
-                        <li>Contributing to the collective effort to mitigate climate change through better emission monitoring and management.</li>
-                    </ul>
-                </article>
-
-                <article>
-                    <h3>💰Business plan</h3>
-
-                    <p>estimate Funding Needed: €500,000</p>
-
-                    <p>Use of Funds:</p>
-
-                    <ul>
-                        <li>Software Development: €200,000</li>
-                        <li>Operational Expenses: €150,000</li>
-                        <li>Marketing and Sales: €100,000</li>
-                        <li>Working Capital: €50,000</li>
-                    </ul>
-
-                    <p>Revenue streams:</p>
-
-                    <p>SaaS Platform:</p>
-
-                    <ul>
-                        <li>Pricing: €500 per customer per month</li>
+        <!-- Footer -->
+            <footer id="footer">
+                <div class="inner">
+                    <ul class="icons">
+                        <!-- <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li> -->
                         <li>
-                            Features:
-                            <ul>
-                                <li>Emission detection and measurement</li>
-                                <li>Real-time reporting</li>
-                                <li>Impact tracking on nearby communities</li>
-                            </ul>
+                            <a href="https://github.com/kimzed/cassini_nitrogen_estimation" class="icon brands fa-github">
+                                <span class="label">Github</span>
+                            </a>
                         </li>
+                        <!-- <li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li> -->
+                        <li><a href="#" class="icon solid fa-globe"><span class="label">About us</span></a></li>
                     </ul>
-
-                    <p>Consultancy Services:</p>
-
-                    <ul>
-                        <li>Pricing: €10,000 per project</li>
-                        <li>
-                            Services:
-                            <ul>
-                                <li>Developing mitigation strategies</li>
-                                <li>Tailored compensation plans for affected communities</li>
-                                <li>Regulatory compliance assistance</li>
-                            </ul>
-                        </li>
+                    <ul class="copyright">
+                        <li>&copy; Untitled</li>
+                        <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                        <li><a href="http://html5up.net"><strong>About us</strong></a></li>
                     </ul>
+                </div>
+            </footer>
 
-                    <p>Year 1 Projections:</p>
+        <!-- Scripts -->
+            <script src="assets/js/jquery.min.js"></script>
+            <script src="assets/js/jquery.poptrox.min.js"></script>
+            <script src="assets/js/browser.min.js"></script>
+            <script src="assets/js/breakpoints.min.js"></script>
+            <script src="assets/js/util.js"></script>
+            <script src="assets/js/main.js"></script>
 
-                    <ul>
-                        <li>
-                            SaaS Revenue:
-                            <ul>
-                                <li>Total Customers: Starting at 5, growing to 17 by year-end</li>
-                                <li>Total Revenue: €63,000</li>
-                            </ul>
-                        </li>
-                        <li>
-                            Consultancy Revenue:
-                            <ul>
-                                <li>Projects: 10</li>
-                                <li>Total Revenue: €100,000</li>
-                            </ul>
-                        </li>
-                        <li>Total Revenue: €163,000</li>
-                        <li>
-                            Expenses:
-                            <ul>
-                                <li>Operational Costs: €360,000</li>
-                            </ul>
-                        </li>
-                        <li>Net Profit/Loss: -€197,000</li>
-                    </ul>
-
-                    <p>Year 2 Projections:</p>
-
-                    <ul>
-                        <li>SaaS Revenue:</li>
-                        <ul>
-                            <li>Total Customers: Growing from 17 to 55</li>
-                            <li>Total Revenue: €204,000</li>
-                        </ul>
-                        <li>
-                            Consultancy Revenue:
-                            <ul>
-                                <li>Projects: 12</li>
-                                <li>Total Revenue: €120,000</li>
-                            </ul>
-                        </li>
-                        <li>Total Revenue: €324,000</li>
-                        <li>
-                            Expenses:
-                            <ul>
-                                <li>Operational Costs: €420,000</li>
-                            </ul>
-                        </li>
-                        <li>Net Profit/Loss: -€96,000</li>
-                    </ul>
-
-                    <p>Year 3 Projections:</p>
-
-                    <ul>
-                        <li>
-                            SaaS Revenue:
-                            <ul>
-                                <li>Total Customers: Growing from 55 to 174</li>
-                                <li>Total Revenue: €652,000</li>
-                            </ul>
-                        </li>
-                        <li>
-                            Consultancy Revenue:
-                            <ul>
-                                <li>Projects: 14</li>
-                                <li>Total Revenue: €140,000</li>
-                            </ul>
-                        </li>
-                        <li>Total Revenue: €792,000</li>
-                        <li>
-                            Expenses:
-                            <ul>
-                                <li>Operational Costs: €480,000</li>
-                            </ul>
-                        </li>
-                        <li>Net Profit/Loss: €312,000</li>
-                    </ul>
-
-                    <p>Break-even Analysis:</p>
-
-                    <ul>
-                        <li>Cumulative Losses (Years 1-2): -€293,000</li>
-                        <li>Year 3 Profit: €312,000</li>
-                        <li>Cumulative Profit: €19,000 (Break-even achieved in Year 3)</li>
-                    </ul>
-
-                    <p>Customer Acquisition Plan:</p>
-
-                    <ul>
-                        <li>Estimated CAC: €2,000</li>
-                        <li>Growth Strategy: Begin with local markets, then expand regionally and internationally</li>
-                    </ul>
-                </article>
-
-                <article>
-                    <h3>🛠️ Get the service</h3>
-
-                    <p>Emisat provides the following services:</p>
-
-                    <ul>
-                        <li>
-                            Software as a Service (SaaS):
-                            <ul>
-                                <li>Post a start and end date and a coordinate polygon to our API</li>
-                                <li>Our backend model processes the emission data</li>
-                                <li>Receive a comprehensive emission report</li>
-                            </ul>
-                        </li>
-                        <li>
-                            Subscription-based pricing: Pay for what you need, when you need it
-                        </li>
-                        <li>
-                            Consultancy services:
-                            <ul>
-                                <li>Partner with experts to help mitigate and compensate for your emissions</li>
-                            </ul>
-                        </li>
-                    </ul>
-
-                    <p>Our services are tailored for various client groups:</p>
-
-                    <ul>
-                        <li>Heavy industry for reporting and compliance purposes</li>
-                        <li>Consultancy companies working on CSRD reporting</li>
-                    </ul>
-
-                    <img src="images/architecture.png" width="100%">
-                </article>
-
-                <article>
-                    <h3>🗺️ Roadmap</h3>
-
-                    <ul>
-                        <li>Improve current approach for better accuracy, potentially incorporating Machine Learning techniques</li>
-                        <li>Expand to methane and CO2 estimation, possibly deriving from nitrogen emission reports</li>
-                        <li>Pursue European certification and cooperation for CSRD compliance</li>
-                        <li>Recruit an atmospheric scientist in the team</li>
-                    </ul>
-
-                    <p>expansion to new markets:</p>
-
-                    <ul>
-                        <li>Livestock farmers</li>
-                        <li>Governmental agencies (e.g., for fraud detection)</li>
-                    </ul>
-
-                </article>
-                <article>
-                    <h3>🤼 Team</h3>
-
-                    <img src="images/team.jpg" width="100%">
-
-                    <ul>
-                        <li>Cédric Baron: French geo-data scientist with a degree from Wageningen University. Currently working as an ML engineer at Avanade Netherlands.</li>
-                        <li>Valeriy Litkovskyy: A passionate and skilled full-stack software developer willing to deliver the best possible products. Currently working at Intex System. Designing a reliable and scalable architecture for the next generation solution to the climate change dilemma.</li>
-                        <li>Antonio Luca Sculli: A mechanical engineer with automation as the main driver of his activity and a background in data analysis on MEMS devices. An avid reader always seeking new challenges in international contexts, bringing strong technical skills and passionate about sustainable innovation.</li>
-                        <li>Alice Giacomelli: Dynamic and curious with a strong passion for innovation and business support. Matured experience in banking consultancy and commercial banking. Always seeking new opportunities in private equity and venture capital. Easily adaptive to complex environments, striving for simple and effective solutions to achieve ambitious goals</li>
-                        <li>David Bencivenga: Bringing a mix of technical understanding and strategic insight, with a background in industrial engineering and a passion for generative AI. Focused on delivering innovative, commercially viable solutions.</li>
-                        <li>Alberto Ambrosini: A curious person, with a strong entrepreneurial sense. Background in economics, law,  management, and finance. Well versed with working in collaborative and interdisciplinary environments. Extremely extrovert, skilled in networking, able to manage stakeholder, investors relationships, organize events, scout for partnership and growth opportunities. Natural at sales and marketing.</li>
-                    </ul>
-
-                </article>
-
-                <article>
-                    <h3>Appendix: physical modelling</h3>
-
-                    <p>
-                        Our model combines knowledge from top-down emission maps
-                        with wind fields from ECMWF, to average horizontal
-                        fluxes of NO2 which preserve strong gradients at point
-                        sources.
-                    </p>
-
-                    <p>
-                        The NOx flux is given by: F = L*V*w
-                    </p>
-
-                    <p>
-                        Where L is NOx divided by NO2, V corresponds to NO2
-                        tropospheric column and w corresponds to wind fields
-                    </p>
-
-                    <p>
-                        The divergence of the flux yields to emissions (E) and
-                        sinks (S), from continuity equation at steady state: D =
-                        E - S
-                    </p>
-
-                    <p>
-                        We can describe the sinks by a 1st order time constant:
-                        S = L*V/τ, where τ is the time constant for the
-                        degradation of NOx gas.
-                    </p>
-
-                    <p>
-                        Emissions are calculated as follows: E = D + S =
-                        ∇(L*V*w) + L*V/τ
-                    </p>
-
-                    <p>
-                        As divergence is a linear operator, the mean emission is
-                        determined by the temporal mean sinks and the divergence
-                        of the temporal mean flux.
-                    </p>
-
-                    <p>
-                        Thanks to the divergence method and by applying a peak
-                        fitting algorithm , we can provide a clear localisation
-                        of point sources (e.g., power plants, cement plants)
-                        with an accuracy below 2km.
-                    </p>
-
-                    <p>
-                        Emissions uncertainty due to V, L and τ uncertainties in
-                        optimal conditions is 42% (detection limit: 0.03 kg/s),
-                        while it can go up to 65% in case of lower sensitivity
-                        and sample sizes (detection limit: 0.11
-                        kg/s). Measurements with cloud data fraction above 30%
-                        were skipped.
-                    </p>
-                </article>
-            </section>
-        </main>
-
-        <footer>
-            <img id="footer-img" src="images/cropped-footer.jpeg">
-        </footer>
-
-        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-        <script type="text/javascript" src="slick/slick.min.js"></script>
-        <script type="text/javascript" src="index.js"></script>
     </body>
 </html>

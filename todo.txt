@@ -1,0 +1,38 @@
+we could add some links to the left footer and I could also make another page with project description (like in taikai)
+
+I could also add a quote from ABB
+
+---cedric
+
+remove the permitted level per day and exceedance for the table, now with the
+regulation we are more in a yearly approach
+
+and i was thinking on how to separate things more between "the problem" and "the solution":
+
+    The Problem: Raw Emission Data
+
+Initial satellite data shows NOx emissions, but it's affected by wind and other factors, making accurate measurement difficult.
+Power Plant Location
+Satellite view of the analyzed Polish power plant.
+
+Raw NOx Emissions
+Uncorrected emission data, showing the influence of wind on NOx dispersion.
+
+    The Solution: EmiSat Model Results
+
+Our model corrects for wind influence and other factors, providing accurate emission data.
+
+Corrected Emissions Map
+NOx emissions after applying our model, correcting for atmospheric disturbances.
+Emissions Dashboard
+Interactive dashboard providing detailed insights into emission patterns and trends.
+Yearly emission and compliance
+
+---done
+
+maybe mention the name of the power plant and that its coal, the biggest thermal
+plant Elektrownia Bełchatów, is the largest thermal power station in Europe and
+one of the world’s largest coal-fired power plants.
+
+2019 Beirle et al. study mention the name of the article "Pinpointing nitrogen
+oxide emissions from space"
